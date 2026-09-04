@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="3.5">
+  <rect x="25" y="35" width="50" height="30" rx="5" stroke="currentColor" style="stroke: var(--primary-color, #0A77E8);"/>
+  <circle cx="38" cy="50" r="6" stroke="currentColor" style="stroke: var(--primary-color, #0A77E8);"/>
+  <circle cx="62" cy="50" r="6" stroke="currentColor" style="stroke: var(--primary-color, #0A77E8);"/>
+  <line x1="44" y1="50" x2="56" y2="50" stroke="currentColor" style="stroke: var(--primary-color, #0A77E8);"/>
+  <path d="M30 35 L20 25 M70 35 L80 25 M30 65 L20 75 M70 65 L80 75" stroke="currentColor" style="stroke: var(--secondary-color, #00C49A); opacity:0.8;"/>
+</svg>

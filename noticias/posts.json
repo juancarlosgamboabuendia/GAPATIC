@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "articulo-2026-09-04-ley-ia-peru.html",
+    "title": "Ley de IA en Perú: qué cambia el 10 de septiembre para cinco sectores",
+    "date": "2026-09-04",
+    "category": "Gobernanza",
+    "excerpt": "En menos de una semana vence el primer plazo de adecuación de la Ley 31814. Si tu empresa desarrolla o implementa IA en salud, educación, justicia, seguridad, economía o finanzas, las obligaciones específicas dejan de ser próximas y pasan a ser exigibles.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
+    "slug": "articulo-2026-09-03-costo-por-tarea.html",
+    "title": "Costo por tarea: la métrica que decide si tu agente de IA conviene",
+    "date": "2026-09-03",
+    "category": "Operaciones",
+    "excerpt": "Poner un agente en producción ya es la parte fácil. La pregunta que aprueba o cancela el proyecto en 2026 es cuánto cuesta cada tarea que resuelve bien, frente a lo que cuesta hoy resolverla.",
+    "image": "images/blog-placeholder-2.jpg",
+    "author": "GAPATIC"
+  },
+  {
+    "slug": "articulo-2026-09-03-ia-en-la-sombra.html",
+    "title": "IA en la sombra: lo que tu equipo ya usa y tu empresa no controla",
+    "date": "2026-09-03",
+    "category": "Gobernanza",
+    "excerpt": "En septiembre de 2026 el riesgo no es solo el atacante con un modelo. Es el chatbot que tu gente ya abre con datos de clientes, sin política, sin registro y sin dueño.",
+    "image": "images/blog-placeholder-1.jpg",
+    "author": "GAPATIC"
+  },
+  {
+    "slug": "articulo-2026-09-02-agentes-ciberseguridad.html",
+    "title": "Agentes autónomos: la ciberseguridad ya no espera al analista",
+    "date": "2026-09-02",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 los agentes de IA encadenan tareas más rápido que un turno humano. Para una empresa en Lima el problema no es el titular: es quién responde cuando el modelo ya actuó.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  }
+]
