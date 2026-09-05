@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>RAG antes del agente: el copiloto interno que no inventa tu empresa — GAPATIC Insights</title>
+  <meta name="description" content="Antes de encadenar agentes, ancla tu copiloto interno a documentos y sistemas propios con RAG. Checklist práctico para empresas en Latinoamérica.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="RAG antes del agente: el copiloto interno que no inventa tu empresa — GAPATIC Insights">
+  <meta property="og:description" content="Recuperación aumentada, fuentes vivas y un mínimo de evaluación: cómo evitar un copiloto que suena bien y falla en operación.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-datos-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Datos</span><span>Publicado el 5 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>RAG antes del agente: el copiloto interno que no inventa tu empresa</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm quiere “un agente”. El fallo más caro suele ser otro: un chat que responde con tono confiado y sin anclarse a tus políticas, precios o contratos vigentes.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-datos-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>Un modelo genérico no conoce tu lista de precios de agosto, el protocolo de devoluciones ni el correo que Legal mandó el martes. <strong>RAG</strong> (recuperación aumentada por generación) es el patrón que pone esas fuentes delante del modelo antes de que escriba la respuesta. Sin eso, el copiloto improvisa; con eso, cita y se puede auditar.</p>
+          <p>La conversación regional ya dejó la fase de “probar ChatGPT”. Lo que se discute en gerencia es valor medible y control. RAG encaja ahí: no pide reentrenar un modelo cada semana; pide <strong>documentos vivos, permisos claros y una forma de saber cuándo la respuesta no viene de tu base</strong>.</p>
+          <h2>Qué problema resuelve (y cuál no)</h2>
+          <p>Resuelve preguntas sobre material que ya tienes: manuales, tickets, fichas de producto, actas, políticas internas. No sustituye un ERP ni decide crédito solo. Si la respuesta necesita una acción en un sistema (crear pedido, bloquear usuario), eso es orquestación o agente; RAG es la capa de verdad previa.</p>
+          <p>Tampoco arregla una carpeta de Drive sin dueño. Si nadie sabe qué PDF está vigente, el índice solo amplifica el desorden. El trabajo útil empieza en gobernanza de contenido, no en el logo del vector store.</p>
+          <h2>Arquitectura mínima que sí escala en una pyme</h2>
+          <ol>
+            <li><strong>Fuentes con dueño.</strong> Una o dos al inicio: SharePoint/Drive de políticas, wiki de producto, o export controlado del CRM. Cada fuente tiene un responsable que valida qué entra al índice.</li>
+            <li><strong>Ingesta aparte de la consulta.</strong> Un job que chunk-ea, etiqueta (área, vigencia, confidencialidad) y actualiza embeddings. La consulta solo recupera y genera; no reindexa en cada pregunta.</li>
+            <li><strong>Recuperación híbrida cuando haga falta.</strong> Búsqueda por palabras clave más vectores suele salvar códigos de producto, números de contrato y nombres propios que el embedding solo diluye.</li>
+            <li><strong>Respuesta con citas.</strong> El usuario ve de qué documento salió el párrafo. Sin cita visible, no hay copiloto de empresa: hay charla.</li>
+            <li><strong>Evaluación pequeña y repetible.</strong> Un set de 20–40 preguntas reales del negocio, con “respuesta aceptable” anotada por alguien del área. Mide fidelidad a la fuente, no eloquencia.</li>
+          </ol>
+          <h2>Errores que vemos en pilotos de LatAm</h2>
+          <p><strong>Indexar todo el Drive el día uno.</strong> Metes borradores, versiones viejas y carpetas personales. El modelo “encuentra” lo incorrecto con seguridad. Mejor un corpus estrecho y vigente.</p>
+          <p><strong>Saltarse permisos.</strong> Si el índice no respeta quién puede ver qué, el copiloto se convierte en un bypass de acceso. Filtra por identidad antes de recuperar.</p>
+          <p><strong>Pasar a agentes sin RAG estable.</strong> Encadenar herramientas sobre alucinaciones multiplica el daño: el agente actúa sobre un dato inventado. Primero ancla; después automatiza.</p>
+          <p><strong>Medir solo “me gustó la demo”.</strong> Sin set de evaluación, cada cambio de prompt o de modelo es una apuesta. Un juez LLM puede ayudar a escalar, pero solo si calibras con humanos del dominio.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Elige un caso cerrado: “preguntas de política comercial” o “soporte nivel 1 con base de conocimiento”, no “IA para toda la empresa”.</li>
+            <li>Lista 30 preguntas que hoy responden humanos con documentos. Marca cuáles tienen respuesta en un solo archivo vigente.</li>
+            <li>Define qué pasa cuando no hay evidencia en el índice: el sistema debe decir “no encontrado” en lugar de inventar.</li>
+            <li>Acuerda con Legal/Compliance qué datos nunca entran (DNI, salud, secretos de terceros).</li>
+            <li>Publica el piloto a un grupo chico con feedback en un canal único; itera el corpus, no solo el prompt.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>En septiembre de 2026, el copiloto interno útil no es el que más “suena a IA”. Es el que recupera la versión correcta del documento, cita la fuente y calla cuando no sabe. RAG no es moda de ingeniería: es la diferencia entre asistencia con dueño y un generador de riesgos operativos.</p>
+          <p><em>Si quieres acotar el corpus, el pipeline de ingesta o el set de evaluación de un caso concreto, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-03-costo-por-tarea.html">Costo por tarea: la métrica que decide</a>
+              <a href="articulo-2026-09-04-ley-ia-peru.html">Ley de IA en Perú: qué cambia el 10 de septiembre</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
