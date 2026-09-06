@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-06-enrutamiento-modelos.html",
+    "title": "Enrutamiento de modelos: deja de pagar frontier por cada clic",
+    "date": "2026-09-06",
+    "category": "Operaciones",
+    "excerpt": "En 2026 el gasto de IA no se dispara por el precio del token: se dispara porque cada clasificación, resumen y borrador pasa por el mismo modelo caro. El enrutamiento cambia esa arquitectura.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-05-rag-copiloto-interno.html",
     "title": "RAG antes del agente: el copiloto interno que no inventa tu empresa",
     "date": "2026-09-05",
