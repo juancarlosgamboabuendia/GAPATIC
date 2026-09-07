@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-07-evaluacion-agentes.html",
+    "title": "Evalúa al agente antes de darle la llave de tus sistemas",
+    "date": "2026-09-07",
+    "category": "Operaciones",
+    "excerpt": "En 2026 el cuello de botella ya no es “montar un agente”. Es saber, con evidencia, si ese agente elige bien las herramientas, respeta políticas y falla de forma segura antes de tocar producción.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-06-enrutamiento-modelos.html",
     "title": "Enrutamiento de modelos: deja de pagar frontier por cada clic",
     "date": "2026-09-06",
