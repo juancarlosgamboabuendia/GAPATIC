@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Memoria de agentes: el contexto no basta para operar — GAPATIC Insights</title>
+  <meta name="description" content="Sin memoria persistente y acotada, el agente reinicia en cada sesión. Cómo diseñar memoria de corta y larga duración para empresas en Latinoamérica.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Memoria de agentes: el contexto no basta para operar — GAPATIC Insights">
+  <meta property="og:description" content="Separa ventana de contexto, memoria de sesión y hechos durables. Escopa por usuario y tenant, y decide qué olvidar.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-datos-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Datos</span><span>Publicado el 9 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Memoria de agentes: el contexto no basta para operar</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm confunde “ventana de contexto grande” con memoria. El agente que opera de verdad necesita recordar hechos, preferencias y estado de tarea entre sesiones, con límites claros de quién ve qué.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-datos-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El piloto funciona: el usuario explica su caso una vez y el agente responde con tono seguro. Al día siguiente, vuelve a preguntar lo mismo. No es un fallo del modelo. Es haber tratado la <strong>ventana de contexto como si fuera memoria</strong>.</p>
+          <p>La ventana es memoria de trabajo: barata de usar y cara de llenar. Se pierde al cerrar la sesión, se comprime mal cuando crece y no respeta por sí sola límites de tenant, rol o retención. Si tu copiloto de atención, ventas o back-office debe “conocer” al cliente o al proceso, necesitas una <strong>capa de memoria</strong> aparte del prompt.</p>
+          <h2>Tres capas (no mezclarlas)</h2>
+          <ul>
+            <li><strong>Contexto de turno:</strong> lo que entra al modelo ahora. Incluye instrucciones, herramientas disponibles y el trozo reciente de la conversación.</li>
+            <li><strong>Memoria de sesión:</strong> el hilo ordenado de esta conversación, con TTL. Sirve para retomar el mismo chat sin reenviar mil mensajes; se puede resumir lo viejo y conservar lo reciente en bruto.</li>
+            <li><strong>Memoria durable:</strong> hechos, preferencias y resultados que deben sobrevivir a varias sesiones: “prefiere facturación mensual”, “ya validó identidad”, “el pedido X quedó en espera de stock”.</li>
+          </ul>
+          <p>El <a href="articulo-2026-09-05-rag-copiloto-interno.html">RAG</a> responde otra pregunta: documentos y políticas de la empresa. La memoria del agente responde “qué pasó con este usuario o este caso”. Mezclar ambos en un único índice suele filtrar mal y filtrar de más.</p>
+          <h2>Qué guardar (y qué nunca)</h2>
+          <p>Guarda lo que cambia una decisión futura: restricciones del cliente, acuerdos ya tomados, estado del ticket, correcciones explícitas (“no uses ese proveedor”). Extrae en checkpoints naturales (fin de turno o fin de sesión), no en cada token, para no inventar “recuerdos” de ruido.</p>
+          <p>No guardes secretos, tokens, datos de pago en claro ni PII que tu política no autorice. Define exclusiones en la extracción automática. Si Legal pide olvido, la memoria debe poder <strong>borrar o anular</strong> por usuario, hilo y tenant — no solo “dejar de recuperar”.</p>
+          <h2>Alcance antes que embeddings</h2>
+          <p>En producción, el fallo caro no es un recall mediocre: es recuperar la memoria del cliente equivocado. Toda memoria lleva alcance: organización, usuario, agente, hilo. La búsqueda (semántica, keyword o híbrida) opera <em>dentro</em> de ese alcance. Sin eso, el “agente que recuerda” se convierte en un filtrado cruzado.</p>
+          <p>Mide también costo: una memoria bien filtrada reduce tokens frente a reenviar el historial completo. Si no mides <a href="articulo-2026-09-03-costo-por-tarea.html">costo por tarea</a> con y sin memoria, no sabrás si el sustrato te ahorra o te duplica gasto.</p>
+          <h2>Errores frecuentes en pilotos de LatAm</h2>
+          <p><strong>Pegar el chat entero en el prompt.</strong> Escala mal, mezcla turnos irrelevantes y no cumple retención.</p>
+          <p><strong>Un solo vector store para RAG y memoria.</strong> Políticas estáticas y hechos de sesión no comparten el mismo ciclo de vida ni el mismo control de acceso.</p>
+          <p><strong>Recordar sin corregir.</strong> Si el usuario dice “eso está mal”, debe quedar una revisión versionada; si no, el agente refuerza el error en la siguiente sesión.</p>
+          <p><strong>Olvidar la gobernanza de autonomía.</strong> Memoria + herramientas sin evaluación es un agente que actúa sobre supuestos viejos. Antes de producción, <a href="articulo-2026-09-07-evaluacion-agentes.html">evalúa el agente</a> también en casos donde la memoria está incompleta, contradictoria o ausente.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Dibuja las tres capas (turno, sesión, durable) para un solo flujo y nombra el dueño de cada una.</li>
+            <li>Define el alcance mínimo: tenant, usuario, hilo; prohíbe búsquedas globales “por si acaso”.</li>
+            <li>Lista cinco hechos que sí deben persistir y cinco tipos de dato que la extracción debe ignorar.</li>
+            <li>Acuerda TTL de sesión y de memoria durable con Legal/IT (y el camino de borrado a pedido).</li>
+            <li>Arma tres casos de prueba: memoria correcta, memoria contradictoria, memoria vacía; no pases a más usuarios sin pasarlos.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>En septiembre de 2026, escalar agentes en Lima o en la región no se gana con una ventana más larga. Se gana con <strong>memoria acotada, corregible y medible</strong>: hechos que sobreviven a la sesión, recuperación dentro del tenant correcto y olvido cuando toca. El contexto ejecuta el turno; la memoria sostiene la relación con el negocio.</p>
+          <p><em>Si quieres diseñar la capa de memoria, el alcance por tenant o las pruebas de recall de un flujo concreto, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-05-rag-copiloto-interno.html">RAG antes del agente: el copiloto interno</a>
+              <a href="articulo-2026-09-07-evaluacion-agentes.html">Evalúa al agente antes de darle la llave</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
