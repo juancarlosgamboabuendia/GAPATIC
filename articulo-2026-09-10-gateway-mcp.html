@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Gateway MCP: quién decide qué herramientas toca tu agente — GAPATIC Insights</title>
+  <meta name="description" content="Un gateway entre el agente y tus herramientas aplica identidad, políticas y auditoría en cada llamada. Cómo plantearlo en empresas de Latinoamérica.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Gateway MCP: quién decide qué herramientas toca tu agente — GAPATIC Insights">
+  <meta property="og:description" content="MCP conecta al agente con herramientas. Sin gateway, también conecta con riesgos que nadie ve hasta que ya actuó.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-desarrollo-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Gobernanza</span><span>Publicado el 10 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Gateway MCP: quién decide qué herramientas toca tu agente</h1>
+          <p class="article-excerpt">En 2026 conectar un agente a APIs y datos ya no es el cuello de botella. El riesgo es dejarlo hablar con todo sin identidad, política ni registro en el momento de la llamada.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-desarrollo-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El piloto ya corre: el agente resume tickets, consulta el CRM y propone un abono. Funciona en la demo. En producción, alguien pregunta: <strong>¿quién autorizó esa llamada</strong>, con qué alcance y con qué evidencia si Legal pide el rastro?</p>
+          <p>En septiembre de 2026 el estándar que más se ve para enchufar modelos a herramientas es MCP (Model Context Protocol) y equivalentes. El protocolo resuelve el cableado. No resuelve por sí solo identidad por usuario, política fail-closed ni auditoría usable. Eso vive en un <strong>gateway</strong>: una puerta entre el agente y tus sistemas.</p>
+          <h2>Qué es (y qué no es) el gateway</h2>
+          <p>No es “otro chatbot”. Es el punto donde cada intento de usar una herramienta pasa por: autenticación, autorización, recorte de contexto y registro. El agente pide “leer pedidos del cliente X”; el gateway decide si ese agente, en nombre de ese usuario, puede ver ese tenant, con qué campos y a qué ritmo.</p>
+          <p>Sin esa capa, el catálogo de herramientas suele crecer por conveniencia: un servidor MCP compartido, una API key de servicio y poca separación entre entornos. Eso es la versión técnica de la <a href="articulo-2026-09-03-ia-en-la-sombra.html">IA en la sombra</a>: capacidad real, dueño difuso.</p>
+          <h2>Tres controles que sí importan en LatAm</h2>
+          <ul>
+            <li><strong>Identidad delegada:</strong> el agente actúa con el alcance del usuario (o de un rol explícito), no con una cuenta compartida “de integración”. Cuando alguien se va o cambia de área, el acceso del agente también cambia.</li>
+            <li><strong>Política en el momento de la llamada:</strong> denegar escritura, exportaciones masivas o herramientas sensibles por defecto. Fail-closed: si la política no carga, no se ejecuta la herramienta.</li>
+            <li><strong>Telemetría de trayectoria:</strong> no solo “API 200”. Qué intentaba el agente, qué se negó, cómo reaccionó. Sin eso, <a href="articulo-2026-09-07-evaluacion-agentes.html">evaluar el agente</a> en producción es adivinar.</li>
+          </ul>
+          <h2>Menos herramientas visibles, mejor agente</h2>
+          <p>Mostrar al modelo el catálogo completo “por si acaso” empeora dos cosas a la vez: superficie de ataque (tool poisoning, shadowing, instrucciones ocultas en descripciones) y calidad (más opciones irrelevantes, más alucinaciones de herramienta). Un gateway serio <strong>recorta el menú</strong> según sesión, rol e intención.</p>
+          <p>Eso también baja costo: menos definición de herramientas en el prompt, menos reintentos fallidos. Si ya mides <a href="articulo-2026-09-03-costo-por-tarea.html">costo por tarea</a>, el gateway es una palanca, no un impuesto.</p>
+          <h2>Errores frecuentes en pilotos</h2>
+          <p><strong>Confiar solo en el system prompt.</strong> “No llames a producción” no es un control. El modelo puede equivocarse; la política en runtime no debería.</p>
+          <p><strong>Una sola API key para todos los agentes.</strong> Mezcla tenants, impide revocar por caso y complica el cumplimiento de la <a href="articulo-2026-09-04-ley-ia-peru.html">Ley de IA en Perú</a> cuando el sistema toca sectores regulados.</p>
+          <p><strong>Auditar solo el chat.</strong> El riesgo está en la llamada a la herramienta. Si no queda el intento denegado, no aprendes ni demuestras control.</p>
+          <p><strong>Saltar memoria y alcance.</strong> Un agente con herramientas potentes y <a href="articulo-2026-09-09-memoria-agentes.html">memoria mal acotada</a> puede actuar sobre supuestos del cliente equivocado. Gateway y memoria se diseñan juntos.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista las herramientas que el piloto puede invocar; marca lectura vs escritura y datos sensibles.</li>
+            <li>Define el dueño de cada servidor o conector (producto, IT, seguridad) y el entorno (dev / staging / prod).</li>
+            <li>Exige identidad por usuario o por rol; elimina la key compartida del camino feliz.</li>
+            <li>Configura al menos tres denegaciones explícitas (exportación masiva, borrar, pagar) y pruébalas.</li>
+            <li>Guarda trayectoria: intento, decisión, motivo, resultado; revisa una muestra en la reunión de gobierno.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Escalar agentes en Lima o en la región en 2026 no se gana enchufando más APIs al protocolo de turno. Se gana con una <strong>puerta de herramientas</strong>: identidad clara, política en la llamada y evidencia cuando algo se niega o se ejecuta. MCP (u otro conector) mueve datos; el gateway decide si debían moverse.</p>
+          <p><em>Si quieres diseñar el catálogo de herramientas, las políticas fail-closed o el rastro de auditoría de un agente concreto, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-07-evaluacion-agentes.html">Evalúa al agente antes de darle la llave</a>
+              <a href="articulo-2026-09-03-ia-en-la-sombra.html">IA en la sombra: lo que tu equipo ya usa</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

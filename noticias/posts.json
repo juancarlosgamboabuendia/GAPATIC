@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-10-gateway-mcp.html",
+    "title": "Gateway MCP: quién decide qué herramientas toca tu agente",
+    "date": "2026-09-10",
+    "category": "Gobernanza",
+    "excerpt": "En 2026 conectar un agente a APIs y datos ya no es el cuello de botella. El riesgo es dejarlo hablar con todo sin identidad, política ni registro en el momento de la llamada.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-09-memoria-agentes.html",
     "title": "Memoria de agentes: el contexto no basta para operar",
     "date": "2026-09-09",
