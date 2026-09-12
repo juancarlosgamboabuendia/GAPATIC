@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-12-agentes-navegador.html",
+    "title": "Agentes de navegador: cuando la IA hace clic en nombre de tu empresa",
+    "date": "2026-09-12",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha operación en LatAm vive en portales sin API limpia. Un agente que ve la pantalla y hace clic promete cerrar ese hueco. También hereda la sesión, los datos visibles y el botón de enviar.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-10-gateway-mcp.html",
     "title": "Gateway MCP: quién decide qué herramientas toca tu agente",
     "date": "2026-09-10",
