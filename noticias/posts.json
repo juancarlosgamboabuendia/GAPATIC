@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-13-gobernanza-escala.html",
+    "title": "De piloto a escala: la gobernanza que frena la IA agéntica",
+    "date": "2026-09-13",
+    "category": "Gobernanza",
+    "excerpt": "En 2026 mucha empresa en LatAm ya tiene un piloto de agentes. Pocas lo llevan a operación diaria. El cuello de botella no es el modelo: es quién decide, qué puede hacer el agente y cómo demuestras el valor.",
+    "image": "images/blog-placeholder-2.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-12-agentes-navegador.html",
     "title": "Agentes de navegador: cuando la IA hace clic en nombre de tu empresa",
     "date": "2026-09-12",
