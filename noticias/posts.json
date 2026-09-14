@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-14-observabilidad-agentes.html",
+    "title": "Observabilidad de agentes: sin traza no hay producción",
+    "date": "2026-09-14",
+    "category": "Operaciones",
+    "excerpt": "En 2026 mucha empresa en LatAm ya tiene un agente que llama herramientas. Pocas pueden rehacer, paso a paso, qué hizo en una corrida concreta. Sin esa traza, el piloto es una caja negra con acceso a tus sistemas.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-13-gobernanza-escala.html",
     "title": "De piloto a escala: la gobernanza que frena la IA agéntica",
     "date": "2026-09-13",
