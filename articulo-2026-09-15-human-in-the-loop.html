@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Human-in-the-loop: cuándo el agente debe pedir permiso — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 escalar agentes en LatAm no es quitar al humano: es definir qué acciones pueden correr solas y cuáles pausan hasta una aprobación con evidencia.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Human-in-the-loop: cuándo el agente debe pedir permiso — GAPATIC Insights">
+  <meta property="og:description" content="El patrón propose-then-commit separa lo reversible de lo irreversible. Sin esa puerta, la autonomía se convierte en riesgo operativo.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-consultoria-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Operaciones</span><span>Publicado el 15 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Human-in-the-loop: cuándo el agente debe pedir permiso</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm quiere “más autonomía”. El atajo peligroso es quitar al humano de todo. El patrón que escala de verdad es otro: el agente propone; una persona autoriza solo lo irreversible, regulado o de alto impacto.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-consultoria-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>Un agente que solo redacta borradores es útil. Un agente que envía el correo, cambia el ERP o dispara un pago ya opera en el mundo real. Ahí la pregunta deja de ser “¿qué tan listo es el modelo?” y pasa a ser <strong>quién firma la acción</strong> antes de que se ejecute.</p>
+          <p>En septiembre de 2026, en fábricas, finanzas y operaciones de servicio, el consenso práctico es el mismo: human-in-the-loop no es un freno al progreso. Es el mecanismo que hace defendible la autonomía.</p>
+          <h2>Propose, luego commit</h2>
+          <p>El patrón sano es simple de explicar y difícil de improvisar:</p>
+          <ul>
+            <li><strong>Propose:</strong> el agente arma un payload estructurado (qué haría, con qué datos, bajo qué política) y lo deja en un almacén durable. No ejecuta todavía.</li>
+            <li><strong>Review:</strong> una persona —o un rol con autoridad— ve un “evidence pack”: contexto, fuentes, herramientas que usaría, costo o impacto estimado, y la acción exacta.</li>
+            <li><strong>Commit:</strong> solo entonces corre la herramienta, con clave de idempotencia, validación de precondiciones y verificación posterior.</li>
+          </ul>
+          <p>Sin esa separación, “aprobar” se convierte en un clic ciego sobre un chat. Eso no es gobernanza: es teatro.</p>
+          <h2>Qué debe pausar (y qué puede ir solo)</h2>
+          <p>No todo necesita humano. Clasificar riesgo por acción, no por “el agente en general”:</p>
+          <ul>
+            <li><strong>Puede ir autónomo:</strong> lecturas, búsquedas internas, borradores, consultas idempotentes de bajo impacto.</li>
+            <li><strong>Debe pausar:</strong> envíos externos, cambios de datos maestros, pagos, altas de acceso, despliegues, holds de calidad, órdenes de trabajo en planta, cualquier acción irreversible o regulada.</li>
+          </ul>
+          <p>En LatAm, donde mucha operación vive en portales, ERPs y APIs heterogéneas, el radio de daño de un clic equivocado es alto. La misma lógica que pedimos para un <a href="articulo-2026-09-10-gateway-mcp.html">gateway MCP</a> aplica aquí: denegación por defecto en acciones sensibles.</p>
+          <h2>Errores frecuentes</h2>
+          <p><strong>Aprobar sin evidencia.</strong> Si el revisor no ve qué datos usó el agente ni qué herramienta invocaría, la firma no vale.</p>
+          <p><strong>Un solo buzón para todo.</strong> Enruta por rol: finanzas aprueba pagos, operaciones aprueba cambios de agenda, seguridad aprueba accesos. Un inbox genérico se satura y se ignora.</p>
+          <p><strong>Pausa sin reanudación durable.</strong> Si el flujo muere cuando la persona cierra el navegador, no tienes HITL: tienes un prototipo. El estado “esperando aprobación” debe sobrevivir turnos y turnos de guardia.</p>
+          <p><strong>Autonomía total porque “el piloto fue bien”.</strong> Un piloto con datos limpios no prueba el peor caso. Baja el umbral de autonomía solo cuando la <a href="articulo-2026-09-14-observabilidad-agentes.html">observabilidad</a> y la <a href="articulo-2026-09-07-evaluacion-agentes.html">evaluación</a> muestran fallos controlados.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista las acciones que tu agente ya puede ejecutar y márcalas: autónomas / con aprobación / prohibidas.</li>
+            <li>Define el evidence pack mínimo: invocador, política, datos tocados, acción propuesta, impacto.</li>
+            <li>Implementa propose-then-commit en un solo flujo de alto riesgo (pago, correo a cliente o cambio en ERP).</li>
+            <li>Asigna rol y SLA de revisión; mide tiempo hasta aprobación y tasa de rechazo con motivo.</li>
+            <li>Guarda aprobación, actor y resultado en la misma traza de corrida que usas para auditar.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Human-in-the-loop no es desconfianza hacia el modelo: es diseño de radio de acción. Primero clasifica qué puede fallar sin destruir confianza o dinero; después amplía autonomía donde la evidencia lo permita. Si no puedes pausar, evidenciar y reanudar, todavía no estás listo para que el agente actúe solo.</p>
+          <p><em>Si quieres diseñar gates de aprobación, evidence packs y agentes fail-closed para tu operación, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-14-observabilidad-agentes.html">Observabilidad de agentes: sin traza no hay producción</a>
+              <a href="articulo-2026-09-13-gobernanza-escala.html">De piloto a escala: la gobernanza que frena</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

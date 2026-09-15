@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-15-human-in-the-loop.html",
+    "title": "Human-in-the-loop: cuándo el agente debe pedir permiso",
+    "date": "2026-09-15",
+    "category": "Operaciones",
+    "excerpt": "En 2026 mucha empresa en LatAm quiere “más autonomía”. El atajo peligroso es quitar al humano de todo. El patrón que escala de verdad es otro: el agente propone; una persona autoriza solo lo irreversible, regulado o de alto impacto.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-14-observabilidad-agentes.html",
     "title": "Observabilidad de agentes: sin traza no hay producción",
     "date": "2026-09-14",
