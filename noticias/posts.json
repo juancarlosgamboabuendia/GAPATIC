@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-16-orquestacion-multiagente.html",
+    "title": "Orquestación multiagente: un solo bot no es una operación",
+    "date": "2026-09-16",
+    "category": "Operaciones",
+    "excerpt": "En 2026 mucha empresa en LatAm encadena un agente detrás de otro y cree que ya tiene un sistema. Sin orquestación —quién arranca, qué pasa si falla y dónde queda el estado— solo tienes demos que no sobreviven un turno de guardia.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-15-human-in-the-loop.html",
     "title": "Human-in-the-loop: cuándo el agente debe pedir permiso",
     "date": "2026-09-15",
