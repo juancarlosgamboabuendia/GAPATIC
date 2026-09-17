@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-17-identidades-no-humanas.html",
+    "title": "Identidades no humanas: tu agente no debe usar tu cuenta",
+    "date": "2026-09-17",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm conecta un agente con la misma cuenta del analista o una clave API compartida. Cuando el modelo actúa a velocidad de máquina, esa identidad no humana sin dueño, caducidad ni privilegio mínimo es la puerta de entrada.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-16-orquestacion-multiagente.html",
     "title": "Orquestación multiagente: un solo bot no es una operación",
     "date": "2026-09-16",

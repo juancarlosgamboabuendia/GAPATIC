@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Identidades no humanas: tu agente no debe usar tu cuenta — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 asegurar IA agéntica en LatAm empieza por tratar cada agente como identidad no humana: dueño, credenciales cortas, privilegio mínimo y auditoría separada de la persona.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Identidades no humanas: tu agente no debe usar tu cuenta — GAPATIC Insights">
+  <meta property="og:description" content="Un agente con la cuenta del analista o una API key eterna no es productividad: es una identidad no humana sin dueño. Sepárala, limítala y audítala.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/blog-etica-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 17 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Identidades no humanas: tu agente no debe usar tu cuenta</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm conecta un agente con la misma cuenta del analista o una clave API compartida. Cuando el modelo actúa a velocidad de máquina, esa identidad no humana sin dueño, caducidad ni privilegio mínimo es la puerta de entrada.</p>
+        </header>
+        <img class="article-featured reveal" src="images/blog-etica-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El atajo más común en un piloto de agentes es simple: “usa mi usuario”, “pega esta API key” o “corre con la cuenta de servicio del ERP”. Funciona en la demo. En producción, el agente hereda privilegios humanos, no tiene MFA propia y deja un rastro que nadie puede atribuir con claridad.</p>
+          <p>En septiembre de 2026 el debate de seguridad ya no es solo el modelo que alucina. Es quién —o qué— está autenticado cuando el agente llama una herramienta, y cómo revocas ese acceso cuando la tarea termina.</p>
+          <h2>Qué es una identidad no humana (y por qué importa)</h2>
+          <p>Una <strong>identidad no humana</strong> (NHI) es cualquier actor que autentica sin ser una persona: cuentas de servicio, claves API, tokens OAuth, bots y, ahora, agentes de IA. No se va de vacaciones, no falla un challenge de MFA y puede ejecutar cientos de acciones por minuto.</p>
+          <p>Si el agente opera con la identidad del analista, tres cosas se rompen a la vez:</p>
+          <ul>
+            <li><strong>Atribución:</strong> el log dice “Juan aprobó el pago”, pero fue el modelo.</li>
+            <li><strong>Revocación:</strong> despedir o rotar a Juan no apaga al agente que sigue con su token.</li>
+            <li><strong>Alcance:</strong> el agente puede hacer todo lo que Juan puede hacer, no solo la tarea acotada.</li>
+          </ul>
+          <h2>Cuatro controles que sí escalan</h2>
+          <p><strong>Identidad propia.</strong> Cada agente en producción tiene un id único, un propietario humano nombrado y un propósito escrito. No reutilices cuentas de personas ni “la” cuenta de servicio genérica del área.</p>
+          <p><strong>Credenciales de corta duración.</strong> Tokens o secretos con caducidad ligada a la corrida o al turno. Cuando la tarea termina, el acceso muere. Las claves eternas en un <code>.env</code> son el anti-patrón.</p>
+          <p><strong>Privilegio mínimo por tarea.</strong> Lectura del CRM en un rol; escritura en pedidos en otro. El mismo principio del <a href="articulo-2026-09-10-gateway-mcp.html">gateway MCP</a>: el agente solo ve las herramientas que necesita para <em>esta</em> corrida.</p>
+          <p><strong>Delegación explícita.</strong> Si actúa “en nombre de” un usuario, conserva ambas identidades en la traza: agente + autoridad humana. Sin eso, el human-in-the-loop y la auditoría se vuelven teatro.</p>
+          <h2>Fallos que ya estamos viendo</h2>
+          <p><strong>API key compartida entre tres agentes.</strong> Un compromiso compromete los tres. Inventario y rotación por agente, no por equipo.</p>
+          <p><strong>Token passthrough.</strong> El agente recibe un token del usuario y lo reenvía a otra API. El destino ya no sabe quién pide ni para qué. Exige token propio o intercambio con audiencia (audience) validada.</p>
+          <p><strong>Sin inventario.</strong> Nadie lista qué agentes existen, quién los provisionó ni qué pueden tocar. Lo que no inventarías, no puedes apagar en un incidente.</p>
+          <p><strong>Confundir observabilidad con identidad.</strong> Ver la traza del prompt ayuda; no sustituye saber con qué identidad firmó la llamada al ERP. Ambas hacen falta —ver también <a href="articulo-2026-09-14-observabilidad-agentes.html">observabilidad de agentes</a>.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista los agentes y automatizaciones que tocan sistemas internos: dueño, propósito y credencial actual.</li>
+            <li>Separa al menos un piloto: identidad propia del agente, distinta de cualquier usuario humano.</li>
+            <li>Sustituye una clave estática por un secreto o token con caducidad corta y rotación.</li>
+            <li>Recorta permisos al mínimo para una sola tarea; prueba que el resto de acciones fallan de forma explícita.</li>
+            <li>Define cómo se desprovisiona el agente (quién lo apaga, en cuánto tiempo, qué logs se conservan).</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Un agente sin identidad propia no es “ágil”: es un usuario privilegiado que nunca duerme. Primero dueño, credencial corta y radio de acción; después más autonomía. Si no puedes decir qué agente actuó, en nombre de quién y con qué permiso, todavía no estás listo para producción.</p>
+          <p><em>Si quieres inventariar identidades de agentes, acotar privilegios y dejar trazas auditables en tu operación, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-10-gateway-mcp.html">Gateway MCP: quién decide qué herramientas toca tu agente</a>
+              <a href="articulo-2026-09-14-observabilidad-agentes.html">Observabilidad de agentes: sin traza no hay producción</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
