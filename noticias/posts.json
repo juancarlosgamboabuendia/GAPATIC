@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-19-sandbox-agentes.html",
+    "title": "Sandbox de agentes: tu piloto no debe correr en producción abierta",
+    "date": "2026-09-19",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm deja que el agente ejecute código o llame herramientas en el mismo entorno que el ERP o la laptop del analista. Sin sandbox —aislar red, archivos y secretos— un prompt malicioso o un error convierte el piloto en incidente.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-18-cortocircuito-agentes.html",
     "title": "Cortocircuito de agentes: el botón de apagado que falta en tu piloto",
     "date": "2026-09-18",
