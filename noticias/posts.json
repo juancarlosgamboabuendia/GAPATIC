@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-20-inyeccion-indirecta-rag.html",
+    "title": "Inyección indirecta en RAG: el documento que manda a tu agente",
+    "date": "2026-09-20",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm conecta su copiloto a SharePoint, tickets y PDFs. Si un documento malicioso lleva instrucciones ocultas, el modelo las trata como órdenes y el agente puede filtrar datos o llamar herramientas sin que nadie teclee el ataque.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-19-sandbox-agentes.html",
     "title": "Sandbox de agentes: tu piloto no debe correr en producción abierta",
     "date": "2026-09-19",
