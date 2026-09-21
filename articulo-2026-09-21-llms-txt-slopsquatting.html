@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>llms.txt y slopsquatting: tu docs invita al agente al paquete falso — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 mucha empresa publica llms.txt para guiar a agentes de código. Si ese archivo apunta a un paquete o dominio que nadie registró, un atacante lo reclama y el agente lo instala como si fuera oficial.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="llms.txt y slopsquatting: tu docs invita al agente al paquete falso — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 mucha empresa publica llms.txt para guiar a agentes de código. Si ese archivo apunta a un paquete o dominio que nadie registró, un atacante lo reclama y el agente lo instala como si fuera oficial.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-desarrollo-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 21 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>llms.txt y slopsquatting: tu docs invita al agente al paquete falso</h1>
+          <p class="article-excerpt">En 2026 mucha empresa publica llms.txt para guiar a agentes de código. Si ese archivo apunta a un paquete o dominio que nadie registró, un atacante lo reclama y el agente lo instala como si fuera oficial.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-desarrollo-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El <code>llms.txt</code> nació para ayudar: un archivo en la raíz del sitio que resume APIs, SDKs y comandos de instalación para que un agente de código no alucine. El problema de 2026 es el modelo de confianza: el agente trata esa documentación como verdad y ejecuta lo que dice —incluido un <code>npm install</code> o un <code>pip install</code>— sin comprobar que el paquete exista, sea tuyo o haya sido revisado.</p>
+          <p>Investigaciones recientes de la Cloud Security Alliance y escaneos sobre miles de dominios corporativos mostraron el patrón: una fracción medible de archivos <code>llms.txt</code> publica nombres de paquetes o dominios <strong>nunca registrados</strong>. Quien reclama ese nombre y sube un paquete “de teléfono a casa” puede ver cómo Claude, Codex u otros agentes lo instalan dentro de la red, a veces en minutos. No parece malware clásico: entra por el gestor de paquetes que ya confías y por la docs que tú mismo publicaste.</p>
+          <h2>Qué es (y qué no es)</h2>
+          <p>El <strong>slopsquatting</strong> clásico aprovecha nombres que el modelo inventa. La variante vía <code>llms.txt</code> invierte la superficie: el atacante lee tu archivo público, anota el nombre exacto que tu empresa invita a instalar y que aún no existe, y lo registra. El agente no “alucinó” el paquete; obedeció tu documentación.</p>
+          <p>No sustituye al <a href="articulo-2026-09-10-gateway-mcp.html">gateway MCP</a> ni a las <a href="articulo-2026-09-17-identidades-no-humanas.html">identidades no humanas</a>: aquí el vector es la cadena de suministro del propio asistente de desarrollo. Tampoco es “el modelo es malo”: es un fallo de verificación entre docs, registro y ejecución.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Agentes de código ya en el día a día.</strong> Muchos equipos en Lima, Bogotá o Ciudad de México dejan que el copiloto instale dependencias “como dice el README del proveedor”. Si ese README o el <code>llms.txt</code> apunta a un nombre libre, el riesgo viaja con el flujo normal de trabajo.</p>
+          <p><strong>Docs publicadas con prisa.</strong> Marketing o producto publican guías para agentes sin el mismo rigor que un release de software: ejemplos inventados, SDKs “próximos” o typos que nadie reclamó en npm/PyPI.</p>
+          <p><strong>Controles de endpoint ciegos.</strong> El agente usa el mismo <code>npm</code>/<code>pip</code> aprobado. El EDR ve una instalación legítima; no ve que el dueño del paquete cambió esta mañana.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Audita tu propio llms.txt.</strong> Lista cada paquete, URL y comando de instalación. Verifica en el registro oficial que el nombre existe, que la cuenta publicadora es tuya o del vendor, y que hay historial (no un paquete de ayer con cero versiones previas).</p>
+          <p><strong>Registra antes de documentar.</strong> Si vas a mencionar un SDK futuro, reserva el nombre en el registro o no lo publiques. Un nombre libre en docs públicas es una invitación abierta.</p>
+          <p><strong>Pin y lockfile.</strong> El agente no debe “resolver lo último”: versiones fijas, hashes y lockfiles revisados. Prohíbe instalación desde URLs crudas o registros no allowlisted en el <a href="articulo-2026-09-19-sandbox-agentes.html">sandbox</a> del piloto.</p>
+          <p><strong>Política en el runtime del agente.</strong> Antes de ejecutar un install, exige allowlist de paquetes o revisión humana. El mismo criterio de <a href="articulo-2026-09-15-human-in-the-loop.html">human-in-the-loop</a> para lo irreversible aplica a “bajar código de internet”.</p>
+          <p><strong>Prueba roja.</strong> En staging, publica un <code>llms.txt</code> de prueba con un nombre inventado no registrado. Si el agente lo intenta instalar, tu pipeline todavía confía en docs como si fueran firmadas.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Abre el <code>llms.txt</code> (y READMEs que citan agentes) de tu producto o de vendors críticos; anota cada nombre de paquete y dominio.</li>
+            <li>Comprueba en npm, PyPI u otro registro: existencia, dueño, fecha de primera publicación y si coincide con el vendor.</li>
+            <li>Registra o retira nombres libres; corrige typos antes de que alguien más los reclame.</li>
+            <li>En el entorno del agente de código: solo registros allowlisted, lockfiles y sin install desde URL arbitraria.</li>
+            <li>Ensayo: nombre inventado en docs de staging — documenta si el agente intentó instalarlo y cierra el hueco.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Publicar <code>llms.txt</code> sin verificar la cadena de suministro convierte tu documentación en vector de instalación. Primero nombres reales y tuyos, versiones fijas y un freno antes del install; después más guías para agentes. Si un archivo en tu dominio puede hacer que el copiloto baje un paquete que nadie de tu empresa publicó, todavía no tienes onboarding para agentes: tienes una puerta lateral firmada por ti.</p>
+          <p><em>Si quieres auditar llms.txt, registros y el freno de instalación de tus agentes de código, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-19-sandbox-agentes.html">Sandbox de agentes: tu piloto no debe correr en producción abierta</a>
+              <a href="articulo-2026-09-10-gateway-mcp.html">Gateway MCP: quién decide qué herramientas toca tu agente</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-21-llms-txt-slopsquatting.html",
+    "title": "llms.txt y slopsquatting: tu docs invita al agente al paquete falso",
+    "date": "2026-09-21",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa publica llms.txt para guiar a agentes de código. Si ese archivo apunta a un paquete o dominio que nadie registró, un atacante lo reclama y el agente lo instala como si fuera oficial.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-20-inyeccion-indirecta-rag.html",
     "title": "Inyección indirecta en RAG: el documento que manda a tu agente",
     "date": "2026-09-20",
