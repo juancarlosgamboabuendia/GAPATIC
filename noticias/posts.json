@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-22-triada-letal-agentes.html",
+    "title": "Tríada letal del agente: datos privados, web abierta y salida externa",
+    "date": "2026-09-22",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm le da a un solo agente datos privados, web o correo no confiable y capacidad de enviar o filtrar. Esa combinación es la tríada letal: una inyección puede robar sin un exploit clásico.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-21-llms-txt-slopsquatting.html",
     "title": "llms.txt y slopsquatting: tu docs invita al agente al paquete falso",
     "date": "2026-09-21",
