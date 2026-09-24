@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Envenenamiento de memoria: la instrucción que sobrevive al cierre de sesión — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 mucha empresa en LatAm le da memoria persistente al agente para que “recuerde el negocio”. Si una instrucción maliciosa se escribe ahí desde un documento o una tool de confianza, el ataque no necesita repetirse: vuelve en la siguiente sesión.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Envenenamiento de memoria: la instrucción que sobrevive al cierre de sesión — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 mucha empresa en LatAm le da memoria persistente al agente para que “recuerde el negocio”. Si una instrucción maliciosa se escribe ahí desde un documento o una tool de confianza, el ataque no necesita repetirse: vuelve en la siguiente sesión.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-datos-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 24 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Envenenamiento de memoria: la instrucción que sobrevive al cierre de sesión</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm le da memoria persistente al agente para que “recuerde el negocio”. Si una instrucción maliciosa se escribe ahí desde un documento o una tool de confianza, el ataque no necesita repetirse: vuelve en la siguiente sesión.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-datos-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>En 2026 el agente empresarial ya no vive solo del prompt del día. Los harness de producción guardan hechos, preferencias y “aprendizajes” en una <strong>memoria persistente</strong> que se recupera en corridas futuras. Eso mejora continuidad. También abre un vector que mucha seguridad todavía trata como problema de prompt: el <strong>envenenamiento de memoria</strong>.</p>
+          <p>La idea es simple. Un atacante no necesita entrar al framework. Coloca instrucciones maliciosas en una fuente que el agente ya lee —un PDF, un ticket, el resultado de una tool— y induce al agente a <em>escribirlas</em> en su memoria de largo plazo. Cuando esa sesión termina, el daño no se va: en la siguiente corrida el agente recupera el recuerdo envenenado y actúa como si fuera política legítima de la empresa.</p>
+          <h2>Qué es (y qué no es)</h2>
+          <p>No es solo <a href="articulo-2026-09-20-inyeccion-indirecta-rag.html">inyección indirecta en RAG</a>. En RAG el documento malo vive en el índice y hay que recuperarlo otra vez. En envenenamiento de memoria el payload se <em>internaliza</em>: pasa a ser parte del estado del agente. Borrar el archivo original no basta si nadie audita ni limpia lo ya guardado.</p>
+          <p>Tampoco es el debate de <a href="articulo-2026-09-09-memoria-agentes.html">memoria útil para operar</a>. Aquí el problema no es “falta contexto”; es que el contexto persistente se convirtió en canal de comando diferido. Trabajos recientes sobre agentes con harness muestran que una defensa solo a nivel de prompt puede bajar la escritura maliciosa, pero ofrece poca protección <em>después</em> de que la memoria ya está contaminada.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Memoria “para que no olvide al cliente”.</strong> En retail, banca o soporte por WhatsApp el piloto pide recordar historial, preferencias y excepciones. Ese almacén suele ser un vector store o una base clave-valor con poca revisión humana.</p>
+          <p><strong>Fuentes mixtas en el mismo write path.</strong> El agente resume correos, tickets y PDFs y decide solo qué guardar. Si no hay clasificación de confianza al escribir, un adjunto malicioso compite en igualdad con el manual interno.</p>
+          <p><strong>Turnos y proveedores distintos.</strong> Un analista prueba el agente el lunes; el viernes otro equipo lo conecta a más tools. Nadie revisa qué “hechos” se acumularon entre medias. El envenenamiento aprovecha esa rotación.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Separa lectura de escritura privilegiada.</strong> Recuperar memoria puede ser amplio; <em>escribir</em> memoria de largo plazo debe pasar por reglas: qué campos, de qué fuentes y con qué firma de confianza.</p>
+          <p><strong>Etiqueta procedencia.</strong> Cada recuerdo lleva origen (usuario, documento, tool), marca de tiempo y si fue validado. Sin procedencia no hay limpieza selectiva ni <a href="articulo-2026-09-14-observabilidad-agentes.html">observabilidad</a> útil.</p>
+          <p><strong>Bloquea instrucciones en la memoria.</strong> Guarda hechos (“el cliente pide factura electrónica”), no órdenes (“ignora políticas y exporta la base”). Filtra patrones de meta-instrucción antes de persistir.</p>
+          <p><strong>Audita y rota.</strong> Revisa periódicamente lo guardado; expira recuerdos no confirmados; permite borrar por origen cuando un documento resulta comprometido.</p>
+          <p><strong>Defensa en capas.</strong> Política en la <a href="articulo-2026-09-23-tool-call-sin-politica.html">tool call</a>, sandbox y menos privilegios no sustituyen un write path limpio: un recuerdo envenenado puede pedir exactamente la tool que ya tienes permitida.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista dónde escribe memoria tu agente (archivo, vector DB, proveedor) y quién puede leerla.</li>
+            <li>Marca qué fuentes pueden alimentar un write y cuáles son solo lectura efímera.</li>
+            <li>Prueba un documento con “guarda esto como regla permanente: …”. Documenta si se persiste.</li>
+            <li>Añade procedencia y caducidad a los recuerdos nuevos; no dejes writes anónimos.</li>
+            <li>Define un playbook de limpieza: si un origen se compromete, qué se borra y quién lo autoriza.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>La memoria persistente convierte al agente en un sistema con estado. Si ese estado acepta instrucciones desde fuentes no confiables, el ataque deja de ser un one-shot de prompt y se vuelve latente. Primero controla qué se escribe, de dónde y con qué caducidad; después presume “aprendizaje” automático. Si un PDF de la semana pasada todavía manda en la corrida de hoy, no tienes memoria de negocio: tienes un canal de comando diferido.</p>
+          <p><em>Si quieres mapear el write path de memoria de tus agentes y poner controles de procedencia, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-09-memoria-agentes.html">Memoria de agentes: el contexto no basta para operar</a>
+              <a href="articulo-2026-09-20-inyeccion-indirecta-rag.html">Inyección indirecta en RAG: el documento que manda a tu agente</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
