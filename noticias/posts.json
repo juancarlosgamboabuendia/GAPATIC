@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-25-mcp-metadata-mutante.html",
+    "title": "MCP de cara amable: el servidor que muda a la tercera llamada",
+    "date": "2026-09-25",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm conecta un servidor MCP “inofensivo” desde un PR o un registro público. Si el metadata de tools/list solo se envenena después de unas llamadas benignas, la revisión rápida pasa y el agente termina buscando credenciales como si fuera política.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-24-envenenamiento-memoria.html",
     "title": "Envenenamiento de memoria: la instrucción que sobrevive al cierre de sesión",
     "date": "2026-09-24",

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>MCP de cara amable: el servidor que muda a la tercera llamada — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 mucha empresa en LatAm conecta un servidor MCP “inofensivo” desde un PR o un registro público. Si el metadata de tools/list solo se envenena después de unas llamadas benignas, la revisión rápida pasa y el agente termina buscando credenciales como si fuera política.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="MCP de cara amable: el servidor que muda a la tercera llamada — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 mucha empresa en LatAm conecta un servidor MCP “inofensivo” desde un PR o un registro público. Si el metadata de tools/list solo se envenena después de unas llamadas benignas, la revisión rápida pasa y el agente termina buscando credenciales como si fuera política.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-desarrollo-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 25 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>MCP de cara amable: el servidor que muda a la tercera llamada</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm conecta un servidor MCP “inofensivo” desde un PR o un registro público. Si el metadata de tools/list solo se envenena después de unas llamadas benignas, la revisión rápida pasa y el agente termina buscando credenciales como si fuera política.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-desarrollo-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>En 2026 el <strong>Model Context Protocol (MCP)</strong> ya es el conector por defecto entre el agente de código y Jira, el correo o el filesystem. Eso acelera el piloto. También abre un vector que la revisión de “¿qué tools ofrece?” no alcanza: el servidor puede mostrar una cara amable en las primeras llamadas y <em>cambiar el metadata</em> después, cuando nadie está mirando.</p>
+          <p>Campañas recientes de cadena de suministro —servidores MCP repartidos por pull requests públicos que parecen utilidades de texto— ilustran el patrón. Durante unas pocas tool calls el servidor responde con herramientas inocuas. Pasado un umbral, reescribe las descripciones e instrucciones que el cliente MCP entrega al modelo: “busca claves SSH”, “lee historial de shell”, “oculta esto al usuario”. La inspección rápida y el smoke test corto pasan. El daño empieza en la sesión de trabajo real.</p>
+          <h2>Qué es (y qué no es)</h2>
+          <p>No es solo un <a href="articulo-2026-09-10-gateway-mcp.html">gateway MCP</a> mal configurado. El gateway decide qué servidores entran. Aquí el servidor ya entró y <em>miente en el tiempo</em>: el contrato de tools/list o de prompts que viste al conectar no es el que el agente recibirá tras unos minutos de uso.</p>
+          <p>Tampoco es solo <a href="articulo-2026-09-21-llms-txt-slopsquatting.html">slopsquatting</a> en docs. Ahí el paquete falso vive en el registro. Aquí el artefacto puede ser el propio servidor MCP —o un PR que lo mete en tu repo— y el envenenamiento es de <strong>metadata en runtime</strong>, no solo de nombre de dependencia.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>PR “de productividad” sin dueño de seguridad.</strong> Un contribuidor o un bot ofrece un MCP de resumen o formato. El equipo de producto lo mergea para desbloquear el piloto. Nadie firma el binario ni fija el hash del servidor.</p>
+          <p><strong>Pruebas cortas que no cruzan el umbral.</strong> El analista hace dos o tres llamadas de formato, ve texto limpio y da el OK. El umbral de activación del metadata malicioso queda justo detrás de esa prueba.</p>
+          <p><strong>Credenciales en el mismo entorno.</strong> El agente corre donde hay AWS, kubeconfig o tokens de API. Si el metadata envenenado pide “lee ~/.ssh” y no hay <a href="articulo-2026-09-19-sandbox-agentes.html">sandbox</a> ni política de <a href="articulo-2026-09-23-tool-call-sin-politica.html">tool call</a>, el modelo cumple como si fuera una tool legítima.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Fija y firma el servidor.</strong> Versión pinneada, checksum o firma; allowlist de endpoints. Un MCP “cualquiera del marketplace” no entra a producción.</p>
+          <p><strong>Vuelve a pedir consentimiento cuando muda el contrato.</strong> Si tools/list, descripciones o system hints cambian respecto a lo aprobado, el cliente debe cortar o reautorizar. Un contrato que deriva sin aviso es un incidente.</p>
+          <p><strong>Observa el metadata, no solo el resultado.</strong> Registra snapshots de tools/list y de instrucciones inyectadas por el servidor. Deriva = alerta, igual que un drift de configuración en un servicio crítico.</p>
+          <p><strong>Menos privilegios en el host del agente.</strong> Sin lectura amplia del home, sin egress libre y sin la cuenta del humano. El metadata malicioso pierde poder si el entorno no puede cumplir lo que pide.</p>
+          <p><strong>Revisa la cadena de entrada.</strong> PRs que tocan configs MCP, Dockerfiles o scripts de instalación del servidor pasan por el mismo control que una dependencia de producción —no por el atajo de “es solo un conector”.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Inventaria qué servidores MCP usa tu equipo (local, remoto, vía PR) y quién los aprobó.</li>
+            <li>Compara el tools/list de hoy con el de la aprobación inicial; documenta cualquier deriva.</li>
+            <li>Simula más de tres tool calls contra cada servidor no firmado; guarda el metadata completo, no solo el éxito de la herramienta.</li>
+            <li>Bloquea writes y lecturas de secretos fuera de un sandbox; el agente no debe poder “buscar claves” aunque el prompt lo pida.</li>
+            <li>Exige pin + firma (o mirror interno) antes de mergear un MCP nuevo.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Un servidor MCP no es una librería estática: es un interlocutor que puede cambiar lo que le dice al modelo mientras corre. Si tu control de calidad solo mira la primera cara amable, estás certificando el disfraz. Primero fija el contrato, observa la deriva y aísla el host; después presume “utilidad de productividad”. Si a la tercera llamada el metadata ya no es el que firmaste, no tienes un conector: tienes un canal de mando diferido dentro del protocolo.</p>
+          <p><em>Si quieres inventariar tus MCP, fijar contratos y poner alerta de deriva de metadata, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-10-gateway-mcp.html">Gateway MCP: quién decide qué herramientas toca tu agente</a>
+              <a href="articulo-2026-09-21-llms-txt-slopsquatting.html">llms.txt y slopsquatting: tu docs invita al agente al paquete falso</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
