@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-26-guardrail-dialecto.html",
+    "title": "Guardrail de dialecto: el filtro que castiga al español LatAm",
+    "date": "2026-09-26",
+    "category": "Operaciones",
+    "excerpt": "En 2026 mucha empresa en LatAm pone un agente frente al cliente con un filtro de seguridad entrenado en otro español. Si el guardrail marca modismos rioplatenses, andinos o caribeños como ofensa, el piloto no falla por el modelo: falla porque el filtro no habla tu mercado.",
+    "image": "images/blog-ia-pymes.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-25-mcp-metadata-mutante.html",
     "title": "MCP de cara amable: el servidor que muda a la tercera llamada",
     "date": "2026-09-25",
