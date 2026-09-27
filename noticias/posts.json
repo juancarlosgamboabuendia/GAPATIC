@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-27-chat-a-transaccion.html",
+    "title": "De chat a transacción: el agente que escribe en tu ERP",
+    "date": "2026-09-27",
+    "category": "Operaciones",
+    "excerpt": "En 2026 mucha empresa en LatAm ya tiene un copiloto que resume y recomienda. El salto de verdad es otro: el agente que crea la orden, actualiza el CRM o mueve stock. Si le das permiso de escritura sin dry-run ni dueño de proceso, no escalaste IA: abriste un canal de cambios sin control.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-26-guardrail-dialecto.html",
     "title": "Guardrail de dialecto: el filtro que castiga al español LatAm",
     "date": "2026-09-26",
