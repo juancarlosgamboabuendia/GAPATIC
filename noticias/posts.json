@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-28-inyeccion-entre-agentes.html",
+    "title": "Inyección entre agentes: el mensaje interno que nadie audita",
+    "date": "2026-09-28",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm orquesta varios agentes que se pasan tareas por mensajes internos. Si un agente comprometido puede instruir a otro sin firma, alcance ni auditoría, la inyección ya no necesita al usuario: viaja por el bus que ustedes mismos construyeron.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-27-chat-a-transaccion.html",
     "title": "De chat a transacción: el agente que escribe en tu ERP",
     "date": "2026-09-27",
