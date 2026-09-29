@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-29-schema-drift-tools.html",
+    "title": "Schema drift de tools: el contrato que el agente ya no conoce",
+    "date": "2026-09-29",
+    "category": "Operaciones",
+    "excerpt": "En 2026 mucha empresa en LatAm fija el prompt del agente y deja que el esquema de tools “se descubra” en runtime. Si el ERP, el CRM o un MCP cambian un campo obligatorio y nadie versiona el contrato, el piloto sigue vivo pero llama a un mundo que ya no existe.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-28-inyeccion-entre-agentes.html",
     "title": "Inyección entre agentes: el mensaje interno que nadie audita",
     "date": "2026-09-28",
