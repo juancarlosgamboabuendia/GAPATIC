@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Caché de prompt compartido: el ahorro que mezcla tus clientes — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 mucha empresa en LatAm activa prompt caching para bajar costo y latencia del agente. Si el prefijo cacheado incluye datos de un cliente, un tenant o un documento recuperado y todos comparten la misma clave de API, el “ahorro” se convierte en un canal de mezcla que nadie audita.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Caché de prompt compartido: el ahorro que mezcla tus clientes — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 mucha empresa en LatAm activa prompt caching para bajar costo y latencia del agente. Si el prefijo cacheado incluye datos de un cliente, un tenant o un documento recuperado y todos comparten la misma clave de API, el “ahorro” se convierte en un canal de mezcla que nadie audita.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-datos-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 30 de septiembre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Caché de prompt compartido: el ahorro que mezcla tus clientes</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm activa prompt caching para bajar costo y latencia del agente. Si el prefijo cacheado incluye datos de un cliente, un tenant o un documento recuperado y todos comparten la misma clave de API, el “ahorro” se convierte en un canal de mezcla que nadie audita.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-datos-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El CFO ve la factura del modelo y pide caché. El proveedor lo ofrece: reutiliza el prefijo del prompt y cobra menos por esos tokens. El piloto se ve más barato y más rápido. Lo que casi nadie revisa es <strong>qué entra en ese prefijo</strong> y <strong>quién comparte la misma clave de caché</strong>.</p>
+          <p>Eso es el riesgo del <strong>caché de prompt compartido</strong>: un mecanismo pensado para costo que, mal armado, convierte al agente multi-cliente en un sistema donde el contexto de un tenant puede influir —por contenido o por señales de timing— en el de otro. No es un exploit de cero día. Es una decisión de arquitectura que se toma con un checkbox.</p>
+          <h2>Qué se cachea de verdad</h2>
+          <p>Los proveedores de LLM cachean un prefijo estable de tokens (system prompt, reglas, esquemas de tools). El hit depende de que ese prefijo sea idéntico. Tres errores típicos en producción:</p>
+          <ul>
+            <li>Meter en el prefijo el nombre del cliente, el RUC, el resumen del ticket o un fragmento RAG “porque siempre va al inicio”.</li>
+            <li>Usar una sola API key / organización del proveedor para todos los tenants del producto SaaS o del BPO.</li>
+            <li>Invalidar el caché a ciegas cuando cambia el prompt… o, peor, no invalidarlo y seguir sirviendo reglas viejas con apariencia de ahorro.</li>
+          </ul>
+          <p>El primer caso rompe el hit rate y, si el prefijo llega a compartirse entre usuarios, mezcla datos. El segundo asume que “aislado por organización del proveedor” equivale a “aislado por cliente tuyo”. No es lo mismo. El tercero te deja con un agente barato que opera con la política de la semana pasada.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Una clave, muchos clientes.</strong> Mid-market y SaaS regionales suelen concentrar el tráfico del agente en una cuenta del proveedor. El caché del proveedor aísla organizaciones, no tus tenants internos. Si el prefijo lleva algo específico de un cliente, el aislamiento que crees tener no está en la capa donde ocurre el cache.</p>
+          <p><strong>Presión de costo sin dueño de aislamiento.</strong> Finanzas pide bajar tokens; producto pide latencia; seguridad no entra al diseño del prefijo. El resultado es caché activado “por defecto” en el SDK sin política de qué puede vivir antes del breakpoint.</p>
+          <p><strong>Agentes con RAG y memoria en el mismo prefijo.</strong> Documentos recuperados, historial o instrucciones de sesión metidos al inicio “para que el modelo no se olvide” convierten el caché en un almacén accidental de contexto sensible entre turnos y, a veces, entre usuarios.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Separa prefijo estable de cola dinámica.</strong> En el prefijo cacheable: system prompt aprobado, reglas de cumplimiento, esquemas de tools determinísticos y versionados. Después del breakpoint: tenant_id, usuario, timestamps, resultados de tools, chunks RAG, memoria de sesión. Nunca al revés.</p>
+          <p><strong>Clave de caché con alcance de tenant (o de usuario).</strong> Si operas multi-tenant sobre una misma cuenta del proveedor, saltea o namespaced el caché por principal. Acepta menor hit rate a cambio de no compartir prefijo entre clientes. En sectores regulados (salud, finanzas, gobierno), el trade-off casi siempre favorece el aislamiento.</p>
+          <p><strong>Política escrita de qué puede entrar al prefijo.</strong> Lista blanca: contenido org-wide aprobado. Lista negra: PII de cliente, texto recuperado no confiable, IDs, fechas vivas. El cambio al prefijo estable pasa por el mismo control de cambios que un release del agente.</p>
+          <p><strong>Telemetría de cache_read / cache_write por tenant.</strong> No solo para finanzas. Una caída brusca de hit rate o un patrón anómalo de lecturas puede indicar que alguien metió datos dinámicos al prefijo o que se está fragmentando el caché. Etiqueta por tenant, superficie y centro de costo.</p>
+          <p><strong>Prueba de aislamiento concurrente.</strong> Dos tenants con preferijos distintos (o con datos sensibles solo en la cola dinámica) bajo carga. Verifica que no haya cruce de contenido en respuestas y, si aplica a tu stack, que las señales de timing no permitan sondar el prefijo ajeno. El test de un solo request no basta.</p>
+          <p><strong>Invalidación explícita al cambiar el contrato.</strong> Cuando versionas el system prompt o el schema de tools (como en el <a href="articulo-2026-09-29-schema-drift-tools.html">schema drift de tools</a>), el fingerprint del prefijo debe cambiar y el caché anterior debe morir. Ahorrar tokens con reglas obsoletas no es ahorro: es deuda operativa.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Dibuja el prompt real que envía tu agente y marca con una línea el breakpoint de caché.</li>
+            <li>Lista qué hay antes de esa línea: si aparece un tenant, un documento o un ID, muévelo después.</li>
+            <li>Confirma si todos tus clientes comparten la misma API key / org del proveedor.</li>
+            <li>Define política: prefijo org-wide compartido vs caché namespaced por tenant; documenta el trade-off de hit rate.</li>
+            <li>Loguea cache_creation y cache_read por tenant durante 48 h y revisa anomalías.</li>
+            <li>Simula dos tenants en paralelo y verifica que ningún fragmento del A aparezca en la respuesta del B.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>El prompt caching no es solo un descuento de tokens: es una <strong>superficie de aislamiento</strong>. En 2026, activarlo sin definir qué puede vivir en el prefijo y quién lo comparte es optimizar la factura a costa de mezclar clientes. Primero prefijo estable, alcance por tenant y telemetría; después presume que el ahorro es limpio.</p>
+          <p><em>Si quieres diseñar el breakpoint de caché, el namespacing por tenant y la telemetría de tu agente —sin inflar la factura ni mezclar clientes— <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>Artículos relacionados</h4>
+            <div class="related-list">
+              <a href="articulo-2026-09-24-envenenamiento-memoria.html">Envenenamiento de memoria: la instrucción que sobrevive al cierre de sesión</a>
+              <a href="articulo-2026-09-22-triada-letal-agentes.html">Tríada letal del agente: datos privados, web abierta y salida externa</a>
+              <a href="articulo-2026-09-17-identidades-no-humanas.html">Identidades no humanas: tu agente no debe usar tu cuenta</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-09-30-cache-prompt-compartido.html",
+    "title": "Caché de prompt compartido: el ahorro que mezcla tus clientes",
+    "date": "2026-09-30",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 mucha empresa en LatAm activa prompt caching para bajar costo y latencia del agente. Si el prefijo cacheado incluye datos de un cliente, un tenant o un documento recuperado y todos comparten la misma clave de API, el “ahorro” se convierte en un canal de mezcla que nadie audita.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-09-29-schema-drift-tools.html",
     "title": "Schema drift de tools: el contrato que el agente ya no conoce",
     "date": "2026-09-29",
