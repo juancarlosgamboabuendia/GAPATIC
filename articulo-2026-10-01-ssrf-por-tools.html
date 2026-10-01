@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>SSRF por tools: el agente que abre tu red interna — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 mucha empresa en LatAm le da al agente una tool HTTP “para consultar APIs”. Si esa tool acepta cualquier URL sin allowlist ni bloqueo de rangos privados, una inyección o un documento malicioso convierte al agente en un proxy hacia tu red interna: metadata cloud, admin panels y servicios que nunca debieron verse desde internet.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="SSRF por tools: el agente que abre tu red interna — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 mucha empresa en LatAm le da al agente una tool HTTP “para consultar APIs”. Si esa tool acepta cualquier URL sin allowlist ni bloqueo de rangos privados, una inyección o un documento malicioso convierte al agente en un proxy hacia tu red interna: metadata cloud, admin panels y servicios que nunca debieron verse desde internet.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-desarrollo-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 1 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>SSRF por tools: el agente que abre tu red interna</h1>
+          <p class="article-excerpt">En 2026 mucha empresa en LatAm le da al agente una tool HTTP “para consultar APIs”. Si esa tool acepta cualquier URL sin allowlist ni bloqueo de rangos privados, una inyección o un documento malicioso convierte al agente en un proxy hacia tu red interna: metadata cloud, admin panels y servicios que nunca debieron verse desde internet.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-desarrollo-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El equipo pide una tool “fetch” o “http_get” para que el agente consulte APIs, lea un webhook o “abra un enlace del correo”. Se conecta en una tarde. Lo que casi nadie define es <strong>quién elige la URL</strong> y <strong>hacia dónde puede salir esa request</strong>.</p>
+          <p>Eso es el riesgo del <strong>SSRF por tools</strong>: Server-Side Request Forgery clásico, pero disparado por un agente que confía en contenido no confiable —prompt, email, PDF, chunk RAG o salida de otra tool— y lo convierte en destino HTTP. No hace falta un exploit de cero día. Basta una tool útil con permisos de red amplios y sin allowlist.</p>
+          <h2>Qué es SSRF vía agente</h2>
+          <p>En el SSRF tradicional, la aplicación server-side pide una URL que controla el atacante. Con agentes, el patrón es el mismo: la tool de fetch/HTTP/webhook hace la request desde tu infraestructura (VPC, on-prem, hop con acceso a la red interna). El modelo solo arma el argumento; la tool ejecuta.</p>
+          <p>Destinos típicos que aparecen cuando no hay filtro:</p>
+          <ul>
+            <li><code>169.254.169.254</code> y variantes de metadata cloud (credenciales temporales, identidad de instancia).</li>
+            <li><code>localhost</code>, <code>127.0.0.1</code>, <code>::1</code> — paneles de admin, agentes locales, bases en el mismo host.</li>
+            <li>Rangos RFC1918 (<code>10.x</code>, <code>172.16–31.x</code>, <code>192.168.x</code>) y link-local.</li>
+            <li>DNS rebinding: un hostname “público” que después resuelve a IP privada.</li>
+            <li>Redirects HTTP: la tool sigue un 302 hacia un destino interno que nunca estuvo en la allowlist.</li>
+          </ul>
+          <p>Si el contenido recuperado (o el prompt) puede elegir la URL final sin validación <em>fuera</em> del modelo, el agente deja de ser un copiloto: es un proxy autenticado hacia tu red.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Agentes pegados al ERP y a VPCs pequeñas.</strong> Mid-market y operaciones regionales suelen poner el agente en la misma red (o VPN) que el ERP, el CRM o el file server “para que sea útil”. Una sola tool HTTP con salida libre ve lo que internet no debería ver.</p>
+          <p><strong>Una tool “útil” con permisos amplios.</strong> Se entrega fetch genérico porque “mañana puede hacer falta otra API”. No hay dueño de la allowlist ni revisión de esquemas privados. El piloto pasa a producción con la misma tool del demo.</p>
+          <p><strong>Poca separación red/agente.</strong> El hop del agente, el worker de tools y el servicio interno comparten segmento. No hay egress control ni identidad de tool con alcance mínimo. Cuando llega un documento malicioso al RAG o un correo al inbox del agente, la red ya está al alcance de un solo tool call.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Allowlist de hosts y esquemas.</strong> Solo HTTPS (o el esquema que apruebes) hacia hosts nombrados. Nada de “cualquier URL que el modelo invente”. La validación corre en código de la tool, no en el system prompt.</p>
+          <p><strong>Bloquear RFC1918, link-local y metadata.</strong> Resuelve el hostname, comprueba la IP final y rechaza privados, loopback y <code>169.254.0.0/16</code> (y equivalentes IPv6). Hazlo otra vez después de cada redirect. DNS rebinding se mitiga resolviendo y fijando la IP (o revalidando en cada hop).</p>
+          <p><strong>No seguir redirects a destinos no allowlisted.</strong> O desactiva redirects, o revalida el Location con la misma política. Un 302 a metadata no es un “detalle del cliente HTTP”.</p>
+          <p><strong>Credenciales de tool con alcance mínimo.</strong> La identidad con la que sale el fetch no debe ser la del ERP ni la del admin. Scope corto, rotación, y preferible un hop de egress que solo hable con APIs aprobadas.</p>
+          <p><strong>Política: el contenido no elige la URL final sin validación fuera del modelo.</strong> Si un PDF o un chunk RAG sugiere un enlace, ese string pasa por el mismo validador que un parámetro de API. El modelo propone; la tool decide si sale.</p>
+          <p><strong>Logs de cada request.</strong> Host (y IP resuelta), status, bytes, tool_id, tenant y correlación con el turno del agente. Sin eso no hay incidente que investigar: solo “el agente abrió algo”.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista todas las tools que hacen HTTP/fetch/webhook y anota quién puede influir en la URL (prompt, email, RAG, otra tool).</li>
+            <li>Prueba desde el sandbox: pide a la tool <code>http://169.254.169.254/</code>, <code>http://127.0.0.1/</code> y un host de tu red interna; documenta si responde.</li>
+            <li>Implementa allowlist de hosts + bloqueo de rangos privados/link-local/metadata en el código de la tool.</li>
+            <li>Desactiva redirects o revalida el destino en cada hop.</li>
+            <li>Revisa qué credenciales usa el hop del agente para salir a red; reduce alcance.</li>
+            <li>Activa log estructurado (host, IP, status, bytes) y revisa 48 h de tráfico anómalo a privados.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Una tool HTTP sin allowlist no es “integración ágil”: es <strong>egress no gobernado con cara de copiloto</strong>. En 2026, darle al agente capacidad de abrir URLs controladas por contenido no confiable —sin bloquear red interna ni metadata— es abrir un proxy hacia lo que internet nunca debió ver. Primero allowlist, bloqueo de privados y logs; después presume que el fetch es seguro.</p>
+          <p><em>Si quieres diseñar la allowlist de tools HTTP, el bloqueo de SSRF y el egress de tu agente —sin dejar la red interna al alcance de un PDF— <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

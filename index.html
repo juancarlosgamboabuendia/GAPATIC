@@ -186,28 +186,10 @@
         </header>
         <ul class="notes" role="list">
           <li>
-            <a class="note reveal" href="articulo-2026-09-30-cache-prompt-compartido.html">
+            <a class="note reveal" href="articulo-2026-10-01-ssrf-por-tools.html">
               <p class="note-id">Nota 01</p>
-              <h3>Caché de prompt compartido: el ahorro que mezcla tus clientes</h3>
-              <p>En 2026 mucha empresa en LatAm activa prompt caching para bajar costo y latencia del agente. Si el prefijo cacheado incluye datos de un cliente, un tenant o un documento recuperado y todos comparten la misma clave de API, el “ahorro” se convierte en un canal de mezcla que nadie audita.</p>
-              <p class="note-kind">Laboratorio · lectura</p>
-              <span class="more-link">Leer</span>
-            </a>
-          </li>
-          <li>
-            <a class="note reveal" href="articulo-2026-09-29-schema-drift-tools.html">
-              <p class="note-id">Nota 02</p>
-              <h3>Schema drift de tools: el contrato que el agente ya no conoce</h3>
-              <p>En 2026 mucha empresa en LatAm fija el prompt del agente y deja que el esquema de tools “se descubra” en runtime. Si el ERP, el CRM o un MCP cambian un campo obligatorio y nadie versiona el contrato, el piloto sigue vivo pero llama a un mundo que ya no existe.</p>
-              <p class="note-kind">Laboratorio · lectura</p>
-              <span class="more-link">Leer</span>
-            </a>
-          </li>
-          <li>
-            <a class="note reveal" href="articulo-2026-09-28-inyeccion-entre-agentes.html">
-              <p class="note-id">Nota 03</p>
-              <h3>Inyección entre agentes: el mensaje interno que nadie audita</h3>
-              <p>En 2026 mucha empresa en LatAm orquesta varios agentes que se pasan tareas por mensajes internos. Si un agente comprometido puede instruir a otro sin firma, alcance ni auditoría, la inyección ya no necesita al usuario: viaja por el bus que ustedes mismos construyeron.</p>
+              <h3>SSRF por tools: el agente que abre tu red interna</h3>
+              <p>En 2026 mucha empresa en LatAm le da al agente una tool HTTP “para consultar APIs”. Si esa tool acepta cualquier URL sin allowlist ni bloqueo de rangos privados, una inyección o un documento malicioso convierte al agente en un proxy hacia tu red interna: metadata cloud, admin panels y servicios que nunca debieron verse desde internet.</p>
               <p class="note-kind">Laboratorio · lectura</p>
               <span class="more-link">Leer</span>
             </a>
