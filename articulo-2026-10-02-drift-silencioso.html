@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Drift silencioso: el modelo que responde y ya no acierta — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 muchas empresas en LatAm tienen un modelo o un RAG en producción que “sigue respondiendo”. Sin monitoreo de data drift y concept drift, la API no falla: solo empeora. El negocio nota el daño semanas después, cuando el piloto ya se vendió como éxito.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Drift silencioso: el modelo que responde y ya no acierta — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 muchas empresas en LatAm tienen un modelo o un RAG en producción que “sigue respondiendo”. Sin monitoreo de data drift y concept drift, la API no falla: solo empeora. El negocio nota el daño semanas después, cuando el piloto ya se vendió como éxito.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-datos-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Operaciones</span><span>Publicado el 2 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Drift silencioso: el modelo que responde y ya no acierta</h1>
+          <p class="article-excerpt">En 2026 muchas empresas en LatAm tienen un modelo o un RAG en producción que “sigue respondiendo”. Sin monitoreo de data drift y concept drift, la API no falla: solo empeora. El negocio nota el daño semanas después, cuando el piloto ya se vendió como éxito.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-datos-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El equipo celebra el go-live. El endpoint responde 200. El dashboard de uptime está verde. Tres meses después, el scoring de crédito aprueba mal, el clasificador de tickets manda todo a “otros” y el asistente RAG inventa políticas que ya no existen. Nadie tocó el código. Cambió el mundo alrededor del modelo.</p>
+          <p>Eso es el <strong>drift silencioso</strong>: degradación de rendimiento sin error explícito. La API sigue viva; la decisión o la respuesta ya no sirven. En ML clásico y en sistemas con LLM/RAG, es una de las formas más caras de “éxito en producción” mal medido.</p>
+          <h2>Qué es data drift y concept drift</h2>
+          <p><strong>Data drift</strong> (deriva de datos): la distribución de las entradas en producción se aleja de la del entrenamiento, del índice o de la evaluación. Cambian precios, canales, idioma de los clientes, formatos de factura, productos nuevos. El modelo recibe inputs “válidos” que ya no se parecen a lo que vio.</p>
+          <p><strong>Concept drift</strong>: la relación entre entrada y resultado correcto cambia, aunque las features parezcan estables. Una política de fraude nueva, una reforma tributaria, un competidor que altera el churn, un catálogo interno reescrito. El modelo sigue mapeando el mundo de ayer.</p>
+          <p>En RAG y agentes el patrón se traduce así: documentos desactualizados en el índice, embeddings que ya no cubren temas nuevos, groundedness que cae, recuperación que trae contexto irrelevante. El sistema “contesta”; deja de estar anclado a la verdad operativa.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Piloto en producción sin dueño de monitoreo.</strong> Mid-market y operaciones regionales suelen pasar del demo al ERP o al contact center sin pipeline de evaluación continua. El éxito se mide en “está desplegado”, no en “sigue acertando frente a una referencia”.</p>
+          <p><strong>Etiquetas tardías o inexistentes.</strong> Saber si un crédito fue bueno o si un ticket se resolvió bien puede tardar días o semanas. Sin proxies de drift (distribución de inputs, de predicciones, calidad de retrieval), el deterioro solo aparece en quejas o en P&amp;L.</p>
+          <p><strong>Datos que se mueven más rápido que el modelo.</strong> Estacionalidad, inflación, cambios de catálogo, regulaciones locales y mezclas de español LatAm hacen que un snapshot de entrenamiento envejezca pronto. Reentrenar “cuando haya tiempo” no es una política: es una apuesta.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Referencia al día del deploy.</strong> Guarda un dataset (o un slice) representativo del momento en que el modelo o el índice se dieron por buenos. Sin referencia no hay drift que medir: solo opiniones.</p>
+          <p><strong>Monitorea inputs, salidas y —cuando exista— outcome.</strong> Calidad de datos, distribución de features o embeddings, distribución de predicciones/respuestas, y métricas de negocio o labels con latencia. Para RAG: relevancia de retrieval, groundedness y feedback implícito (repreguntas, escalados a humano).</p>
+          <p><strong>Alertas con umbral y dueño.</strong> Un reporte HTML semanal que nadie lee no es monitoreo. Define umbrales, canal (Slack, ticket, mail) y quién investiga. Distingue drift brusco (pipeline roto, evento) de drift lento (mercado).</p>
+          <p><strong>Playbook de respuesta.</strong> Investigar features/documentos afectados → diagnosticar causa (upstream, estacionalidad, cambio de política) → decidir: reentrenar, reindexar, ajustar preprocesamiento, o poner el caso en humano. Rollback o versión anterior debe ser un botón, no un proyecto.</p>
+          <p><strong>Segmenta.</strong> Drift global puede ocultar un segmento que ya se rompió (un país, un canal, un producto). En LatAm, operar en varios mercados sin cortes por segmento es dejar ciegos a los peores casos.</p>
+          <p><strong>No confundas uptime con calidad.</strong> Latencia y 5xx son necesarios. No sustituyen “¿sigue decidiendo bien?”. Un modelo degradado que responde rápido es peor que uno caído: genera confianza falsa.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista modelos, scorings y RAGs en producción y anota si tienen dataset/referencia de deploy.</li>
+            <li>Define al menos un proxy de drift por sistema (PSI u otro test en features clave; para RAG, métricas de retrieval/groundedness).</li>
+            <li>Corre una comparación referencia vs. últimos 7–30 días y documenta desviaciones.</li>
+            <li>Asigna dueño de alerta y canal; prueba que la alerta llega a alguien que puede actuar.</li>
+            <li>Escribe el playbook mínimo: investigar → decidir (reentrenar / reindexar / rollback / humano).</li>
+            <li>Revisa un segmento crítico (país, producto o canal) aparte del agregado global.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Un modelo o un RAG sin monitoreo de drift no está “estable en producción”: está <strong>envejeciendo a ciegas con cara de API saludable</strong>. En 2026, desplegar sin referencia, sin alertas y sin playbook de reentrenamiento o reindexado es firmar que el negocio descubrirá el fallo antes que el equipo técnico. Primero mide la deriva; después presume que el modelo sigue acertando.</p>
+          <p><em>Si quieres armar el monitoreo de drift, la referencia de deploy y el playbook de reentrenamiento o reindexado de tus modelos y RAGs —sin esperar a que el P&amp;L te avise— <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
