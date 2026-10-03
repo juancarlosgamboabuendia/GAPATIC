@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Inventario de agentes: lo que TI no sabe que corre en producción — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 muchas empresas en LatAm ya tienen agentes o “asistentes con tools” en producción sin un registro único: quién los desplegó, qué sistemas tocan, con qué identidad y con qué kill switch. Sin inventario no hay gobernanza, ni auditoría, ni respuesta a incidentes. TI descubre el agente cuando algo falla o un proveedor pregunta por el contrato.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Inventario de agentes: lo que TI no sabe que corre en producción — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 muchas empresas en LatAm ya tienen agentes o “asistentes con tools” en producción sin un registro único: quién los desplegó, qué sistemas tocan, con qué identidad y con qué kill switch. Sin inventario no hay gobernanza, ni auditoría, ni respuesta a incidentes. TI descubre el agente cuando algo falla o un proveedor pregunta por el contrato.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-consultoria-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Operaciones</span><span>Publicado el 3 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Inventario de agentes: lo que TI no sabe que corre en producción</h1>
+          <p class="article-excerpt">En 2026 muchas empresas en LatAm ya tienen agentes o “asistentes con tools” en producción sin un registro único: quién los desplegó, qué sistemas tocan, con qué identidad y con qué kill switch. Sin inventario no hay gobernanza, ni auditoría, ni respuesta a incidentes. TI descubre el agente cuando algo falla o un proveedor pregunta por el contrato.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-consultoria-ia.jpg" alt="">
+        <div class="article-body prose reveal">
+          <p>El área comercial prende un “asistente con tools” en el CRM. Finanzas conecta un agente del ERP al correo. Marketing activa el chatbot del SaaS de campañas. Cada uno celebra su go-live. Seguridad pregunta cuántos agentes hay en producción y nadie tiene la lista. Tres semanas después un proveedor pide el contrato del bot que escribió en la API de facturación: nadie sabe quién lo desplegó ni con qué API key.</p>
+          <p>Eso no es un fallo de un modelo. Es <strong>shadow IT agéntico</strong>: capacidad con tools, identidad y acceso a sistemas reales, fuera del mapa de TI. En 2026 el piloto ya no es solo un chat; escribe tickets, consulta clientes y, si alguien le dio permiso, ejecuta. Sin inventario, gobernanza y respuesta a incidentes llegan tarde.</p>
+          <h2>Qué es un inventario de agentes</h2>
+          <p>No es un wiki bonito ni un Excel que alguien actualiza “cuando pueda”. Es un <strong>registro vivo</strong> de cada agente, asistente con tools o bot operativo que toca datos o sistemas de la empresa. Mínimo: nombre y propósito, dueño de negocio, entorno (piloto / staging / producción), identidad con la que corre, tools y sistemas que puede llamar, datos que ve o escribe, secretos asociados, canal de acceso y <strong>kill switch</strong> (cómo apagarlo ya).</p>
+          <p>Si no puedes responder “quién lo desplegó, qué toca y cómo lo mato” en minutos, no tienes inventario: tienes anécdotas.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Pilotos que nacen en áreas de negocio.</strong> Mid-market y operaciones regionales suelen comprar o activar el agente desde comercial, CX o finanzas. TI se entera cuando el consumo de API sube, el ERP muestra movimientos raros o un auditor pregunta por el flujo.</p>
+          <p><strong>Tools sin allowlist.</strong> El asistente “útil” termina con conectores amplios: correo, CRM, drive, tickets. Sin lista explícita de acciones permitidas, el alcance real del agente es desconocido hasta el primer error o abuso.</p>
+          <p><strong>Identidades compartidas y secretos sueltos.</strong> Un mismo service account, un token de integración “de prueba” que quedó en producción, o una API key en el panel del SaaS. Cuando hay que rotar o revocar, nadie sabe qué agentes mueren con ese secreto.</p>
+          <p><strong>Varios países y varios proveedores.</strong> El mismo grupo opera bots de un CRM global, un contact center local y un piloto de un vendor regional. Sin registro único por entidad y entorno, el mapa se fragmenta y el incidente cruza fronteras antes que el runbook.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Campos mínimos, no un CMDB de 80 columnas.</strong> Id, nombre, dueño, entorno, identidad, tools/allowlist, datos (lectura/escritura), secretos, proveedor o runtime, fecha de alta, estado y kill switch. Si el formulario es eterno, nadie lo llena.</p>
+          <p><strong>Discovery periódico.</strong> Cruza paneles de SaaS, cuentas de servicio, logs de API, suscripciones cloud y tickets de “piloto de IA”. Lo que no está en el inventario y aparece en discovery es deuda: o se registra o se apaga.</p>
+          <p><strong>Dueño por agente, no “el área de IA”.</strong> Una persona (o rol) responsable de negocio y una de plataforma. Sin dueño no hay rotación de secretos, ni revisión de tools, ni baja limpia.</p>
+          <p><strong>Liga identidad y secretos al registro.</strong> Cada agente apunta a su identidad y a los secretos que usa. Rotar un token debe listar qué agentes se afectan. Un secreto huérfano es un agente fantasma.</p>
+          <p><strong>Playbook de baja.</strong> Revocar secretos → quitar tools → desactivar endpoint o tenant → archivar en el inventario con fecha y motivo. “Lo apagamos en el chat del vendor” no es baja: es dejar credenciales vivas.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista todo lo que hoy actúa como agente o asistente con tools (interno, SaaS embebido, piloto de área) y anota dueño y entorno.</li>
+            <li>Para cada uno, escribe identidad, tools/sistemas y si tiene kill switch documentado.</li>
+            <li>Corre un discovery liviano: cuentas de servicio, API keys de IA y conectores activos en CRM/ERP/correo.</li>
+            <li>Marca los que no tienen allowlist de tools o usan identidad compartida; fija fecha de remediación.</li>
+            <li>Define el formulario mínimo del inventario y quién lo aprueba antes de producción.</li>
+            <li>Ensayá apagar un agente de prueba de punta a punta y anotá el tiempo real hasta “sin acceso”.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Un agente en producción sin inventario no es innovación: es <strong>capacidad operativa opaca con tools y secretos</strong>. En 2026, desplegar asistentes que escriben en sistemas reales sin dueño, sin allowlist y sin kill switch es firmar que TI descubrirá el mapa en el incidente. Primero registra qué corre; después presume que puedes gobernarlo.</p>
+          <p><em>Si quieres armar el inventario de agentes, el discovery periódico y el playbook de alta/baja —sin esperar a que un proveedor o un auditor te pregunte qué bots tienes— <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
