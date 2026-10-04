@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-10-04-cuentas-personales-ia.html",
+    "title": "Cuentas personales de IA: el DLP que no ve el prompt",
+    "date": "2026-10-04",
+    "category": "Ciberseguridad",
+    "excerpt": "En 2026 el riesgo no es solo el agente en producción: es el colaborador que pega datos sensibles en un chat con cuenta personal. El DLP del endpoint no ve ese prompt porque sale por HTTPS hacia un tenant que la empresa no controla.",
+    "image": "images/blog-etica-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-10-03-inventario-de-agentes.html",
     "title": "Inventario de agentes: lo que TI no sabe que corre en producción",
     "date": "2026-10-03",

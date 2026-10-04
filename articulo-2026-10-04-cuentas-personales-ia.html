@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Cuentas personales de IA: el DLP que no ve el prompt — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 el riesgo no es solo el agente en producción: es el colaborador que pega datos sensibles en un chat con cuenta personal. El DLP del endpoint no ve ese prompt porque sale por HTTPS hacia un tenant que la empresa no controla.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Cuentas personales de IA: el DLP que no ve el prompt — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 el riesgo no es solo el agente en producción: es el colaborador que pega datos sensibles en un chat con cuenta personal. El DLP del endpoint no ve ese prompt porque sale por HTTPS hacia un tenant que la empresa no controla.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/blog-etica-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 4 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Cuentas personales de IA: el DLP que no ve el prompt</h1>
+          <p class="article-excerpt">En 2026 el riesgo no es solo el agente en producción: es el colaborador que pega datos sensibles en un chat con cuenta personal. El DLP del endpoint no ve ese prompt porque sale por HTTPS hacia un tenant que la empresa no controla.</p>
+        </header>
+        <img class="article-featured reveal" src="images/blog-etica-ia.jpg" alt="Gobernanza de Shadow AI y cuentas personales de IA">
+        <div class="article-body prose reveal">
+          <p>Alguien abre ChatGPT, Claude o Gemini con su correo personal —en el navegador del laptop o en el móvil— y pega un Excel de clientes, un borrador de contrato o un fragmento de código del repositorio. Termina el prompt, copia la respuesta y sigue el día. TI cree que el DLP del endpoint cubre la salida de datos. El prompt nunca pasó por el proxy corporativo: salió cifrado hacia un tenant personal. El archivo no se adjuntó a un correo; se convirtió en contexto de un modelo que la empresa no audita.</p>
+          <p>Eso no es el agente en producción del que hablamos ayer. Es <strong>Shadow AI por cuenta personal</strong>: el humano con prisa y una herramienta fuera del SSO. Mismo síntoma de opacidad; distinto dueño del riesgo.</p>
+          <h2>Qué es Shadow AI por cuenta personal</h2>
+          <p>No es el bot desplegado en el CRM ni el asistente con tools bajo un service account. Es el uso de herramientas de IA <strong>fuera del tenant corporativo</strong>: cuenta freemium, login con Gmail o iCloud, extensión del navegador, app móvil con sesión personal. No hay SSO, no hay retención bajo contrato, no hay registro de qué se pegó ni quién lo pegó en nombre de la empresa.</p>
+          <p>Si el flujo de trabajo “oficial” es lento o inexistente y la alternativa personal responde en segundos, el dato sensible viaja por el camino más corto. Prohibir sin ofrecer equivalente usable solo empuja el uso a canales aún menos visibles.</p>
+          <h2>Por qué duele en LatAm</h2>
+          <p><strong>Mid-market sin CASB.</strong> Muchas organizaciones mid-market en la región no tienen inspección de SaaS ni control fino de dominios de IA. El tráfico HTTPS a chat.openai.com, claude.ai o gemini.google.com parece “navegación normal”.</p>
+          <p><strong>BYOD y el móvil como segundo escritorio.</strong> El contrato o el export del CRM se abre en el teléfono personal. Ahí no hay agente de DLP, no hay proxy y a menudo no hay MDM. El prompt sale desde la red del café o del hogar.</p>
+          <p><strong>Áreas de negocio más rápidas que el proceso de aprobación.</strong> Comercial, legal o desarrollo necesitan un resumen, una cláusula o un refactor “para ayer”. Si pedir acceso al tenant corporativo tarda semanas, la cuenta personal gana por default.</p>
+          <p><strong>SaaS de IA gratuito o freemium.</strong> La barrera de entrada es cero. No hay orden de compra que dispare revisión de seguridad. El riesgo aparece en la conversación cotidiana, no en el presupuesto de TI.</p>
+          <h2>Cómo blindarlo sin teatro</h2>
+          <p><strong>Política clara + alternativa corporativa usable.</strong> Escribe qué datos no pueden ir a cuentas personales y, al mismo tiempo, ofrece un workspace con SSO, límites de retención y un modelo que la gente realmente use. Sin alternativa, la política es teatro.</p>
+          <p><strong>SSO obligatorio para IA de trabajo.</strong> Si el caso de uso es laboral, la identidad debe ser corporativa. Bloquea o degrada el acceso anónimo/personal desde la red y los dispositivos gestionados donde puedas.</p>
+          <p><strong>DLP y proxy donde aplique.</strong> En endpoints y redes controladas, inspecciona o bloquea dominios de chat de IA no aprobados; clasifica exports de CRM y repositorios. Acepta el límite: el móvil personal fuera de MDM no lo verás —por eso la alternativa usable importa más que el bloqueo solo.</p>
+          <p><strong>Detectar patrones, no solo prohibir.</strong> Extensiones de navegador de IA, picos de tráfico a dominios de chat, installs no gestionados. Combínalo con educación corta y concreta: “pegar PII o código en cuenta personal es incidente”, no un PDF de 40 páginas.</p>
+          <p><strong>Ruta rápida de aprobación.</strong> Un canal para pedir acceso al tenant corporativo en horas, no en sprints. Si el “sí” tarda más que abrir una cuenta personal, ya sabes qué elegirá el equipo.</p>
+          <h2>Checklist de esta semana</h2>
+          <ul>
+            <li>Lista qué herramientas de IA usa el personal hoy (encuesta corta + revisión de extensiones en flota gestionada) y marca cuáles van con cuenta personal.</li>
+            <li>Publica una regla de una página: qué datos no pueden pegarse fuera del tenant corporativo y cuál es la alternativa oficial.</li>
+            <li>Activa o verifica SSO en el workspace de IA aprobado; cierra el “entrar con Gmail personal” para casos de trabajo.</li>
+            <li>Revisa proxy/DNS/MDM: dominios de chat no aprobados en dispositivos corporativos —bloquea o alerta según madurez.</li>
+            <li>Abre una cola de aprobación rápida (mismo día) para acceso al tenant oficial; mide el tiempo real de respuesta.</li>
+            <li>Elige un área piloto (legal, comercial o desarrollo), ofrece el workspace usable y pide que dejen de usar cuentas personales para datos de clientes o código.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Un DLP que no ve el prompt no protege el dato: solo protege la ilusión de control. En 2026, gobernar IA no es solo inventariar agentes en producción; es asumir que el colaborador con cuenta personal es un canal de exfiltración involuntaria si no hay SSO, alternativa usable y reglas claras. Primero haz que el camino corporativo sea el más fácil; después habla de sanciones.</p>
+          <p><em>Si quieres definir la política de Shadow AI, el tenant con SSO y el control de cuentas personales —sin frenar al negocio ni fingir que el DLP del laptop lo ve todo— <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
