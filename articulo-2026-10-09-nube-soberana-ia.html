@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Nube soberana para IA: dónde viven tus datos cuando el modelo responde — GAPATIC Insights</title>
+  <meta name="description" content="En 2026 la IA empresarial empieza a ofrecerse desde centros de datos dentro de la región, con promesa de soberanía y cumplimiento local. Antes de mover cargas, hay que saber qué datos tocan tus modelos, dónde se procesan de verdad y qué pasa con prompts, logs y respaldos.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Nube soberana para IA: dónde viven tus datos cuando el modelo responde — GAPATIC Insights">
+  <meta property="og:description" content="En 2026 la IA empresarial empieza a ofrecerse desde centros de datos dentro de la región, con promesa de soberanía y cumplimiento local. Antes de mover cargas, hay que saber qué datos tocan tus modelos, dónde se procesan de verdad y qué pasa con prompts, logs y respaldos.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-desarrollo-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Infraestructura</span><span>Publicado el 9 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Nube soberana para IA: dónde viven tus datos cuando el modelo responde</h1>
+          <p class="article-excerpt">En 2026 la IA empresarial empieza a ofrecerse desde centros de datos dentro de la región, con promesa de soberanía y cumplimiento local. Antes de mover cargas, hay que saber qué datos tocan tus modelos, dónde se procesan de verdad y qué pasa con prompts, logs y respaldos.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-desarrollo-ia.jpg" alt="Centro de datos que procesa cargas de inteligencia artificial dentro del país">
+        <div class="article-body prose reveal">
+          <p>Un banco quiere usar IA generativa para resumir expedientes de crédito, pero su área legal pregunta lo de siempre: ¿dónde se procesan esos datos? Si el prompt, el documento adjunto y la respuesta viajan a un centro de datos en otro continente, el proyecto entra en una conversación larga sobre transferencias internacionales, contratos y auditoría. En 2026 esa pregunta empieza a tener otra respuesta posible en Latinoamérica: nube e IA operadas dentro del país.</p>
+          <p>El 6 de octubre de 2026 Claro y Oracle anunciaron en Argentina un acuerdo para ofrecer servicios de nube e inteligencia artificial desde centros de datos locales, bajo la marca de Claro y con tecnología Oracle Alloy, pensados para gobierno, servicios financieros, salud, energía y retail, con disponibilidad prevista desde diciembre. En paralelo, la región discute grandes proyectos de cómputo para IA, como el hub Iguazú AI City anunciado en Paraguay sobre la energía de Itaipú. La infraestructura se está acercando. La pregunta para una empresa es si eso resuelve su problema o solo lo cambia de lugar.</p>
+          <h2>Qué significa “soberana” en la práctica</h2>
+          <p><strong>Residencia de datos.</strong> Los datos se almacenan en un centro de datos dentro del país. Es lo más fácil de prometer y lo más fácil de verificar en un contrato.</p>
+          <p><strong>Procesamiento local.</strong> No basta con guardar el archivo aquí si el modelo que lo lee corre en otra región. Para IA importa dónde se ejecuta la inferencia, dónde se generan los embeddings y dónde se indexa el buscador semántico.</p>
+          <p><strong>Control operativo.</strong> Quién administra la plataforma, desde qué país se dan soporte y accesos privilegiados, y bajo qué jurisdicción queda el operador. Dos nubes en el mismo edificio pueden tener respuestas muy distintas aquí.</p>
+          <p><strong>Catálogo disponible.</strong> Una región local no siempre ofrece los mismos modelos ni servicios que una región global. Hay que confirmar qué modelos corren realmente dentro del país y cuáles derivan la llamada a otra región.</p>
+          <h2>Dónde se filtra el dato aunque la nube sea local</h2>
+          <p><strong>Prompts y logs.</strong> El documento puede quedarse en el país, pero los registros de uso, las trazas de depuración o la telemetría del proveedor a veces se envían a otra región. Pregunta por cada uno.</p>
+          <p><strong>Integraciones del agente.</strong> Un asistente con herramientas que consulta un CRM SaaS, un servicio de traducción o una API externa saca datos del perímetro en cada llamada, sin importar dónde corre el modelo.</p>
+          <p><strong>Respaldos y recuperación ante desastres.</strong> Muchas arquitecturas replican a una segunda región por resiliencia. Si esa región está fuera del país, la promesa de residencia tiene una excepción que debe estar escrita.</p>
+          <p><strong>Ajuste fino y evaluación.</strong> Los datos usados para afinar o evaluar un modelo son una copia más. Deben tener el mismo tratamiento que la fuente.</p>
+          <h2>Checklist antes de mover cargas de IA</h2>
+          <ul>
+            <li>Clasifica qué casos de uso de IA tocan datos personales, financieros, de salud o secretos comerciales, y cuáles no. No todo necesita nube soberana.</li>
+            <li>Dibuja el flujo completo de cada caso: dónde entra el dato, dónde se procesa la inferencia, dónde quedan embeddings, logs, respaldos y salidas.</li>
+            <li>Pide al proveedor, por escrito, qué modelos y servicios corren dentro del país y cuáles derivan tráfico a otras regiones.</li>
+            <li>Revisa con legal cómo encaja cada flujo en la ley de protección de datos personales de tu país y en la regulación de tu sector.</li>
+            <li>Define quién tiene acceso privilegiado a la plataforma y desde dónde, y exige registro auditable de esos accesos.</li>
+            <li>Diseña la arquitectura para poder cambiar de modelo o de proveedor sin rehacer integraciones: la oferta local va a cambiar rápido.</li>
+            <li>Compara costo y latencia de la opción local con la global en un piloto real, no en una presentación comercial.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Que la IA llegue a centros de datos de la región es una buena noticia para sectores regulados, pero “soberana” no es una casilla que se marca al firmar. Es una propiedad de todo el flujo: modelo, logs, integraciones y respaldos. Empieza por los casos de uso más sensibles, verifica cada salto del dato y usa la opción local donde de verdad cambia tu riesgo.</p>
+          <p><em>Si quieres mapear tus flujos de datos de IA y decidir qué cargas deben correr dentro del país, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

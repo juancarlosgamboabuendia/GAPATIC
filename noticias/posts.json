@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-10-09-nube-soberana-ia.html",
+    "title": "Nube soberana para IA: dónde viven tus datos cuando el modelo responde",
+    "date": "2026-10-09",
+    "category": "Infraestructura",
+    "excerpt": "En 2026 la IA empresarial empieza a ofrecerse desde centros de datos dentro de la región, con promesa de soberanía y cumplimiento local. Antes de mover cargas, hay que saber qué datos tocan tus modelos, dónde se procesan de verdad y qué pasa con prompts, logs y respaldos.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-10-07-comercio-agentico.html",
     "title": "Comercio agéntico: tu próximo cliente compra desde el chat",
     "date": "2026-10-07",
