@@ -1,5 +1,14 @@
 [
   {
+    "slug": "articulo-2026-10-13-ai-scan-en-pull-requests.html",
+    "title": "AI Scan en pull requests: si no mides remediación, solo acumulaste alertas",
+    "date": "2026-10-13",
+    "category": "Ciberseguridad",
+    "excerpt": "El 13 de octubre de 2026 GitHub publicó métricas de AI Scan en el security overview: hallazgos, remediación y adopción de autofix. Encender el escaneo con IA en los PR no basta; sin esos números, el equipo de seguridad no sabe si la inversión reduce riesgo o solo suma ruido.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "author": "GAPATIC"
+  },
+  {
     "slug": "articulo-2026-10-12-alucinaciones-con-consecuencias.html",
     "title": "Alucinaciones con consecuencias: quién revisa lo que la IA entrega",
     "date": "2026-10-12",

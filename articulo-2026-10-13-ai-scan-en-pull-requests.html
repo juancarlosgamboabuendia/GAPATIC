@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>AI Scan en pull requests: si no mides remediación, solo acumulaste alertas — GAPATIC Insights</title>
+  <meta name="description" content="El 13 de octubre de 2026 GitHub publicó métricas de AI Scan en el security overview: hallazgos, remediación y adopción de autofix. Encender el escaneo con IA en los PR no basta; sin esos números, el equipo de seguridad no sabe si la inversión reduce riesgo o solo suma ruido.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="AI Scan en pull requests: si no mides remediación, solo acumulaste alertas — GAPATIC Insights">
+  <meta property="og:description" content="El 13 de octubre de 2026 GitHub publicó métricas de AI Scan en el security overview: hallazgos, remediación y adopción de autofix. Encender el escaneo con IA en los PR no basta; sin esos números, el equipo de seguridad no sabe si la inversión reduce riesgo o solo suma ruido.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-desarrollo-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Casos</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 13 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>AI Scan en pull requests: si no mides remediación, solo acumulaste alertas</h1>
+          <p class="article-excerpt">El 13 de octubre de 2026 GitHub publicó métricas de AI Scan en el security overview: hallazgos, remediación y adopción de autofix. Encender el escaneo con IA en los PR no basta; sin esos números, el equipo de seguridad no sabe si la inversión reduce riesgo o solo suma ruido.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-desarrollo-ia.jpg" alt="Equipo de seguridad revisando métricas de hallazgos en pull requests">
+        <div class="article-body prose reveal">
+          <p>Muchas empresas en LatAm ya activaron algún escaneo de seguridad con IA en el flujo de pull requests. El anuncio suena bien en el comité: “ahora la IA revisa el código antes del merge”. Semanas después, nadie puede responder con datos cuántos hallazgos se generaron, cuántos se cerraron ni si los desarrolladores aplicaron las correcciones sugeridas.</p>
+          <p>El 13 de octubre de 2026, GitHub publicó en su changelog métricas de AI Scan dentro del security overview. Los administradores de organización y de empresa pueden ver cuántos hallazgos generó AI Scan, cuántos se resolvieron, la tasa de remediación, en qué repositorios aparecen, la tendencia en el período elegido y con qué frecuencia se aplicaron las sugerencias de autofix. La página que antes se llamaba “CodeQL pull requests” pasó a “Code scanning on pull requests”, con pestañas separadas para CodeQL y AI Scan.</p>
+          <p>AI Scan es el motor de GitHub que busca vulnerabilidades en pull requests, en especial en lenguajes y frameworks que CodeQL no cubre bien. Los hallazgos viven en el PR; no se convierten automáticamente en una cola eterna en la vista de seguridad del repositorio. Eso ayuda a no ahogar al equipo, pero también hace más fácil perder de vista el impacto real si nadie mira el overview.</p>
+          <h2>Por qué “ya lo encendimos” no es gobernanza</h2>
+          <p>Activar una función de seguridad es un paso de cobertura. Gobernar es saber si esa cobertura cambia el comportamiento: si se corrige lo crítico antes del merge, si el autofix se usa con criterio y si el ruido no entrena a la gente a ignorar alertas.</p>
+          <p>Sin métricas de remediación, el piloto se vende como éxito porque “hay hallazgos”. En la práctica puede estar pasando lo contrario: muchos avisos, poca corrección y cero decisión sobre dónde vale la pena invertir.</p>
+          <h2>Qué mirar la primera semana</h2>
+          <ul>
+            <li>Cuántos hallazgos genera AI Scan por repositorio y por período, no solo el total de la organización.</li>
+            <li>Tasa de remediación: hallazgos resueltos frente a generados. Si crece el volumen y no la remediación, tienes ruido, no control.</li>
+            <li>Adopción de autofix: cuántas sugerencias se aplican. Una tasa muy baja puede significar desconfianza, sugerencias flojas o proceso de merge que no deja tiempo para revisarlas.</li>
+            <li>Cobertura: qué repos tienen AI Scan efectivamente habilitado. GitHub ya expone estado de enablement en el coverage view; úsalo para no asumir que “toda la org” está protegida.</li>
+            <li>Separación CodeQL vs AI Scan: son señales distintas. Mezclarlas en un solo número esconde dónde está el hueco.</li>
+          </ul>
+          <h2>Límites que conviene decir en voz alta</h2>
+          <p>La vista previa pública está en github.com y GitHub Enterprise Cloud para clientes con GitHub Code Security o GitHub Advanced Security. GitHub Enterprise Server no está soportado en este anuncio. Además, como cualquier detector basado en IA, puede haber falsos positivos: hace falta un canal para marcarlos y un dueño que decida qué se corrige sí o sí antes del merge.</p>
+          <p>AI Scan tampoco sustituye políticas de merge, inventarios de repositorios ni revisión humana en cambios de alto impacto. Es un sensor. El gobierno está en cómo lees el sensor y qué haces con él.</p>
+          <h2>Criterio GAPATIC</h2>
+          <p>Si tu equipo ya usa escaneo con IA en pull requests, esta semana abre el security overview y anota tres cifras: hallazgos, remediación y adopción de autofix. Si no puedes obtenerlas, el control todavía no existe: solo tienes una herramienta encendida. Define un umbral mínimo de remediación para los repos críticos y un responsable que revise la tendencia cada viernes. Cuando esas cifras existan, recién tiene sentido hablar de ampliar el rollout.</p>
+          <p><em>Si quieres armar el tablero de seguridad de código y el ritual de remediación de tu equipo sin frenar los merges, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Casos</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
