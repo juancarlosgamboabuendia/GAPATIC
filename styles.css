@@ -19,7 +19,7 @@
   --wrap: 72rem;
   --pad: clamp(1.15rem, 4.2vw, 2.75rem);
   --section: clamp(4.5rem, 11vw, 8.5rem);
-  --header-h: 4.15rem;
+  --header-h: 7rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --radius: 4px;
 }
@@ -161,30 +161,29 @@ textarea {
 
 .brand-plate {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
   background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
+  border-radius: 10px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
 .brand-plate img {
-  width: 220%;
-  height: 220%;
+  display: block;
+  width: 160px;
+  height: 96px;
   max-width: none;
-  object-fit: cover;
-  object-position: 2% 50%;
+  object-fit: contain;
 }
 
 .brand-word {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 0.98rem;
-  letter-spacing: 0.14em;
-  color: var(--ink);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .nav-toggle {
