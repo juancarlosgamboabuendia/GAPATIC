@@ -22,6 +22,6 @@ Fuente de verdad de edición: `/workspace/gapatic-ia`. Se sincroniza a `/workspa
 6. **Verificar render:** `python3 -m http.server 8765` y
    `/usr/bin/google-chrome --headless --no-sandbox --disable-gpu --window-size=1280,2200 --screenshot=/tmp/x.png http://localhost:8765/<página>` para la nueva página, `proyectos.html` e `index.html`.
 7. **Sincronizar gapatic-ia → GAPATIC-git:**
-   `rsync -a --exclude .git --exclude _orig --exclude original-pages.zip /workspace/gapatic-ia/ /workspace/GAPATIC-git/` (sin `--delete` sobre `.gitignore`/`README.md`). Comprobar con `diff -rq --exclude=.git --exclude=_orig --exclude=original-pages.zip /workspace/gapatic-ia /workspace/GAPATIC-git` (sin salida).
+   `cd /workspace/gapatic-ia && tar --exclude=.git --exclude=_orig --exclude=original-pages.zip -cf - . | tar -xf - -C /workspace/GAPATIC-git` (rsync no está instalado; no borra `.gitignore`/`README.md`). Comprobar con `diff -rq --exclude=.git --exclude=_orig --exclude=original-pages.zip /workspace/gapatic-ia /workspace/GAPATIC-git` (sin salida).
 8. **Publicar:** `cd /workspace/GAPATIC-git && git add -A && git commit -m "Oportunidad diaria: <título>" && git push origin main`.
 9. **Reportar:** hash, título, archivo, sector, fuentes, incidencias.
