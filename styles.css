@@ -1887,3 +1887,11 @@ a.blog-card[hidden] { display: none; }
 .case-sector.case-cat {
   color: var(--cyan);
 }
+
+/* Línea de actualización — soluciones */
+.spec-updated {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--muted, #8aa);
+  letter-spacing: 0.02em;
+}
