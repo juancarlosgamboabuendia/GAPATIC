@@ -1883,3 +1883,7 @@ a.blog-card[hidden] { display: none; }
   border-top: 1px solid var(--line);
   padding-top: 0.7rem;
 }
+
+.case-sector.case-cat {
+  color: var(--cyan);
+}

@@ -121,7 +121,7 @@
 (function () {
   var bar = document.querySelector(".opp-filters");
   if (!bar) return;
-  var cards = document.querySelectorAll(".opp-grid [data-sector]");
+  var cards = document.querySelectorAll(".opp-grid [data-categoria]");
   bar.addEventListener("click", function (ev) {
     var btn = ev.target.closest(".opp-chip");
     if (!btn) return;
@@ -132,7 +132,7 @@
       b.setAttribute("aria-pressed", on ? "true" : "false");
     });
     cards.forEach(function (c) {
-      c.hidden = !(f === "todos" || c.getAttribute("data-sector") === f);
+      c.hidden = !(f === "todos" || c.getAttribute("data-categoria") === f);
     });
   });
 })();

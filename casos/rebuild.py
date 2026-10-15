@@ -22,7 +22,8 @@ MESES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 DATA = HERE / "casos.json"
-REQUIRED = ("slug", "date", "title", "sector", "servicio", "excerpt", "image", "url", "tipo")
+POSTS = ROOT / "noticias" / "posts.json"
+REQUIRED = ("slug", "date", "title", "categoria", "sector", "servicio", "excerpt", "image", "url", "tipo")
 TIPOS = ("Oportunidad", "Caso real")
 FORBIDDEN = ("durero", "san borja")
 
@@ -59,7 +60,23 @@ def replace_inner(doc: str, open_re: str, tag: str, new_inner: str) -> str:
     raise SystemExit(f"HTML mal formado alrededor de <{tag}>.")
 
 
+def categorias() -> list[str]:
+    """Categorías de Insights (noticias/posts.json), en orden de primera aparición."""
+    posts = json.loads(POSTS.read_text(encoding="utf-8"))
+    if isinstance(posts, dict):
+        posts = posts.get("posts", [])
+    out: list[str] = []
+    for p in posts:
+        c = p.get("category")
+        if c and c not in out:
+            out.append(c)
+    if not out:
+        raise SystemExit("noticias/posts.json no tiene categorías.")
+    return sorted(out, key=key)
+
+
 def load() -> list[dict]:
+    cats = categorias()
     items = json.loads(DATA.read_text(encoding="utf-8"))
     if not isinstance(items, list) or not items:
         raise SystemExit("casos.json debe ser un arreglo no vacío.")
@@ -69,6 +86,8 @@ def load() -> list[dict]:
         if miss:
             raise SystemExit(f"Item {i} sin campos: {', '.join(miss)}")
         date.fromisoformat(it["date"])
+        if it["categoria"] not in cats:
+            raise SystemExit(f"Item {i}: categoria {it['categoria']!r} no es una categoría de Insights {cats}")
         if it["tipo"] not in TIPOS:
             raise SystemExit(f"Item {i}: tipo debe ser uno de {TIPOS}")
         if it["url"] in seen:
@@ -88,6 +107,8 @@ def check(items: list[dict]) -> None:
             low = txt.lower()
             if any(f in low for f in FORBIDDEN):
                 errs.append(f"{page.name}: contiene una dirección física prohibida")
+            if f'<span class="cat">{e(it["categoria"])}</span>' not in txt:
+                errs.append(f"{page.name}: article-meta debe mostrar la categoría {it['categoria']!r}")
             if it["tipo"] == "Oportunidad" and "escenario ilustrativo" not in txt:
                 errs.append(f"{page.name}: falta el aviso 'Caso aplicable: escenario ilustrativo…'")
             for ref in re.findall(r'(?:href|src)="([^"#:]+?)(?:#[^"]*)?"', txt):
@@ -104,7 +125,8 @@ def e(s: str) -> str:
 
 
 def filters(items: list[dict]) -> str:
-    sectors = sorted({it["sector"] for it in items}, key=key)
+    present = {it["categoria"] for it in items}
+    sectors = [c for c in categorias() if c in present]
     out = ['\n          <button class="opp-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>\n']
     for s in sectors:
         out.append(f'          <button class="opp-chip" type="button" data-filter="{key(s)}" aria-pressed="false">{e(s)}</button>\n')
@@ -115,10 +137,10 @@ def filters(items: list[dict]) -> str:
 def cards(items: list[dict]) -> str:
     out = ["\n"]
     for it in items:
-        out.append(f"""          <a class="blog-card reveal" href="{e(it['url'])}" data-sector="{key(it['sector'])}">
+        out.append(f"""          <a class="blog-card reveal" href="{e(it['url'])}" data-categoria="{key(it['categoria'])}">
             <img src="{e(it['image'])}" alt="{e(it.get('image_alt') or it['title'])}">
             <div class="blog-card-body">
-              <p class="blog-card-meta"><span class="cat">{e(it['sector'])}</span><span>{e(it['tipo'])}</span><span>{e(es_date(it['date']))}</span></p>
+              <p class="blog-card-meta"><span class="cat">{e(it['categoria'])}</span><span>{e(it['sector'])}</span><span>{e(it['tipo'])}</span><span>{e(es_date(it['date']))}</span></p>
               <h3>{e(it['title'])}</h3>
               <p>{e(it['excerpt'])}</p>
               <span class="more-link">Ver oportunidad</span>
@@ -135,14 +157,14 @@ def home(items: list[dict]) -> str:
         out.append(f"""          <a class="case-file reveal" href="{e(it['url'])}">
             <header class="case-meta">
               <p class="case-id">{e(it['tipo'])} {i:02d}</p>
-              <p class="case-sector">{e(it['sector'])}</p>
+              <p class="case-sector case-cat">{e(it['categoria'])}</p>
             </header>
             <div class="case-body">
               <h3>{e(it.get('home_title') or it['title'])}</h3>
               <p>{e(it['excerpt'])}</p>
               <span class="more-link">Ver oportunidad</span>
             </div>
-            <p class="case-service">Servicio: {e(it['servicio'])}</p>
+            <p class="case-service">Sector: {e(it['sector'])} · Servicio: {e(it['servicio'])}</p>
           </a>
 """)
     out.append("        ")
