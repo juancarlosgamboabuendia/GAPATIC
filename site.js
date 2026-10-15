@@ -116,3 +116,23 @@
       "&body=" + encodeURIComponent(bodyLines.join("\n"));
   });
 })();
+
+/* Filtro por sector en Oportunidades (proyectos.html) */
+(function () {
+  var bar = document.querySelector(".opp-filters");
+  if (!bar) return;
+  var cards = document.querySelectorAll(".opp-grid [data-sector]");
+  bar.addEventListener("click", function (ev) {
+    var btn = ev.target.closest(".opp-chip");
+    if (!btn) return;
+    var f = btn.getAttribute("data-filter");
+    bar.querySelectorAll(".opp-chip").forEach(function (b) {
+      var on = b === btn;
+      b.classList.toggle("is-active", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    cards.forEach(function (c) {
+      c.hidden = !(f === "todos" || c.getAttribute("data-sector") === f);
+    });
+  });
+})();

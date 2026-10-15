@@ -1825,3 +1825,61 @@ a.blog-card:focus-visible {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Oportunidades
+   ----------------------------------------------------------------------- */
+
+.opp-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.opp-chip {
+  font: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.opp-chip:hover,
+.opp-chip:focus-visible {
+  border-color: var(--line-strong);
+  color: var(--cyan);
+}
+
+.opp-chip.is-active {
+  border-color: var(--lime);
+  color: var(--lime);
+  background: rgba(163, 230, 53, 0.08);
+}
+
+.opp-grid [hidden] { display: none; }
+a.blog-card[hidden] { display: none; }
+
+.opp-disclaimer {
+  border: 1px solid var(--lime);
+  border-left-width: 4px;
+  padding: 0.85rem 1rem;
+  margin: 0 0 1.5rem;
+  color: var(--text, inherit);
+  background: rgba(163, 230, 53, 0.06);
+}
+
+.opp-cta { margin: 2rem 0 1.2rem; }
+
+.case-service {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lime);
+  border-top: 1px solid var(--line);
+  padding-top: 0.7rem;
+}
