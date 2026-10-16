@@ -7,7 +7,12 @@
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
     toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
     document.body.classList.toggle("nav-open", open);
+    document.documentElement.style.overflow = open ? "hidden" : "";
   }
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 768 && document.body.classList.contains("nav-open")) setOpen(false);
+  });
 
   toggle.addEventListener("click", function () {
     setOpen(toggle.getAttribute("aria-expanded") !== "true");

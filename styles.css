@@ -1895,3 +1895,70 @@ a.blog-card[hidden] { display: none; }
   color: var(--muted, #8aa);
   letter-spacing: 0.02em;
 }
+
+/* Menú móvil — panel sólido a pantalla completa bajo el header
+   Causa del bug: backdrop-filter en .site-header crea un containing block para
+   hijos position:fixed, así que .nav-panel se medía contra el header (7rem)
+   y quedaba sin alto ni fondo efectivo sobre el hero.
+   ----------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .site-header {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: rgba(5, 7, 11, 0.96);
+  }
+
+  .site-header.is-scrolled {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  body.nav-open {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  body.nav-open .site-header {
+    z-index: 1000;
+    background: var(--bg);
+    transform: none;
+    will-change: auto;
+  }
+
+  .nav-panel {
+    top: var(--header-h);
+    height: calc(100vh - var(--header-h));
+    height: calc(100dvh - var(--header-h));
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    z-index: 1000;
+    padding: 1.5rem var(--pad) calc(2rem + env(safe-area-inset-bottom));
+  }
+
+  body.nav-open .nav-panel {
+    display: flex;
+  }
+
+  .nav-panel .site-nav ul {
+    gap: 0;
+  }
+
+  .nav-panel .site-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 3.5rem;
+    padding: 0.9rem 0;
+    font-size: 1.05rem;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-panel .btn-nav {
+    width: 100%;
+    min-height: 3.25rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
