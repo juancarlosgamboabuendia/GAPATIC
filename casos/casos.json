@@ -1,5 +1,24 @@
 [
   {
+    "slug": "fraude-banca-movil",
+    "date": "2026-10-16",
+    "title": "Banca móvil en cajas y microfinancieras: detectar la cuenta tomada antes de que salga la transferencia",
+    "home_title": "Detectar la cuenta tomada en banca móvil antes de la transferencia.",
+    "categoria": "Ciberseguridad",
+    "sector": "Banca y microfinanzas",
+    "problema": "Toma de cuentas de banca móvil tras robo de celular o suplantación, detectada recién cuando llega el reclamo por operación no reconocida",
+    "servicio": "Analítica de fraude con IA",
+    "excerpt": "El fraude informático es el ciberdelito más denunciado del Perú y las cuentas de ahorro vinculadas a billeteras digitales son el blanco principal. Una oportunidad aplicable: analítica de comportamiento con IA para detectar sesiones y transferencias de cuentas tomadas en tiempo real.",
+    "image": "images/case-study-fintech-fraud.jpg",
+    "image_alt": "Panel de monitoreo de fraude en operaciones de banca móvil",
+    "url": "oportunidad-2026-10-16-fraude-banca-movil.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://andina.pe/agencia/noticia-fraude-informatico-lidera-los-ciberdelitos-peru-cinco-claves-para-proteger-tu-dinero-1092564.aspx",
+      "https://gestion.pe/tu-dinero/fraude-digital-amenaza-cuentas-de-ahorro-por-s-257-millones-por-donde-atacan-delincuentes-noticia/"
+    ]
+  },
+  {
     "slug": "calidad-arandanos",
     "date": "2026-10-15",
     "title": "Arándanos de exportación: inspección de calidad con visión artificial en la línea de empaque",
