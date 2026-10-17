@@ -1,5 +1,24 @@
 [
   {
+    "slug": "partes-diarios-obra",
+    "date": "2026-10-17",
+    "title": "Obras de construcción: el parte diario y la valorización sin perseguir fotos por WhatsApp",
+    "home_title": "Partes diarios y valorizaciones de obra sin perseguir fotos por WhatsApp.",
+    "categoria": "Productividad",
+    "sector": "Construcción",
+    "problema": "Partes diarios, metrados y valorizaciones de obra armados a mano con fotos, audios y mensajes de WhatsApp dispersos, con días de retraso para la oficina técnica",
+    "servicio": "Automatización de reportes con IA",
+    "excerpt": "La construcción creció 10,34% en agosto de 2026 y el avance físico de obras públicas, 19,33%. Más obra significa más partes diarios, metrados y valorizaciones armados a mano. Una oportunidad aplicable: un asistente con IA que convierte lo que reporta el frente de obra en partes y borradores de valorización listos para revisar.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Equipo de trabajo revisando un tablero digital de indicadores",
+    "url": "oportunidad-2026-10-17-partes-diarios-obra.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.inei.gob.pe/media/MenuRecursivo/boletines/10-informe-tecnico-produccion-nacional-agosto-2026.pdf",
+      "https://www.gob.pe/institucion/inei/noticias/1451370-consumo-interno-de-cemento-subio-7-6-en-agosto-de-2026"
+    ]
+  },
+  {
     "slug": "fraude-banca-movil",
     "date": "2026-10-16",
     "title": "Banca móvil en cajas y microfinancieras: detectar la cuenta tomada antes de que salga la transferencia",
