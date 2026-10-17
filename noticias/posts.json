@@ -1,5 +1,15 @@
 [
   {
+    "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-10-17",
+    "excerpt": "El 15 de octubre de 2026, en Ciudad de México, Twilio presentó para LatAm una capa de memoria persistente para que agentes de IA y personas retomen cada conversación con contexto. La experiencia mejora; también nace un expediente del cliente que alguien tiene que gobernar: qué se guarda, cuánto tiempo y quién puede verlo.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Datos de clientes que un agente de IA conserva entre conversaciones y que requieren gobierno",
+    "slug": "articulo-2026-10-17-memoria-del-agente.html",
+    "title": "Memoria del agente: lo que recuerda de tu cliente también es dato personal"
+  },
+  {
     "slug": "articulo-2026-10-16-pricing-dinamico-ia.html",
     "title": "Pricing dinámico con IA: el precio que nadie escribió",
     "date": "2026-10-16",
