@@ -1,5 +1,26 @@
 [
   {
+    "slug": "supervision-ia-clinicas",
+    "date": "2026-10-18",
+    "title": "Clínicas privadas: la IA que agenda, prioriza o sugiere diagnósticos ya exige supervisión humana documentada",
+    "home_title": "Supervisión humana documentada para la IA que usan las clínicas.",
+    "categoria": "Gobernanza",
+    "sector": "Salud",
+    "problema": "Clínicas privadas que usan IA para agendar, priorizar o sugerir diagnósticos sin inventario, clasificación de riesgo, registro ni protocolo de supervisión humana exigidos por el Reglamento de la Ley 31814",
+    "servicio": "Gobernanza de IA y cumplimiento",
+    "excerpt": "El Reglamento de la Ley 31814 trata como de riesgo alto a la IA que da acceso a servicios de salud u orienta tamizaje y diagnóstico, y para el sector privado de salud esas obligaciones corren desde setiembre de 2026. Una oportunidad aplicable: ordenar los usos de IA de una clínica en un registro, con supervisión humana que pueda detener o corregir al sistema.",
+    "image": "images/blog-etica-ia.jpg",
+    "image_alt": "Concepto de ética y gobernanza en la inteligencia artificial",
+    "url": "oportunidad-2026-10-18-supervision-ia-clinicas.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/110225-clasificacion-de-la-ia-en-el-peru",
+      "https://cdn.www.gob.pe/uploads/document/file/8619777/7133522-decreto-supremo-n-115-2025-pcm.PDF?v=1757422328",
+      "https://www.gob.pe/institucion/minsa/normas-legales/8686326-903-2026-minsa",
+      "https://www.gob.pe/institucion/minsa/noticias/1415982-conectaton-minsa-peru-2026-presenta-exitosos-resultados-en-interoperabilidad-entre-historias-clinicas-electronicas"
+    ]
+  },
+  {
     "slug": "partes-diarios-obra",
     "date": "2026-10-17",
     "title": "Obras de construcción: el parte diario y la valorización sin perseguir fotos por WhatsApp",
