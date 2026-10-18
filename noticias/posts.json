@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Productividad",
+    "date": "2026-10-18",
+    "excerpt": "El 16 de octubre de 2026, ejecutivos de Credicorp describieron una “fábrica de agentes supervisada por humanos”, con equipos de producto que podrían pasar de 10 a 14 personas a unas tres. El organigrama se achica; lo que no se achica es la responsabilidad. Antes de rediseñar equipos, hay que definir qué revisa cada supervisor y cuántos agentes puede vigilar de verdad.",
+    "image": "images/blog-placeholder-1.jpg",
+    "image_alt": "Equipo pequeño de personas que supervisa el trabajo de varios agentes de IA",
+    "slug": "articulo-2026-10-18-equipos-que-supervisan-agentes.html",
+    "title": "Equipos que supervisan agentes: menos personas, más responsabilidad por persona"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Gobernanza",
     "date": "2026-10-17",
     "excerpt": "El 15 de octubre de 2026, en Ciudad de México, Twilio presentó para LatAm una capa de memoria persistente para que agentes de IA y personas retomen cada conversación con contexto. La experiencia mejora; también nace un expediente del cliente que alguien tiene que gobernar: qué se guarda, cuánto tiempo y quién puede verlo.",
