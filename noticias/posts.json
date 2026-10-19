@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Estrategia",
+    "date": "2026-10-19",
+    "excerpt": "El 17 de octubre de 2026, Andina recogió el EY Chief Data Officer Study 2026: en el Perú, el 85% de las organizaciones consultadas aumentó su inversión en datos e IA en los últimos 12 meses y el 93% prevé volver a aumentarla. Octubre es mes de presupuestos. Antes de aprobar la partida de IA para 2027, cada proyecto debería llegar con su problema, su línea base y la cifra que demostrará si funcionó.",
+    "image": "images/case-study-placeholder-1.jpg",
+    "image_alt": "Planificación de presupuesto de inteligencia artificial con indicadores de negocio",
+    "slug": "articulo-2026-10-19-presupuesto-ia-2027.html",
+    "title": "Presupuesto de IA para 2027: sin línea base, invertir más es apostar"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Productividad",
     "date": "2026-10-18",
     "excerpt": "El 16 de octubre de 2026, ejecutivos de Credicorp describieron una “fábrica de agentes supervisada por humanos”, con equipos de producto que podrían pasar de 10 a 14 personas a unas tres. El organigrama se achica; lo que no se achica es la responsabilidad. Antes de rediseñar equipos, hay que definir qué revisa cada supervisor y cuántos agentes puede vigilar de verdad.",
