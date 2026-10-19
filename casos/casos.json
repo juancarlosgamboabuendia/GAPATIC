@@ -1,5 +1,25 @@
 [
   {
+    "slug": "fugas-redes-agua",
+    "date": "2026-10-19",
+    "title": "Redes de agua potable: decidir dónde buscar fugas y qué tubería renovar con los datos que ya existen",
+    "home_title": "Priorizar fugas y renovación de redes de agua con los datos que ya existen.",
+    "categoria": "Infraestructura",
+    "sector": "Agua y saneamiento",
+    "problema": "Empresas prestadoras de agua con 38 % de agua no facturada y datos de GIS, SCADA, sistema comercial e historial de roturas sin integrar, que priorizan la búsqueda de fugas y la renovación de tuberías sin un ranking de riesgo",
+    "servicio": "Analítica predictiva de infraestructura",
+    "excerpt": "De cada 100 litros que producen las empresas de saneamiento del Perú, 38 no se facturan, y entre las causas están las fugas en redes envejecidas. Una oportunidad aplicable: un modelo con IA que cruza GIS, SCADA, datos comerciales e historial de roturas para priorizar la búsqueda de fugas y la renovación de tuberías.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Red de nodos y conexiones que representa una red de distribución monitoreada con datos",
+    "url": "oportunidad-2026-10-19-fugas-redes-agua.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/sunass/noticias/1445669-eps-reducen-perdidas-del-agua-potable-tras-cuatro-anos-de-incremento-del-agua-no-facturada",
+      "https://www.gob.pe/institucion/sunass/noticias/1283937-sunass-valor-del-agua-no-facturada-alcanzo-mas-de-s-1-800-millones-en-la-ultima-decada",
+      "https://cdn.www.gob.pe/uploads/document/file/10034872/8179666-informe-de-rendicion-de-cuentas_mayo-2026.pdf"
+    ]
+  },
+  {
     "slug": "supervision-ia-clinicas",
     "date": "2026-10-18",
     "title": "Clínicas privadas: la IA que agenda, prioriza o sugiere diagnósticos ya exige supervisión humana documentada",
