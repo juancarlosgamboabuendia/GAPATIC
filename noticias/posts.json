@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Ciberseguridad",
+    "date": "2026-10-20",
+    "excerpt": "El 5 de octubre de 2026, CloudSEK documentó a un afiliado del ransomware The Gentlemen que conectó un asistente de código a su propio servidor MCP para ejecutar comandos dentro de redes ya comprometidas, con al menos una víctima en México. Lo nuevo es el agente; lo viejo es la entrada: según la investigación, todas las víctimas confirmadas cayeron por secretos robados de CI/CD.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Pipeline de desarrollo con credenciales expuestas y un agente de IA ejecutando comandos",
+    "slug": "articulo-2026-10-20-ransomware-con-agente-ia.html",
+    "title": "Ransomware con agente de IA: la puerta sigue siendo un secreto olvidado en el pipeline"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-10-19",
     "excerpt": "El 17 de octubre de 2026, Andina recogió el EY Chief Data Officer Study 2026: en el Perú, el 85% de las organizaciones consultadas aumentó su inversión en datos e IA en los últimos 12 meses y el 93% prevé volver a aumentarla. Octubre es mes de presupuestos. Antes de aprobar la partida de IA para 2027, cada proyecto debería llegar con su problema, su línea base y la cifra que demostrará si funcionó.",

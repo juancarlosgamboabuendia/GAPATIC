@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Ransomware con agente de IA: la puerta sigue siendo un secreto olvidado en el pipeline — GAPATIC Insights</title>
+  <meta name="description" content="El 5 de octubre de 2026, CloudSEK documentó a un afiliado del ransomware The Gentlemen que conectó un asistente de código a su propio servidor MCP para ejecutar comandos dentro de redes ya comprometidas, con al menos una víctima en México. Lo nuevo es el agente; lo viejo es la entrada: según la investigación, todas las víctimas confirmadas cayeron por secretos robados de CI/CD.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="Ransomware con agente de IA: la puerta sigue siendo un secreto olvidado en el pipeline — GAPATIC Insights">
+  <meta property="og:description" content="El 5 de octubre de 2026, CloudSEK documentó a un afiliado del ransomware The Gentlemen que conectó un asistente de código a su propio servidor MCP para ejecutar comandos dentro de redes ya comprometidas, con al menos una víctima en México. Lo nuevo es el agente; lo viejo es la entrada: según la investigación, todas las víctimas confirmadas cayeron por secretos robados de CI/CD.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/case-study-placeholder-2.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Oportunidades</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Ciberseguridad</span><span>Publicado el 20 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>Ransomware con agente de IA: la puerta sigue siendo un secreto olvidado en el pipeline</h1>
+          <p class="article-excerpt">El 5 de octubre de 2026, CloudSEK documentó a un afiliado del ransomware The Gentlemen que conectó un asistente de código a su propio servidor MCP para ejecutar comandos dentro de redes ya comprometidas, con al menos una víctima en México. Lo nuevo es el agente; lo viejo es la entrada: según la investigación, todas las víctimas confirmadas cayeron por secretos robados de CI/CD.</p>
+        </header>
+        <img class="article-featured reveal" src="images/case-study-placeholder-2.jpg" alt="Pipeline de desarrollo con credenciales expuestas y un agente de IA ejecutando comandos">
+        <div class="article-body prose reveal">
+          <p>Durante meses, el uso de inteligencia artificial en ataques reales se discutió sobre todo como posibilidad: correos de phishing mejor escritos, malware que consulta un modelo, agentes que podrían moverse solos dentro de una red. A inicios de octubre de 2026 apareció un caso documentado que vale la pena leer con calma, no por alarmista, sino porque deja una lección muy concreta para cualquier empresa que desarrolla software o contrata a quien lo haga.</p>
+          <p>El 5 de octubre de 2026, la firma de ciberseguridad CloudSEK publicó una investigación sobre un afiliado del grupo de ransomware The Gentlemen que se hace llamar Azazel. A partir de infraestructura del propio atacante mal configurada, los investigadores reconstruyeron una operación contra más de dos docenas de organizaciones en seis países. El Economista de México informó el 6 de octubre que entre ellas había una organización mexicana.</p>
+          <h2>Qué hizo el agente y qué no</h2>
+          <p>Según CloudSEK, el atacante montó en su propia máquina un servidor MCP, el protocolo abierto con el que se le dan herramientas a un asistente de IA, y registró ahí una herramienta que ejecutaba comandos dentro de sesiones que ya tenía abiertas en servidores de las víctimas. Su asistente de código podía así revisar, por ejemplo, que la nota de rescate estuviera colocada en cada servidor, en el repositorio de GitLab y hasta en la configuración de la base de datos. La firma también encontró rastreos de internet en busca de puertos MCP expuestos y aclara que no se trata de una vulnerabilidad nueva del protocolo: la herramienta hizo exactamente lo que se le pidió.</p>
+          <p>La parte que menos titulares recibió es la más útil. De acuerdo con la investigación, todas las víctimas confirmadas fueron alcanzadas con secretos robados de sistemas de integración y despliegue continuo: variables de GitLab con credenciales, historial de repositorios con claves que alguien creyó haber borrado, un mismo servidor de GitLab que alojaba trabajos de dos empresas distintas. La IA aceleró lo que vino después; la puerta fue la de siempre.</p>
+          <h2>Por qué importa a una empresa en Latinoamérica</h2>
+          <p>Muchas empresas de la región ya no tienen un área de desarrollo pequeña y aislada. Tienen proveedores que despliegan en su nube, pipelines que conectan con producción, desarrolladores que usan asistentes de código con permisos para correr comandos y, cada vez más, servidores MCP instalados por equipos que quieren que sus agentes consulten sistemas internos. Cada una de esas piezas guarda credenciales. Un atacante con un agente no necesita ser más hábil; necesita encontrar una de esas credenciales y dejar que el agente haga el trabajo repetitivo más rápido.</p>
+          <h2>Cinco controles que no dependen de la IA</h2>
+          <ul>
+            <li><strong>Sacar los secretos del pipeline.</strong> Las claves de bases de datos, nubes y servidores no deberían vivir como variables en texto plano del CI ni en el código. Usa un gestor de secretos, credenciales de corta duración y permisos mínimos por trabajo.</li>
+            <li><strong>Revisar el historial, no solo el código actual.</strong> Una clave borrada en el último commit sigue en el historial del repositorio. Escanea el historial completo y, si aparece una clave, rótala: borrarla no basta.</li>
+            <li><strong>Separar entornos y clientes.</strong> Un mismo runner o servidor de integración no debería atender a dos empresas ni tener alcance a producción si solo compila. Si trabajas con una software factory, pregunta cómo aísla tu proyecto del de sus otros clientes.</li>
+            <li><strong>Inventariar los servidores MCP y lo que pueden hacer.</strong> Qué servidores MCP corren en laptops y servidores, quién los instaló, qué herramientas exponen y si alguna ejecuta comandos. Ninguno debería escuchar en una red abierta ni aceptar un token fijo compartido.</li>
+            <li><strong>Vigilar lo que el agente ejecuta.</strong> Si tus equipos usan asistentes de código con permiso para correr comandos, registra esos comandos igual que registras los de una persona con acceso privilegiado, y define en qué máquinas y con qué credenciales pueden hacerlo.</li>
+          </ul>
+          <h2>Criterio GAPATIC</h2>
+          <p>Este caso no pide comprar una herramienta nueva contra “ataques con IA”. Pide hacer bien lo que ya se sabía: secretos fuera del pipeline, historial limpio, entornos separados y permisos mínimos. Lo que sí cambia es el inventario: a la lista de cuentas privilegiadas ahora hay que sumar los agentes y los servidores MCP que pueden ejecutar acciones. Esta semana, pide a tu equipo o a tu proveedor de desarrollo una respuesta simple: dónde están nuestras credenciales de producción y qué persona o qué agente puede usarlas hoy.</p>
+          <p><em>Si quieres revisar los secretos de tus pipelines y el inventario de agentes y servidores MCP de tu empresa, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Oportunidades</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
