@@ -1,5 +1,25 @@
 [
   {
+    "slug": "parada-anchoveta-plantas",
+    "date": "2026-10-21",
+    "title": "Plantas y flotas pesqueras: usar la parada larga de la anchoveta para llegar listos a 2027",
+    "home_title": "Usar la parada de la anchoveta para priorizar mantenimiento y llegar listos a 2027.",
+    "categoria": "Operaciones",
+    "sector": "Pesca",
+    "problema": "Empresas pesqueras con plantas de harina y aceite y flota que enfrentan una parada larga tras la decisión de Produce de no autorizar la segunda temporada 2026 de anchoveta en la zona norte-centro, y que planifican mantenimiento, repuestos y arranque con hojas de cálculo, sin priorizar por riesgo ni costo",
+    "servicio": "Planificación de operaciones con IA",
+    "excerpt": "Produce no autorizó la segunda temporada de anchoveta 2026 en la zona norte-centro: el Imarpe estimó una biomasa de 5,12 millones de toneladas, 27,9 % menos que en el verano, con 79 % de juveniles. Una oportunidad aplicable: planificación de operaciones con IA para priorizar el mantenimiento de plantas y embarcaciones durante la parada y preparar un arranque ordenado.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e inteligencia artificial, símbolo de la planificación de operaciones apoyada en datos",
+    "url": "oportunidad-2026-10-21-parada-anchoveta-plantas.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/produce/noticias/1457656-produce-no-autoriza-segunda-temporada-de-anchoveta-en-la-zona-norte-centro-para-proteger-la-sostenibilidad-del-recurso-y-su-pesqueria",
+      "https://cdn.www.gob.pe/uploads/document/file/10219770/8307548-rd-343-2026-produce-dgpchdi.pdf",
+      "https://rpp.pe/economia/economia/produce-descarta-segunda-temporada-de-anchoveta-sociedad-nacional-de-pesqueria-hace-un-llamado-urgente-al-gobierno-noticia-1713031"
+    ]
+  },
+  {
     "slug": "mercados-emisores-turismo",
     "date": "2026-10-20",
     "title": "Hoteles y operadores turísticos: decidir a qué mercados apostar cuando Chile cae y Estados Unidos crece",
