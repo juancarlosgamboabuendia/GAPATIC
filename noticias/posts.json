@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Operaciones",
+    "date": "2026-10-21",
+    "excerpt": "El 20 de octubre de 2026, Infobae recogió la advertencia de Applying Consulting: si un agente de IA genera documentos o responde solicitudes más rápido, pero las áreas que revisan y aprueban mantienen sus tiempos, el trabajo solo se acumula en otro punto. Antes de sumar otro agente, hay que medir el proceso completo, de la solicitud al resultado.",
+    "image": "images/blog-ia-generativa-featured.jpg",
+    "image_alt": "Flujo de trabajo donde un agente de IA acelera un paso y las solicitudes se acumulan en la etapa de aprobación",
+    "slug": "articulo-2026-10-21-cuello-de-botella-agentes.html",
+    "title": "Agente rápido, proceso lento: el cuello de botella solo cambió de lugar"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Ciberseguridad",
     "date": "2026-10-20",
     "excerpt": "El 5 de octubre de 2026, CloudSEK documentó a un afiliado del ransomware The Gentlemen que conectó un asistente de código a su propio servidor MCP para ejecutar comandos dentro de redes ya comprometidas, con al menos una víctima en México. Lo nuevo es el agente; lo viejo es la entrada: según la investigación, todas las víctimas confirmadas cayeron por secretos robados de CI/CD.",
