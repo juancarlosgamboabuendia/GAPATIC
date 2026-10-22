@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>El agente no se gobierna solo: sus límites van en la infraestructura — GAPATIC Insights</title>
+  <meta name="description" content="El 21 de octubre de 2026, NVIDIA presentó una arquitectura de referencia para ejecutar agentes de IA en entornos aislados, con políticas de acceso que se aplican fuera del agente; BBVA y Santander se sumaron para explorarla. La idea sirve a cualquier empresa, use o no ese hardware: si el único freno del agente es su prompt, no hay freno.">
+  <meta name="theme-color" content="#05070B">
+  <meta property="og:title" content="El agente no se gobierna solo: sus límites van en la infraestructura — GAPATIC Insights">
+  <meta property="og:description" content="El 21 de octubre de 2026, NVIDIA presentó una arquitectura de referencia para ejecutar agentes de IA en entornos aislados, con políticas de acceso que se aplican fuera del agente; BBVA y Santander se sumaron para explorarla. La idea sirve a cualquier empresa, use o no ese hardware: si el único freno del agente es su prompt, no hay freno.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="images/placeholder-consultoria-ia.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="GAPATIC, inicio">
+        <span class="brand-plate" aria-hidden="true">
+          <img src="assets/logo-nav.png" width="640" height="382" alt="">
+        </span>
+        <span class="brand-word">GAPATIC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-panel" id="nav-panel">
+        <nav class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="servicios.html">Soluciones</a></li>
+            <li><a href="proyectos.html">Oportunidades</a></li>
+            <li><a href="blog.html" aria-current="page">Insights</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-cyan btn-nav" href="contacto.html">Hablemos</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <article class="article-shell">
+      <div class="wrap">
+        <header class="article-head reveal">
+          <p class="article-meta"><span class="cat">Infraestructura</span><span>Publicado el 22 de octubre, 2026</span><span>Por: Equipo GAPATIC</span></p>
+          <h1>El agente no se gobierna solo: sus límites van en la infraestructura</h1>
+          <p class="article-excerpt">El 21 de octubre de 2026, NVIDIA presentó una arquitectura de referencia para ejecutar agentes de IA en entornos aislados, con políticas de acceso que se aplican fuera del agente; BBVA y Santander se sumaron para explorarla. La idea sirve a cualquier empresa, use o no ese hardware: si el único freno del agente es su prompt, no hay freno.</p>
+        </header>
+        <img class="article-featured reveal" src="images/placeholder-consultoria-ia.jpg" alt="Agente de IA trabajando dentro de un entorno aislado con políticas de acceso controladas desde fuera">
+        <div class="article-body prose reveal">
+          <p>Cuando un agente de IA pasa de responder preguntas a ejecutar tareas, la conversación sobre seguridad suele quedarse en el lugar equivocado: el prompt. Se le escribe al agente que no borre archivos, que no comparta datos de clientes y que no se conecte a sistemas que no necesita. Funciona en la demo. El problema es que una instrucción es una sugerencia, y un agente que trabaja horas, descarga código, usa herramientas y pide más permisos puede terminar haciendo justo lo que se le pidió que no hiciera, por error o porque alguien lo manipuló con un documento o un correo.</p>
+          <p>El 21 de octubre de 2026, NVIDIA anunció la OpenShell Reference Architecture, un diseño para crear, contener y observar agentes en sistemas críticos. Según el blog técnico de la compañía, el entorno trata al agente como no confiable durante toda su ejecución y separa las piezas: un entorno aislado donde corre el agente, un supervisor externo que revisa cada solicitud de salida y entrega las credenciales, un plano de control que administra políticas y un verificador que comprueba que los permisos no superen el techo que fijó la organización. BBVA y Santander anunciaron que explorarán esta arquitectura para reforzar la gobernanza y la seguridad de sus agentes. La frase que resume el enfoque está en el propio blog: un agente no puede gobernarse a sí mismo.</p>
+          <h2>Por qué esto no es solo para bancos europeos</h2>
+          <p>La arquitectura viene acompañada de hardware de NVIDIA que pocas empresas de la región van a comprar pronto. Pero el principio no depende de ese hardware. Cualquier empresa que hoy deja a un agente leer correos, consultar el ERP, mover archivos o llamar APIs puede preguntarse lo mismo: si el agente decide hacer algo indebido, ¿qué lo detiene? Si la respuesta es "le dijimos que no lo hiciera", el control está dentro del agente, que es justo donde un atacante o un error pueden desactivarlo.</p>
+          <p>Mover el control a la infraestructura significa que el límite existe aunque el agente no coopere: no puede abrir conexiones a destinos que no estén permitidos, no ve las contraseñas reales y no puede ampliar sus propios permisos sin que alguien lo apruebe.</p>
+          <h2>Cinco controles que puedes aplicar con lo que ya tienes</h2>
+          <ul>
+            <li><strong>Un entorno separado para cada agente.</strong> Un contenedor, una máquina virtual o una cuenta de nube aparte, sin acceso al disco ni a la red de los servidores de producción, salvo lo que se habilite expresamente.</li>
+            <li><strong>Salida a internet con lista blanca.</strong> El agente solo puede conectarse a los dominios y APIs que su tarea necesita. Todo lo demás se bloquea por defecto, incluidas las direcciones internas de la red.</li>
+            <li><strong>Credenciales que el agente nunca ve.</strong> Un intermediario agrega la clave a la solicitud cuando esta sale, con el permiso mínimo y con fecha de vencimiento. Si alguien logra que el agente revele lo que sabe, no hay contraseña que filtrar.</li>
+            <li><strong>Registro de cada acción, fuera del agente.</strong> Qué archivo leyó, qué sistema consultó y qué solicitud le fue negada. El registro lo guarda la infraestructura, no el agente, para que no pueda borrarlo ni maquillarlo.</li>
+            <li><strong>Pedir más permisos es un trámite, no una decisión del agente.</strong> Si la tarea necesita acceso nuevo, se solicita, una persona lo aprueba y queda constancia. El techo de permisos lo fija la empresa.</li>
+          </ul>
+          <h2>Por qué importa ahora</h2>
+          <p>Muchas empresas en Latinoamérica están pasando del asistente que conversa al agente que actúa, y lo hacen con proveedores distintos en cada área. Cuanto más autonomía tiene cada agente, más caro sale descubrir tarde que nadie definió dónde termina su acceso. Diseñar ese límite antes de conectar el agente a sistemas reales cuesta poco comparado con reconstruirlo después de un incidente.</p>
+          <h2>Criterio GAPATIC</h2>
+          <p>Antes de darle a un agente acceso a un sistema que importa, haz una prueba simple: imagina que el agente recibe una instrucción maliciosa escondida en un documento. Luego revisa qué podría tocar, a qué podría conectarse y qué credenciales tendría a mano. Si la respuesta depende de que el agente se porte bien, todavía no está listo para producción. Primero va el entorno con sus límites; después, la autonomía.</p>
+          <p><em>Si quieres revisar qué pueden tocar hoy tus agentes de IA y diseñar el entorno donde deberían trabajar, <a href="contacto.html">hablemos</a>.</em></p>
+        </div>
+        <aside class="article-aside reveal">
+          <div>
+            <h4>En el sitio</h4>
+            <div class="related-list">
+              <a href="servicios.html">Soluciones GAPATIC</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Más Insights</a>
+            </div>
+          </div>
+          <p><a class="back-link" href="blog.html">← Volver a Insights</a></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Oportunidades</a>
+        <a href="blog.html">Insights</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+      <p>© 2026 GAPATIC · Lima, Perú · <a href="mailto:juancarlosgamboabuendia@gapatic.com">juancarlosgamboabuendia@gapatic.com</a> · <a href="tel:+51987205777">+51 987 205 777</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

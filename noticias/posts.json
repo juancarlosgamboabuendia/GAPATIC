@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Infraestructura",
+    "date": "2026-10-22",
+    "excerpt": "El 21 de octubre de 2026, NVIDIA presentó una arquitectura de referencia para ejecutar agentes de IA en entornos aislados, con políticas de acceso que se aplican fuera del agente; BBVA y Santander se sumaron para explorarla. La idea sirve a cualquier empresa, use o no ese hardware: si el único freno del agente es su prompt, no hay freno.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Agente de IA trabajando dentro de un entorno aislado con políticas de acceso controladas desde fuera",
+    "slug": "articulo-2026-10-22-limites-del-agente-en-infraestructura.html",
+    "title": "El agente no se gobierna solo: sus límites van en la infraestructura"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Operaciones",
     "date": "2026-10-21",
     "excerpt": "El 20 de octubre de 2026, Infobae recogió la advertencia de Applying Consulting: si un agente de IA genera documentos o responde solicitudes más rápido, pero las áreas que revisan y aprueban mantienen sus tiempos, el trabajo solo se acumula en otro punto. Antes de sumar otro agente, hay que medir el proceso completo, de la solicitud al resultado.",
