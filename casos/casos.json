@@ -1,5 +1,25 @@
 [
   {
+    "slug": "fugas-datos-aseguradoras",
+    "date": "2026-10-22",
+    "title": "Aseguradoras: detectar la fuga de datos antes de que la anuncie el extorsionador",
+    "home_title": "Detectar la fuga de datos de una aseguradora antes de que la anuncie el extorsionador.",
+    "categoria": "Ciberseguridad",
+    "sector": "Seguros",
+    "problema": "Aseguradoras y corredores de seguros que no tienen mapeado dónde están los datos de sus clientes, corrigen vulnerabilidades por orden de llegada y no detectan a tiempo la extracción de información, de modo que se enteran de una fuga por terceros (como en el incidente reportado a la SBS en octubre de 2026)",
+    "servicio": "Ciberseguridad y detección de amenazas con IA",
+    "excerpt": "En octubre de 2026 una aseguradora peruana supo de la exposición de sus bases de datos por el correo de un tercero, y la SBS ya supervisa el caso. Con el 90 % de las empresas analizadas con al menos una vulnerabilidad crítica o alta, una oportunidad aplicable: priorización de vulnerabilidades y detección de exfiltración con IA, alineadas con el Reglamento SBS de ciberseguridad.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Ilustración de un caso de estudio, símbolo de la detección temprana de fugas de datos en una aseguradora",
+    "url": "oportunidad-2026-10-22-fugas-datos-aseguradoras.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://elcomercio.pe/economia/sbs-sobre-posible-filtracion-de-datos-de-interseguro-estamos-realizando-el-seguimiento-y-las-acciones-de-supervision-que-corresponden-noticia/",
+      "https://andina.pe/agencia/noticia-nueve-cada-10-empresas-tiene-al-menos-una-vulnerabilidad-frente-a-ciberdelincuentes-1095381.aspx",
+      "https://busquedas.elperuano.pe/dispositivo/NL/1929393-1"
+    ]
+  },
+  {
     "slug": "parada-anchoveta-plantas",
     "date": "2026-10-21",
     "title": "Plantas y flotas pesqueras: usar la parada larga de la anchoveta para llegar listos a 2027",
