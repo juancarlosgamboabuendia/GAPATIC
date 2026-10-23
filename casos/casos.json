@@ -1,5 +1,24 @@
 [
   {
+    "slug": "guia-remision-transporte-carga",
+    "date": "2026-10-23",
+    "title": "Transporte de carga: emitir la guía de remisión electrónica sin frenar al camión",
+    "home_title": "Emitir la guía de remisión electrónica del transportista sin frenar al camión.",
+    "categoria": "Productividad",
+    "sector": "Transporte y logística",
+    "problema": "Empresas de transporte de carga por carretera que digitan a mano cada guía de remisión electrónica a partir de órdenes dispersas (WhatsApp, correo, PDF), con errores que obligan a corregir y sin claridad sobre cuándo les toca emitir, mientras la SUNAT prorroga la no sanción solo hasta el 28 de febrero de 2027",
+    "servicio": "Automatización de procesos con IA",
+    "excerpt": "La SUNAT amplió hasta el 28 de febrero de 2027 el periodo en que no sanciona fallas en la guía de remisión electrónica del transportista: de unas 140 323 empresas de carga por carretera, solo 65 071 la habían emitido a diciembre de 2025. Una oportunidad aplicable: preparar y validar cada guía con IA a partir de los documentos que ya llegan, para cumplir sin sumar horas de digitación.",
+    "image": "images/case-study-retail-logistics.jpg",
+    "image_alt": "Ilustración de logística y transporte, símbolo de la emisión de guías de remisión electrónicas en una empresa de carga",
+    "url": "oportunidad-2026-10-23-guia-remision-transporte-carga.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://busquedas.elperuano.pe/dispositivo/NL/2530115-1",
+      "https://www.sunat.gob.pe/legislacion/superin/2026/000108-2026.pdf"
+    ]
+  },
+  {
     "slug": "fugas-datos-aseguradoras",
     "date": "2026-10-22",
     "title": "Aseguradoras: detectar la fuga de datos antes de que la anuncie el extorsionador",
