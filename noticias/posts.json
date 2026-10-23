@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-10-23",
+    "excerpt": "El 21 de octubre de 2026, la fintech Kira lanzó un servicio en el que un agente de IA prepara pagos internacionales a nombre de terceros: revisa la factura, reúne la documentación y elige la ruta bancaria, mientras su equipo de cumplimiento aprueba cada operación. Es la señal de lo que viene: agentes que mueven dinero. Antes de dejar que uno toque tus pagos, define qué puede preparar, qué puede ejecutar y quién firma.",
+    "image": "images/case-study-fintech-fraud.jpg",
+    "image_alt": "Agente de IA que prepara un pago internacional mientras una persona revisa y aprueba la operación",
+    "slug": "articulo-2026-10-23-agentes-que-pagan.html",
+    "title": "Agentes que pagan: el permiso para mover dinero lo firma una persona"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Infraestructura",
     "date": "2026-10-22",
     "excerpt": "El 21 de octubre de 2026, NVIDIA presentó una arquitectura de referencia para ejecutar agentes de IA en entornos aislados, con políticas de acceso que se aplican fuera del agente; BBVA y Santander se sumaron para explorarla. La idea sirve a cualquier empresa, use o no ese hardware: si el único freno del agente es su prompt, no hay freno.",
