@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Productividad",
+    "date": "2026-10-24",
+    "excerpt": "El 23 de octubre de 2026 se difundió la Encuesta del PROI Latam Squad: en el Perú, el 38% de las empresas medianas y grandes consultadas señala la resistencia de sus empleados como un desafío para implementar IA, frente a un promedio regional de 28%. Esa resistencia rara vez es rechazo a la tecnología. Casi siempre es una pregunta que nadie respondió: qué pasa con mi trabajo.",
+    "image": "images/blog-placeholder-2.jpg",
+    "image_alt": "Equipo de trabajo conversando con su jefatura sobre cómo cambiarán sus tareas con la inteligencia artificial",
+    "slug": "articulo-2026-10-24-resistencia-del-equipo-a-la-ia.html",
+    "title": "Resistencia del equipo a la IA: no es terquedad, es una pregunta sin responder"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Gobernanza",
     "date": "2026-10-23",
     "excerpt": "El 21 de octubre de 2026, la fintech Kira lanzó un servicio en el que un agente de IA prepara pagos internacionales a nombre de terceros: revisa la factura, reúne la documentación y elige la ruta bancaria, mientras su equipo de cumplimiento aprueba cada operación. Es la señal de lo que viene: agentes que mueven dinero. Antes de dejar que uno toque tus pagos, define qué puede preparar, qué puede ejecutar y quién firma.",
