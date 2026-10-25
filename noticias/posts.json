@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Estrategia",
+    "date": "2026-10-25",
+    "excerpt": "El Índice Latinoamericano de Inteligencia Artificial (ILIA) 2026, de la Cepal y el Cenia, presentado el 20 de octubre, estima que en la región usa IA el 27,6% de las grandes empresas, el 12,8% de las medianas y el 6,8% de las pequeñas. Para una pyme, la lectura útil no es que llega tarde, sino que no puede darse el lujo de empezar como una corporación.",
+    "image": "images/blog-ia-pymes.jpg",
+    "image_alt": "Dueña de una pequeña empresa revisando con su equipo un proceso que quiere apoyar con inteligencia artificial",
+    "slug": "articulo-2026-10-25-brecha-ia-pymes-ilia-2026.html",
+    "title": "La brecha de IA de las pymes: el tamaño no es el problema, el primer proceso sí"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Productividad",
     "date": "2026-10-24",
     "excerpt": "El 23 de octubre de 2026 se difundió la Encuesta del PROI Latam Squad: en el Perú, el 38% de las empresas medianas y grandes consultadas señala la resistencia de sus empleados como un desafío para implementar IA, frente a un promedio regional de 28%. Esa resistencia rara vez es rechazo a la tecnología. Casi siempre es una pregunta que nadie respondió: qué pasa con mi trabajo.",
