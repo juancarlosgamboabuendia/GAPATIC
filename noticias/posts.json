@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Operaciones",
+    "date": "2026-10-26",
+    "excerpt": "El 22 de octubre de 2026 Anthropic entregó el estándar abierto Agent Skills a la Agentic AI Foundation, de la Linux Foundation. Para una empresa, la noticia práctica es que el procedimiento que hoy le escribe a un agente puede llevarse mañana a otra herramienta, siempre que se escriba, se revise y se mantenga como cualquier otro documento de operación.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Equipo de operaciones documentando paso a paso un proceso que luego seguirá un agente de inteligencia artificial",
+    "slug": "articulo-2026-10-26-skills-procesos-portables.html",
+    "title": "Skills para agentes: el manual de tu proceso ya no es de un solo proveedor"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-10-25",
     "excerpt": "El Índice Latinoamericano de Inteligencia Artificial (ILIA) 2026, de la Cepal y el Cenia, presentado el 20 de octubre, estima que en la región usa IA el 27,6% de las grandes empresas, el 12,8% de las medianas y el 6,8% de las pequeñas. Para una pyme, la lectura útil no es que llega tarde, sino que no puede darse el lujo de empezar como una corporación.",
