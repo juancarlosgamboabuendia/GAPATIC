@@ -1,5 +1,24 @@
 [
   {
+    "slug": "cartera-minera-proveedores",
+    "date": "2026-10-26",
+    "title": "Proveedores mineros: decidir a qué proyectos de la cartera apostar antes de que salga la licitación",
+    "home_title": "Elegir a qué proyectos mineros apostar cuando el 70 % de la cartera aún no tiene fecha.",
+    "categoria": "Estrategia",
+    "sector": "Minería",
+    "problema": "Empresas peruanas de bienes y servicios para la minería que reparten su esfuerzo comercial y sus inversiones entre los 66 proyectos de la Cartera MINEM 2026 por intuición, aunque el 70,1 % del monto (US$ 44 910 millones) aún no tiene fecha de inicio, y se enteran tarde de los cambios de etapa, permisos y postergaciones",
+    "servicio": "Inteligencia comercial y estrategia con IA",
+    "excerpt": "La Cartera de Proyectos de Inversión Minera 2026 del MINEM suma 66 proyectos por US$ 64 075 millones, pero el 70,1 % de ese monto aún no tiene fecha de inicio. Para una empresa de bienes y servicios mineros, perseguir todos los proyectos a la vez agota al equipo comercial. Una oportunidad aplicable: usar IA para leer la cartera, seguir sus señales y decidir dónde y cuándo invertir el esfuerzo comercial.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Ilustración de un tablero de análisis con proyectos y regiones priorizados, símbolo de la estrategia comercial con IA para proveedores mineros",
+    "url": "oportunidad-2026-10-26-cartera-minera-proveedores.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://cdn.www.gob.pe/uploads/document/file/10173250/8277304-cpim-2026.pdf?v=1782158300",
+      "https://www.gob.pe/institucion/minem/noticias/1457561-minem-busca-acelerar-la-inversion-minera-y-fortalecer-la-formalizacion-de-la-pequena-mineria"
+    ]
+  },
+  {
     "slug": "interrupciones-red-telecom",
     "date": "2026-10-25",
     "title": "Operadoras de telecomunicaciones: saber por qué se cayó cada sitio antes de que llegue la compensación",
