@@ -1,5 +1,24 @@
 [
   {
+    "slug": "mantenimiento-redes-distribucion-electrica",
+    "date": "2026-10-27",
+    "title": "Distribuidoras eléctricas: decidir qué tramo de red mantener primero cuando empieza el nuevo VAD",
+    "home_title": "Mantener primero el tramo de red que más cortes evita, justo cuando arranca el VAD 2026-2030.",
+    "categoria": "Operaciones",
+    "sector": "Energía",
+    "problema": "Distribuidoras eléctricas peruanas del primer grupo del VAD 2026-2030 que planifican el mantenimiento preventivo de sus redes de media tensión por calendario y no por riesgo, aunque desde el 1 de noviembre de 2026 el SAIDI y el SAIFI pesan en un incentivo o penalidad de hasta 5 % del VAD de media tensión",
+    "servicio": "Analítica operativa y mantenimiento con IA",
+    "excerpt": "El 1 de noviembre de 2026 empieza el periodo de Valor Agregado de Distribución 2026-2030 para el primer grupo de distribuidoras, y la ley prevé un incentivo o penalidad de hasta 5 % del VAD de media tensión según el SAIDI y el SAIFI. Una oportunidad aplicable: usar IA para que la cuadrilla de mantenimiento vaya primero donde más interrupciones evita.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de un tablero de datos con tramos de red priorizados, símbolo del mantenimiento de redes de distribución eléctrica con IA",
+    "url": "oportunidad-2026-10-27-mantenimiento-redes-distribucion-electrica.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.osinergmin.gob.pe/Resoluciones/pdf/2026/Informe-Legal-505-2026-GRT.pdf",
+      "https://www.osinergmin.gob.pe/Resoluciones/pdf/2026/Osinergmin-014-2026-OS-CD.pdf"
+    ]
+  },
+  {
     "slug": "cartera-minera-proveedores",
     "date": "2026-10-26",
     "title": "Proveedores mineros: decidir a qué proyectos de la cartera apostar antes de que salga la licitación",
