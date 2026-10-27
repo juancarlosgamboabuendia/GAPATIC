@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Ciberseguridad",
+    "date": "2026-10-27",
+    "excerpt": "El 26 de octubre de 2026 Palo Alto Networks, Fortinet y Red Hat con NVIDIA anunciaron controles para agentes de IA dentro de productos que muchas empresas ya tienen: el antivirus de nueva generación, el firewall y la plataforma de nube. Antes de comprar una herramienta nueva para vigilar agentes, conviene saber qué puede hacer lo que ya pagas y qué decisiones siguen siendo tuyas.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Analista de seguridad revisando en una consola qué agentes de inteligencia artificial corren en los equipos de la empresa",
+    "slug": "articulo-2026-10-27-seguridad-de-agentes-en-tu-plataforma.html",
+    "title": "Seguridad para agentes de IA: pregunta primero a tu proveedor de siempre"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Operaciones",
     "date": "2026-10-26",
     "excerpt": "El 22 de octubre de 2026 Anthropic entregó el estándar abierto Agent Skills a la Agentic AI Foundation, de la Linux Foundation. Para una empresa, la noticia práctica es que el procedimiento que hoy le escribe a un agente puede llevarse mañana a otra herramienta, siempre que se escriba, se revise y se mantenga como cualquier otro documento de operación.",
