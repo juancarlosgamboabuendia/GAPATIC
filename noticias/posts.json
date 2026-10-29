@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Productividad",
+    "date": "2026-10-29",
+    "excerpt": "El 28 de octubre de 2026 ServiceNow presentó un plugin para completar sus flujos de trabajo desde ChatGPT y Prophecy lanzó DataGPT para hacer análisis de datos dentro de ChatGPT, Claude y Copilot. El chat se está volviendo la ventanilla desde la que se trabaja con los sistemas de la empresa. Antes de abrirla, conviene decidir qué se puede revisar, quién aprueba y dónde queda el registro.",
+    "image": "images/blog-placeholder-2.jpg",
+    "image_alt": "Analista revisando paso a paso el flujo de datos que un asistente de inteligencia artificial armó desde una conversación",
+    "slug": "articulo-2026-10-29-trabajo-desde-el-chat.html",
+    "title": "Trabajar desde el chat: cada resultado se debe poder revisar y cada acción, autorizar"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-10-28",
     "excerpt": "El 21 de octubre de 2026 OpenAI llevó ChatGPT Ads al Perú y a otros 13 países de América Latina. Para una empresa peruana abre un canal nuevo para aparecer cuando un cliente compara opciones, pero el anuncio va al costado de la respuesta, no dentro de ella. Antes de invertir, conviene saber qué responde hoy el asistente cuando alguien pregunta por tu rubro.",
