@@ -160,11 +160,11 @@ def home(items: list[dict]) -> str:
               <p class="case-sector case-cat">{e(it['categoria'])}</p>
             </header>
             <div class="case-body">
+              <p class="case-service">Sector: {e(it['sector'])} · Servicio: {e(it['servicio'])}</p>
               <h3>{e(it.get('home_title') or it['title'])}</h3>
               <p>{e(it['excerpt'])}</p>
               <span class="more-link">Ver oportunidad</span>
             </div>
-            <p class="case-service">Sector: {e(it['sector'])} · Servicio: {e(it['servicio'])}</p>
           </a>
 """)
     out.append("        ")

@@ -972,7 +972,7 @@ h2 {
   }
 
   .case-file {
-    grid-template-columns: 11.5rem minmax(0, 1fr) auto;
+    grid-template-columns: 11.25rem minmax(0, 1fr);
     gap: 1.5rem;
     align-items: start;
     padding: 1.5rem 1.5rem 1.4rem;
@@ -1962,3 +1962,13 @@ a.blog-card[hidden] { display: none; }
     margin-top: 0.5rem;
   }
 }
+
+/* Home oportunidades: sector/servicio dentro de la columna principal */
+.case-body .case-service {
+  max-width: none;
+  margin: 0 0 0.5rem;
+  border-top: none;
+  padding-top: 0;
+  overflow-wrap: anywhere;
+}
+.case-body { min-width: 0; }
