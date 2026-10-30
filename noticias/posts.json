@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Infraestructura",
+    "date": "2026-10-30",
+    "excerpt": "El 29 de octubre de 2026 Itaú Unibanco y GFT contaron cómo usan agentes de IA para llevar a la nube los procesos batch que corrían en mainframe, como cierres, liquidaciones y conciliaciones, con personas a cargo de la arquitectura y la gobernanza. Para cualquier empresa con un sistema antiguo que nadie se atreve a tocar, la lección es que el agente acelera entender y reescribir el código, pero la prueba de que el resultado cuadra sigue siendo trabajo del equipo.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Equipo de tecnología comparando los resultados de un proceso nocturno antiguo con su nueva versión en la nube",
+    "slug": "articulo-2026-10-30-migrar-el-batch-con-agentes.html",
+    "title": "Migrar el batch heredado con agentes de IA: el código se acelera, el cuadre lo firma tu equipo"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Productividad",
     "date": "2026-10-29",
     "excerpt": "El 28 de octubre de 2026 ServiceNow presentó un plugin para completar sus flujos de trabajo desde ChatGPT y Prophecy lanzó DataGPT para hacer análisis de datos dentro de ChatGPT, Claude y Copilot. El chat se está volviendo la ventanilla desde la que se trabaja con los sistemas de la empresa. Antes de abrirla, conviene decidir qué se puede revisar, quién aprueba y dónde queda el registro.",
