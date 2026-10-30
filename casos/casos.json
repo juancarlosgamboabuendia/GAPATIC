@@ -1,5 +1,24 @@
 [
   {
+    "slug": "oficial-datos-personales-fintech",
+    "date": "2026-10-30",
+    "title": "Fintech medianas: llegar al 30 de noviembre con Oficial de Datos Personales y un mapa real de los datos de sus clientes",
+    "home_title": "Tener Oficial de Datos Personales y un mapa de los datos de los clientes antes del 30 de noviembre.",
+    "categoria": "Gobernanza",
+    "sector": "Fintech",
+    "problema": "Fintech medianas peruanas (ventas de más de 1700 y hasta 2300 UIT) que tratan grandes volúmenes de datos personales y deben contar con Oficial de Datos Personales desde el 30 de noviembre de 2026, sin un inventario de dónde están los datos de sus clientes ni un protocolo para notificar incidentes en 48 horas",
+    "servicio": "Gobernanza de IA y cumplimiento",
+    "excerpt": "El Reglamento de la Ley 29733 obliga a las empresas medianas, con ventas de más de 1700 y hasta 2300 UIT, que tratan grandes volúmenes de datos personales o datos sensibles a contar con un Oficial de Datos Personales desde el 30 de noviembre de 2026, y a notificar ciertos incidentes en 48 horas. Una oportunidad aplicable: usar IA para inventariar dónde están los datos de los clientes y darle al nuevo oficial con qué trabajar desde el primer día.",
+    "image": "images/blog-etica-ia.jpg",
+    "image_alt": "Ilustración sobre ética y gobierno de la inteligencia artificial, símbolo de una fintech que ordena los datos personales de sus clientes",
+    "url": "oportunidad-2026-10-30-oficial-datos-personales-fintech.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://cdn.www.gob.pe/uploads/document/file/7756037/6554453-reglamento-de-la-ley-n-29733.pdf",
+      "https://www.prcp.com.pe/blog/el-universo-de-empresas-que-debe-designar-un-oficial-de-datos-personales-se-amplia/"
+    ]
+  },
+  {
     "slug": "matricula-2027-colegios-privados",
     "date": "2026-10-29",
     "title": "Colegios privados: preparar y responder la información de matrícula 2027 cuando el año escolar se cierra antes",
