@@ -1,5 +1,24 @@
 [
   {
+    "slug": "medicion-energia-agua-plantas-manufactura",
+    "date": "2026-10-31",
+    "title": "Plantas manufactureras: medir energía, agua y aire comprimido por línea antes de invertir en la próxima mejora",
+    "home_title": "Medir energía, agua y aire comprimido por línea antes de invertir en la próxima mejora.",
+    "categoria": "Infraestructura",
+    "sector": "Manufactura",
+    "problema": "Plantas manufactureras medianas que pagan un solo recibo de luz y agua por todo el local, sin medición por línea, máquina o servicio (compresores, calderas, frío), y que deciden sus inversiones en eficiencia sin línea base",
+    "servicio": "Datos e IA para operaciones industriales",
+    "excerpt": "PRODUCE reportó en junio de 2026 que 85 mejoras operativas en seis complejos industriales ahorraron 1105 MWh de electricidad y más de 113 mil metros cúbicos de agua, y la NTP 222.105:2025 ya pide a los parques industriales una mejora medible y verificable. Una oportunidad aplicable: usar medición y IA para saber qué línea consume qué, detectar desperdicios y priorizar las próximas inversiones con datos.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Imagen ilustrativa de una planta industrial, símbolo de una manufacturera que mide su consumo de energía, agua y aire comprimido por línea",
+    "url": "oportunidad-2026-10-31-medicion-energia-agua-plantas-manufactura.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/produce/noticias/1411575-iniciativas-sostenibles-logran-que-empresas-reincorporen-230-toneladas-de-materiales-al-ciclo-productivo-y-reduzcan-414-toneladas-de-co",
+      "https://www.gob.pe/institucion/inacal/noticias/1348012-inacal-aprueba-nueva-norma-tecnica-que-impulsa-la-transformacion-sostenible-de-los-parques-industriales-en-el-peru"
+    ]
+  },
+  {
     "slug": "oficial-datos-personales-fintech",
     "date": "2026-10-30",
     "title": "Fintech medianas: llegar al 30 de noviembre con Oficial de Datos Personales y un mapa real de los datos de sus clientes",
