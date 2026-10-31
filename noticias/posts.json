@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-10-31",
+    "excerpt": "Entre el 27 y el 30 de octubre de 2026 SAP, Oracle y Tencent presentaron agentes de IA que trabajan dentro del ERP y del CRM: consultan datos, arman operaciones y hasta las registran. Los tres pusieron el acento en lo mismo: contexto de negocio confiable, permisos por agente y registro de lo que hace. Para una empresa que usa cualquier sistema de gestión, el trabajo previo no es elegir el agente, sino dejar por escrito qué significa cada dato y qué puede tocar.",
+    "image": "images/case-study-placeholder-1.jpg",
+    "image_alt": "Equipo de finanzas y tecnología definiendo los conceptos y permisos que usará un agente de IA dentro del sistema de gestión de la empresa",
+    "slug": "articulo-2026-10-31-agentes-en-el-erp.html",
+    "title": "Agentes dentro del ERP: antes de darles acceso, escribe qué significa cada dato de tu negocio"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Infraestructura",
     "date": "2026-10-30",
     "excerpt": "El 29 de octubre de 2026 Itaú Unibanco y GFT contaron cómo usan agentes de IA para llevar a la nube los procesos batch que corrían en mainframe, como cierres, liquidaciones y conciliaciones, con personas a cargo de la arquitectura y la gobernanza. Para cualquier empresa con un sistema antiguo que nadie se atreve a tocar, la lección es que el agente acelera entender y reescribir el código, pero la prueba de que el resultado cuadra sigue siendo trabajo del equipo.",
