@@ -60,12 +60,16 @@ def replace_inner(doc: str, open_re: str, tag: str, new_inner: str) -> str:
     raise SystemExit(f"HTML mal formado alrededor de <{tag}>.")
 
 
+BASE_CATS = ("Ciberseguridad", "Estrategia", "Gobernanza", "Infraestructura", "Operaciones", "Productividad")
+
+
 def categorias() -> list[str]:
     """Categorías de Insights (noticias/posts.json), en orden de primera aparición."""
     posts = json.loads(POSTS.read_text(encoding="utf-8"))
     if isinstance(posts, dict):
         posts = posts.get("posts", [])
-    out: list[str] = []
+    # Base fija: Insights se poda cada mes, pero las categorías siguen vigentes.
+    out: list[str] = list(BASE_CATS)
     for p in posts:
         c = p.get("category")
         if c and c not in out:

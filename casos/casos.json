@@ -1,5 +1,24 @@
 [
   {
+    "slug": "diversificar-mercados-exportadores-confecciones",
+    "date": "2026-11-01",
+    "title": "Exportadoras de confecciones: decidir con datos a qué mercados ir más allá de Estados Unidos",
+    "home_title": "Decidir con datos a qué mercados ir más allá de Estados Unidos.",
+    "categoria": "Estrategia",
+    "sector": "Textil y confecciones",
+    "problema": "Exportadoras medianas de confecciones que dependen de Estados Unidos (64,2 % de los envíos de prendas en enero-agosto de 2026, con aranceles adicionales de 12,5 % desde julio) y eligen nuevos mercados por contactos o intuición, sin cruzar estadísticas de comercio exterior con sus márgenes por línea",
+    "servicio": "Inteligencia comercial con IA",
+    "excerpt": "Según ADEX, las exportaciones peruanas de prendas de vestir cayeron 5,7 % entre enero y agosto de 2026, a US$ 764,1 millones, y Estados Unidos, con aranceles adicionales de 12,5 % desde julio, concentra el 64,2 %. Una oportunidad aplicable: usar datos de comercio exterior e IA para elegir qué mercados y productos priorizar, en lugar de diversificar por intuición.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Ilustración de un caso de estudio, símbolo de una exportadora de confecciones que compara mercados de destino con datos",
+    "url": "oportunidad-2026-11-01-diversificar-mercados-exportadores-confecciones.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://forbes.pe/economia-y-finanzas/2026-10-13/exportacion-de-prendas-de-vestir-cayeron-57-entre-enero-y-agosto-impactada-por-aranceles-de-ee-uu/",
+      "https://www.atv.pe/noticia/exportaciones-textiles-peru-caen/"
+    ]
+  },
+  {
     "slug": "medicion-energia-agua-plantas-manufactura",
     "date": "2026-10-31",
     "title": "Plantas manufactureras: medir energía, agua y aire comprimido por línea antes de invertir en la próxima mejora",

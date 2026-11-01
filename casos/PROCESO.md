@@ -12,7 +12,7 @@ Fuente de verdad de edición: `/workspace/gapatic-ia`. Se sincroniza a `/workspa
 
 ## Pasos
 1. **Elegir categoría, luego sector y problema.** Leer `casos/casos.json`.
-   - **Categoría** (campo `categoria`, obligatorio): una de las categorías de Insights tal como aparecen en `noticias/posts.json` (hoy: Ciberseguridad, Estrategia, Gobernanza, Infraestructura, Operaciones, Productividad; si Insights añade otra, también vale). Rotar: **nunca la misma categoría que el item del día anterior**, y elegir la que tenga menos items en el catálogo (cobertura equilibrada); en empate, la usada hace más tiempo.
+   - **Categoría** (campo `categoria`, obligatorio): una de las categorías de Insights tal como aparecen en `noticias/posts.json` (hoy: Ciberseguridad, Estrategia, Gobernanza, Infraestructura, Operaciones, Productividad; si Insights añade otra, también vale; `rebuild.py` mantiene estas seis como base fija porque Insights se poda al cambiar de mes). Rotar: **nunca la misma categoría que el item del día anterior**, y elegir la que tenga menos items en el catálogo (cobertura equilibrada); en empate, la usada hace más tiempo.
    - **Sector peruano** (campo `sector`, detalle secundario): agroexportación, minería, retail/bodegas, fintech, logística, salud, educación, manufactura, construcción, pesca, banca/microfinanzas, sector público, turismo, energía, telecom, seguros. Evitar repetir el sector del día anterior.
    - **Problema** (campo `problema`): uno que no exista ya en el catálogo; la combinación categoría/sector/problema debe ser nueva y coherente (p. ej. Ciberseguridad + fintech: fraude Yape/Plin).
 2. **Investigar.** Buscar 1–2 fuentes públicas peruanas y abrirlas. Anotar URL, entidad y fecha.
