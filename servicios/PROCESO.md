@@ -36,3 +36,11 @@ Primera semana de cada mes (o antes si hay un lanzamiento grande de un proveedor
 - https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent · https://cursor.com/docs/cloud-agent
 - https://docs.x.ai/developers/models/grok-voice-3.0 · https://huggingface.co/NousResearch/Hermes-4-70B · https://groq.com/blog/the-official-llama-api-accelerated-by-groq
 - https://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/
+
+## Fuentes verificadas (noviembre 2026)
+- https://dev.meta.ai/resources/blog/build-with-muse-spark-open · https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B (Muse Spark Open, 15-oct-2026)
+- https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/ (Nemotron 3.5 Super VL, 15-oct-2026)
+- https://developers.openai.com/api/docs/changelog (Agents API: skills de hojas/presentaciones/Word, 16-oct-2026) · https://openai.com/index/devday-2026-recap/ (Agents API con computer use)
+- https://platform.claude.com/docs/en/release-notes/overview (7-oct-2026: clases beta de browser/computer use en los SDK; Haiku 5.5)
+- https://ai.google.dev/gemini-api/docs/latest-model (Gemini 4 Argon GA 13-oct-2026; Gemini Managed Agents)
+- https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/
