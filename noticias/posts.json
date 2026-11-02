@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Operaciones",
+    "date": "2026-11-02",
+    "excerpt": "El Índice Latinoamericano de Inteligencia Artificial 2026, de la CEPAL y el CENIA, muestra que en la región usan IA el 27,6% de las grandes empresas, el 12,8% de las medianas y solo el 6,8% de las pequeñas. Perú aparece con 52,7 puntos, en el grupo de adoptantes. Para una empresa pequeña o mediana, la salida no es comprar otra aplicación, sino elegir un proceso, ordenar sus datos y medir el resultado.",
+    "image": "images/blog-ia-pymes.jpg",
+    "image_alt": "Dueña de una pequeña empresa peruana revisando con su equipo un proceso antes de automatizarlo con IA",
+    "slug": "articulo-2026-11-02-ilia-2026-brecha-pymes.html",
+    "title": "ILIA 2026: la brecha de la IA está en las empresas pequeñas, y se cierra con procesos, no con más herramientas"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-11-01",
     "excerpt": "El 29 de octubre de 2026 Microsoft y el CENIA de Chile anunciaron una alianza para sostener Latam GPT, el modelo de lenguaje abierto creado en y para América Latina y el Caribe. Es una buena noticia para la región, y también una oportunidad para que cada empresa deje de elegir modelos por fama y empiece a elegirlos con una prueba hecha con sus propios textos, su jerga y sus casos.",
