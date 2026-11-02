@@ -1,5 +1,24 @@
 [
   {
+    "slug": "raciones-concesionarios-alimentos",
+    "date": "2026-11-02",
+    "title": "Concesionarios de alimentos: planificar raciones y compras por comedor para crecer sin multiplicar la merma",
+    "home_title": "Planificar raciones y compras por comedor para crecer sin multiplicar la merma.",
+    "categoria": "Operaciones",
+    "sector": "Restaurantes y concesionarios de alimentos",
+    "problema": "Concesionarios de alimentos que suman comedores en mineras, colegios, bancos, centros de salud y ministerios (impulsaron un alza de 3,00 % en agosto de 2026 según el INEI) y calculan raciones y compras a ojo en cada comedor, con merma y costo por ración que solo se conocen al cierre de mes",
+    "servicio": "Pronóstico de demanda y optimización de operaciones",
+    "excerpt": "Según el INEI, la actividad de restaurantes creció 4,61 % entre enero y agosto de 2026, y en agosto los concesionarios de alimentos impulsaron un alza de 3,00 % con nuevos contratos en mineras, colegios, bancos, centros de salud y ministerios. Una oportunidad aplicable: pronosticar asistencia por comedor con IA para comprar y cocinar lo justo.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Ilustración de consultoría en IA, símbolo de un concesionario de alimentos que planifica raciones por comedor con datos",
+    "url": "oportunidad-2026-11-02-raciones-concesionarios-alimentos.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/inei/noticias/1460686-actividad-de-restaurantes-reporto-alza-de-1-13-en-agosto-de-2026",
+      "https://cdn.www.gob.pe/uploads/document/file/10837160/8748339-boletin-del-sector-servicios-n-10-octubre-2026.pdf"
+    ]
+  },
+  {
     "slug": "diversificar-mercados-exportadores-confecciones",
     "date": "2026-11-01",
     "title": "Exportadoras de confecciones: decidir con datos a qué mercados ir más allá de Estados Unidos",
