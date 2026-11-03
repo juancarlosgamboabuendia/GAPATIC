@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Infraestructura",
+    "date": "2026-11-03",
+    "excerpt": "Un estudio de GFT Technologies entre 945 líderes de tecnología encontró que el 84% había cancelado algún piloto o proyecto de IA por las limitaciones de sus sistemas heredados. A la vez, bancos y aseguradoras de la región ya usan agentes de IA para acelerar justamente esa modernización, siempre con aprobación humana antes de tocar producción. La lección para una empresa peruana: empezar por inventariar y ordenar lo viejo, no por sumar pilotos encima.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Equipo de tecnología revisando un mapa de sistemas antiguos antes de migrarlos con ayuda de agentes de IA",
+    "slug": "articulo-2026-11-03-sistemas-heredados-agentes-ia.html",
+    "title": "Sistemas heredados y agentes de IA: moderniza primero lo que frena a la IA, con agentes que proponen y personas que aprueban"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Operaciones",
     "date": "2026-11-02",
     "excerpt": "El Índice Latinoamericano de Inteligencia Artificial 2026, de la CEPAL y el CENIA, muestra que en la región usan IA el 27,6% de las grandes empresas, el 12,8% de las medianas y solo el 6,8% de las pequeñas. Perú aparece con 52,7 puntos, en el grupo de adoptantes. Para una empresa pequeña o mediana, la salida no es comprar otra aplicación, sino elegir un proceso, ordenar sus datos y medir el resultado.",
