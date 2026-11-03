@@ -1,5 +1,24 @@
 [
   {
+    "slug": "correos-falsos-sunat-estudios-contables",
+    "date": "2026-11-03",
+    "title": "Estudios contables: detectar correos y mensajes falsos a nombre de la SUNAT antes de que alguien haga clic",
+    "home_title": "Detectar correos y mensajes falsos a nombre de la SUNAT antes de que alguien haga clic.",
+    "categoria": "Ciberseguridad",
+    "sector": "Servicios contables y tributarios",
+    "problema": "Estudios contables que reciben a diario correos, SMS y llamadas falsos a nombre de la SUNAT (embargos, multas, deudas) que buscan datos personales o tributarios, sin un filtro común ni contraste sistemático con el Buzón Electrónico SUNAT de cada cliente, y con claves de clientes en hojas de cálculo",
+    "servicio": "Ciberseguridad con IA y automatización de procesos",
+    "excerpt": "La SUNAT advierte que circulan llamadas, SMS y correos falsos que buscan datos personales o tributarios, y recuerda que su Buzón Electrónico es el único canal oficial de notificaciones. Una oportunidad aplicable: un filtro con IA que revisa el correo de un estudio contable y separa lo oficial de lo sospechoso.",
+    "image": "images/case-study-fintech-fraud.jpg",
+    "image_alt": "Ilustración sobre prevención de fraude, símbolo de un estudio contable que revisa correos sospechosos a nombre de la SUNAT",
+    "url": "oportunidad-2026-11-03-correos-falsos-sunat-estudios-contables.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/114269-alerta-sunat",
+      "https://www.sunat.gob.pe/mensajes/julio/2019/aviso-ti-250719.html"
+    ]
+  },
+  {
     "slug": "raciones-concesionarios-alimentos",
     "date": "2026-11-02",
     "title": "Concesionarios de alimentos: planificar raciones y compras por comedor para crecer sin multiplicar la merma",
