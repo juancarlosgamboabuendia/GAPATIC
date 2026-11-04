@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-11-04",
+    "excerpt": "El Reporte sobre la Preparación de la IA en América Latina 2026 de RSM, basado en 461 respuestas de líderes empresariales, encontró que el 68% de las organizaciones que ya usan IA planea escalarla en los próximos 12 meses, pero solo el 18% tiene un marco formal de gobernanza y el 17% una política de uso para sus colaboradores. Antes de ampliar licencias o pilotos, conviene escribir reglas cortas y claras: qué herramientas se pueden usar, con qué datos y quién revisa.",
+    "image": "images/blog-etica-ia.jpg",
+    "image_alt": "Equipo de una empresa peruana revisando en una reunión la política interna de uso de herramientas de IA",
+    "slug": "articulo-2026-11-04-politica-uso-ia-colaboradores.html",
+    "title": "Política de uso de IA para tu equipo: escalar sin reglas claras es el riesgo, no la herramienta"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Infraestructura",
     "date": "2026-11-03",
     "excerpt": "Un estudio de GFT Technologies entre 945 líderes de tecnología encontró que el 84% había cancelado algún piloto o proyecto de IA por las limitaciones de sus sistemas heredados. A la vez, bancos y aseguradoras de la región ya usan agentes de IA para acelerar justamente esa modernización, siempre con aprobación humana antes de tocar producción. La lección para una empresa peruana: empezar por inventariar y ordenar lo viejo, no por sumar pilotos encima.",
