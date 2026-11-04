@@ -1,5 +1,24 @@
 [
   {
+    "slug": "expedientes-despacho-agencias-aduana",
+    "date": "2026-11-04",
+    "title": "Agencias de aduana: armar el expediente de cada despacho sin volver a digitar facturas y documentos de embarque",
+    "home_title": "Armar el expediente de cada despacho sin volver a digitar facturas y documentos de embarque.",
+    "categoria": "Productividad",
+    "sector": "Agencias de aduana y comercio exterior",
+    "problema": "Agencias de aduana que transcriben a mano facturas, packing lists y documentos de embarque en formatos e idiomas distintos para armar cada expediente de despacho, y detectan tarde las diferencias entre documentos",
+    "servicio": "Automatización de procesos con IA",
+    "excerpt": "Según el INEI, en setiembre de 2026 el Perú importó 6,624 millones de dólares, 32.19% más que un año antes. Una oportunidad aplicable: un asistente con IA que lee facturas, packing lists y documentos de embarque y deja el expediente listo para que el especialista lo revise.",
+    "image": "images/case-study-retail-logistics.jpg",
+    "image_alt": "Ilustración de logística y carga, símbolo de una agencia de aduana que prepara expedientes de despacho",
+    "url": "oportunidad-2026-11-04-expedientes-despacho-agencias-aduana.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://andina.pe/agencia/noticia-inei-consumo-interno-cemento-subio-1222-setiembre-2026-1098149.aspx",
+      "https://www.gob.pe/institucion/inei/informes-publicaciones/8712942-evolucion-de-las-exportaciones-e-importaciones-agosto-2026"
+    ]
+  },
+  {
     "slug": "correos-falsos-sunat-estudios-contables",
     "date": "2026-11-03",
     "title": "Estudios contables: detectar correos y mensajes falsos a nombre de la SUNAT antes de que alguien haga clic",
