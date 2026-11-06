@@ -1,5 +1,24 @@
 [
   {
+    "slug": "scoring-ia-trazabilidad-cooperativas-ahorro-credito",
+    "date": "2026-11-06",
+    "title": "Cooperativas de ahorro y crédito: scoring con IA con trazabilidad, política de uso y registro de quién aprueba excepciones",
+    "home_title": "Scoring con IA con trazabilidad y registro de quién aprueba excepciones.",
+    "categoria": "Gobernanza",
+    "sector": "Cooperativas de ahorro y crédito",
+    "problema": "Cooperativas de ahorro y crédito que usan o planean modelos de scoring o IA para créditos sin trazabilidad, política de uso ni registro de quién aprueba excepciones, con riesgo de sesgo, reclamos y fiscalización SBS o Ley de datos personales",
+    "servicio": "Gobernanza de IA y cumplimiento",
+    "excerpt": "Al cierre de 2025 el Sistema Coopac tenía 230 cooperativas y una cartera bruta de S/ 9,676 millones, con más de 1.18 millones de deudores. Una oportunidad aplicable: gobernar el scoring con IA antes de ampliarlo, con trazabilidad, política de uso y registro de excepciones.",
+    "image": "images/blog-etica-ia.jpg",
+    "image_alt": "Ilustración sobre ética y gobernanza de IA, símbolo de una cooperativa que ordena el uso de scoring con trazabilidad",
+    "url": "oportunidad-2026-11-06-scoring-ia-trazabilidad-cooperativas-ahorro-credito.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.coopsrdelosmilagros.com/index.php/servicios/noticias/249-reporte-2026-i-hacia-el-fortalecimiento-del-sistema-cooperativo",
+      "https://andina.pe/agencia/noticia-sbs-aprueba-reglamento-sobre-gestion-del-riesgo-sobreendeudamiento-cooperativas-1092310.aspx"
+    ]
+  },
+  {
     "slug": "expedientes-despacho-agencias-aduana",
     "date": "2026-11-04",
     "title": "Agencias de aduana: armar el expediente de cada despacho sin volver a digitar facturas y documentos de embarque",
