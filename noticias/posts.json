@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Estrategia",
+    "date": "2026-11-05",
+    "excerpt": "El estudio AI Pulse Perú 2026 de EY ubica al mercado en Experimentación, con un Índice de Madurez en Inteligencia Artificial (IMIA) de 50.2 sobre 100. Solo el 8.3% de las organizaciones llega a Escalamiento o Liderazgo, y apenas el 7% usa agentes inteligentes en procesos productivos. La lección práctica: antes de comprar más herramientas, mide en qué proceso concreto la IA ya genera resultado y cierra la brecha de talento, datos y gobierno ahí.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Equipo de una empresa peruana revisando el avance real de sus proyectos de IA frente a los pilotos",
+    "slug": "articulo-2026-11-05-ai-pulse-peru-madurez-valor.html",
+    "title": "AI Pulse Perú 2026: tener IA no es lo mismo que sacar valor de ella"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Gobernanza",
     "date": "2026-11-04",
     "excerpt": "El Reporte sobre la Preparación de la IA en América Latina 2026 de RSM, basado en 461 respuestas de líderes empresariales, encontró que el 68% de las organizaciones que ya usan IA planea escalarla en los próximos 12 meses, pero solo el 18% tiene un marco formal de gobernanza y el 17% una política de uso para sus colaboradores. Antes de ampliar licencias o pilotos, conviene escribir reglas cortas y claras: qué herramientas se pueden usar, con qué datos y quién revisa.",
