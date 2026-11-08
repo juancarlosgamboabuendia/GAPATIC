@@ -1,5 +1,24 @@
 [
   {
+    "slug": "mercados-destino-exportadoras-cafe",
+    "date": "2026-11-08",
+    "title": "Cooperativas y exportadoras de café: decidir con datos a qué mercados vender, no solo al comprador de siempre",
+    "home_title": "Decidir con datos a qué mercados vender el café, no solo al comprador de siempre.",
+    "categoria": "Estrategia",
+    "sector": "Café y cooperativas cafetaleras",
+    "problema": "Cooperativas y mipymes exportadoras de café que eligen destinos y compradores por costumbre, sin cruzar las estadísticas de comercio exterior con el perfil de taza, las certificaciones y los márgenes de cada lote, mientras Estados Unidos crece y Alemania, uno de los dos grandes destinos, retrocede",
+    "servicio": "Inteligencia comercial con IA",
+    "excerpt": "Según el Mincetur, las exportaciones de café sumaron US$ 705 millones entre enero y agosto de 2026; más de 300 empresas exportan cada año y el 59 % son mipymes. ADEX detalla que Estados Unidos y Alemania concentran el 44 %: el primero creció 16,1 % y el segundo retrocedió 30,8 %. Una oportunidad aplicable: usar datos de comercio exterior e IA para elegir a qué mercados ir, en lugar de repetir al comprador de siempre.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Ilustración de consultoría en IA, símbolo de una cooperativa cafetalera que compara mercados de destino con datos",
+    "url": "oportunidad-2026-11-08-mercados-destino-exportadoras-cafe.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.elperuano.pe/noticia/306824-mincetur-exportaciones-de-cafe-ascendieron-a-us-705-millones-en-primeros-ocho-meses-del-2026",
+      "https://connuestroperu.com/economia/adex-agroexportaciones-peruanas-retroceden-de-enero-a-agosto-2026/"
+    ]
+  },
+  {
     "slug": "monitoreo-camaras-frio-almacenes-refrigerados",
     "date": "2026-11-07",
     "title": "Almacenes refrigerados: vigilar temperatura, energía y equipos de cada cámara de frío antes de que la merma aparezca",
