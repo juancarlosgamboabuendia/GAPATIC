@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Estrategia",
+    "date": "2026-11-08",
+    "excerpt": "Credicorp contó en octubre que tiene más de 100 casos de uso de IA en producción y otros 400 identificados, y que aproximadamente el 20% de esos casos concentra el 80% del valor generado. La lección para una empresa peruana que ya acumula pilotos y copilotos: medir cada caso con un número de negocio, poner la inversión en los pocos que mueven ingresos o costos, y tratar el resto como mejoras de productividad del día a día.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Equipo directivo de una empresa peruana revisando en una tabla el valor medido de cada caso de uso de IA",
+    "slug": "articulo-2026-11-08-portafolio-casos-ia-valor.html",
+    "title": "Muchos casos de IA, poco valor visible: mide cada uno, concentra recursos en los pocos que mueven el negocio y deja el resto como ayuda diaria"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Productividad",
     "date": "2026-11-07",
     "excerpt": "La Encuesta del PROI Latam Squad, publicada en octubre con 219 líderes de empresas medianas y grandes, encontró que en el Perú el 94% ya incorpora IA en procesos internos, pero que la resistencia de los colaboradores llega al 38%, por encima del promedio regional de 28%. La salida práctica no es imponer otra licencia: elegir con el equipo una tarea repetitiva que les quite tiempo, probarla juntos y medir cuánto les devuelve.",
