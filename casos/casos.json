@@ -1,5 +1,24 @@
 [
   {
+    "slug": "control-diario-galpones-granjas-pollo",
+    "date": "2026-11-09",
+    "title": "Granjas de pollo de engorde: ver a diario mortalidad, alimento y ambiente de cada galpón, no recién al cierre de la campaña",
+    "home_title": "Ver a diario mortalidad, alimento y ambiente de cada galpón, no al cierre de la campaña.",
+    "categoria": "Operaciones",
+    "sector": "Avicultura y granjas de pollo de engorde",
+    "problema": "Granjas medianas de pollo de engorde que registran mortalidad, consumo de alimento y agua, pesos y ambiente de cada galpón en cuadernos y hojas de cálculo, y conocen la conversión alimenticia y el costo por kilo recién al cierre de la campaña",
+    "servicio": "Analítica operativa con IA",
+    "excerpt": "Según el INEI, la producción de ave creció 1,7 % en agosto de 2026 por una mayor colocación de pollos BB, y Áncash, Arequipa, La Libertad y Lima concentraron el 85,8 % del total nacional. Una oportunidad aplicable: juntar en un tablero diario la mortalidad, el consumo de alimento y agua, el peso y el ambiente de cada galpón, para que la IA avise de un lote que se desvía antes de que se pierda la campaña.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e IA, símbolo de una granja avícola que sigue cada galpón con datos diarios",
+    "url": "oportunidad-2026-11-09-control-diario-galpones-granjas-pollo.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.agraria.pe/noticias/produccion-de-ave-crecio-1-7-en-agosto-del-2026-43382",
+      "https://www.agroperu.pe/sector-agropecuario-crecio-34-en-agosto-de-2026/"
+    ]
+  },
+  {
     "slug": "mercados-destino-exportadoras-cafe",
     "date": "2026-11-08",
     "title": "Cooperativas y exportadoras de café: decidir con datos a qué mercados vender, no solo al comprador de siempre",
