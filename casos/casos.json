@@ -1,5 +1,24 @@
 [
   {
+    "slug": "suplantacion-whatsapp-redes-notarias",
+    "date": "2026-11-10",
+    "title": "Notarías: detectar a tiempo los perfiles y números de WhatsApp que se hacen pasar por ellas y cobran trámites falsos",
+    "home_title": "Detectar a tiempo los perfiles y números falsos que cobran trámites en nombre de la notaría.",
+    "categoria": "Ciberseguridad",
+    "sector": "Notarías",
+    "problema": "Notarías cuyo nombre usan perfiles de redes sociales y números de WhatsApp falsos para ofrecer trámites en línea y cobrar por Yape, y que se enteran recién cuando un cliente llama a verificar o ya pagó",
+    "servicio": "Ciberseguridad y monitoreo de marca con IA",
+    "excerpt": "Entre enero y julio de 2026, el Ministerio Público registró 29 118 denuncias por delitos informáticos, 7431 de ellas por suplantación de identidad. Una oportunidad aplicable: que la notaría vigile con IA las redes y los números que usan su nombre, y dé a sus clientes un canal oficial para verificar cualquier oferta antes de pagar.",
+    "image": "images/case-study-fintech-fraud.jpg",
+    "image_alt": "Ilustración de prevención de fraude digital, símbolo de una notaría que vigila los perfiles falsos que usan su nombre",
+    "url": "oportunidad-2026-11-10-suplantacion-whatsapp-redes-notarias.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://andina.pe/agencia/noticia-fraude-informatico-lidera-los-ciberdelitos-peru-cinco-claves-para-proteger-tu-dinero-1092564.aspx",
+      "https://diariocorreo.pe/edicion/ica/ica-notaria-barnuevo-cuellar-advierte-sobre-suplantacion-en-redes-sociales-y-posibles-estafas-noticia/"
+    ]
+  },
+  {
     "slug": "control-diario-galpones-granjas-pollo",
     "date": "2026-11-09",
     "title": "Granjas de pollo de engorde: ver a diario mortalidad, alimento y ambiente de cada galpón, no recién al cierre de la campaña",
