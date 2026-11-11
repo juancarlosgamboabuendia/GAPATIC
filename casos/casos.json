@@ -1,5 +1,24 @@
 [
   {
+    "slug": "postventa-observaciones-entrega-inmobiliarias",
+    "date": "2026-11-11",
+    "title": "Inmobiliarias: ordenar con IA las observaciones de entrega y los pedidos de postventa para responder a tiempo y con el expediente completo",
+    "home_title": "Ordenar con IA las observaciones de entrega y la postventa para responder a tiempo y con el expediente completo.",
+    "categoria": "Productividad",
+    "sector": "Inmobiliarias",
+    "problema": "Inmobiliarias medianas que reciben observaciones de entrega, pedidos de garantía y consultas de compradores por WhatsApp, correo, llamadas y Libro de Reclamaciones sin un registro único por unidad, con documentos (partida, planos, garantías) dispersos entre áreas, en un sector que el Indecopi ubica como el segundo más sancionado en 2026",
+    "servicio": "Automatización de postventa con IA",
+    "excerpt": "En lo que va de 2026, el Indecopi impuso 269 sanciones al sector construcción e inmobiliario, sobre todo por falta de idoneidad e información insuficiente. Una oportunidad aplicable: que la inmobiliaria reúna con IA las observaciones de entrega, los pedidos de postventa y los documentos de cada unidad en un solo flujo, con plazos y responsables visibles.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Ilustración de desarrollo de IA, símbolo de una inmobiliaria que ordena sus observaciones de entrega y pedidos de postventa",
+    "url": "oportunidad-2026-11-11-postventa-observaciones-entrega-inmobiliarias.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/indecopi/noticias/1403059-indecopi-impone-mas-de-260-sanciones-en-el-sector-inmobiliario-por-infringir-derechos-de-los-consumidores",
+      "https://cdn.www.gob.pe/uploads/document/file/10420970/2190451-reporte-estadistico-del-indecopi-ii-trimestre-2026.pdf"
+    ]
+  },
+  {
     "slug": "suplantacion-whatsapp-redes-notarias",
     "date": "2026-11-10",
     "title": "Notarías: detectar a tiempo los perfiles y números de WhatsApp que se hacen pasar por ellas y cobran trámites falsos",
