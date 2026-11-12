@@ -1,5 +1,24 @@
 [
   {
+    "slug": "consentimiento-llamadas-comerciales-contact-centers",
+    "date": "2026-11-12",
+    "title": "Contact centers y televentas: probar con IA que cada llamada comercial tenía consentimiento, antes de marcar y no después del reclamo",
+    "home_title": "Probar con IA que cada llamada comercial tenía consentimiento, antes de marcar y no después del reclamo.",
+    "categoria": "Gobernanza",
+    "sector": "Contact centers y televentas",
+    "problema": "Contact centers de televentas y las empresas que los contratan (bancos, aseguradoras, telcos, retail) que llaman con bases de origen poco claro, sin un registro único del consentimiento ni de las bajas, revisando solo una muestra de audios y sumando voicebots sin reglas, cuando el Indecopi confirmó que tercerizar el call center no exime de responsabilidad",
+    "servicio": "Gobierno de datos y cumplimiento con IA",
+    "excerpt": "En agosto de 2026, el Indecopi confirmó una multa de 21,49 UIT a una aseguradora por llamadas comerciales a 1395 personas sin consentimiento acreditado, y recordó que tercerizar el call center no exime de responsabilidad. Una oportunidad aplicable: que el contact center y su cliente gobiernen con IA el consentimiento, la fuente de cada base y la revisión de los audios.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Ilustración de consultoría en IA, símbolo de un contact center que gobierna el consentimiento de sus llamadas comerciales",
+    "url": "oportunidad-2026-11-12-consentimiento-llamadas-comerciales-contact-centers.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.elperuano.pe/noticia/301866-call-centers-y-empresas-responden-por-llamadas-comerciales-indecopi-ratifica-criterio-sancionador",
+      "https://www.gob.pe/institucion/minjus/noticias/1137398-nuevo-reglamento-de-proteccion-de-datos-personales-refuerza-el-consentimiento-de-usuarios-para-recibir-llamadas-publicitarias"
+    ]
+  },
+  {
     "slug": "postventa-observaciones-entrega-inmobiliarias",
     "date": "2026-11-11",
     "title": "Inmobiliarias: ordenar con IA las observaciones de entrega y los pedidos de postventa para responder a tiempo y con el expediente completo",
