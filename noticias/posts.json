@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Infraestructura",
+    "date": "2026-11-12",
+    "excerpt": "BCG publicó el 10 de noviembre que el 85% de las empresas tecnológicas de América Latina que analizó ya usa agentes de IA en producción, pero solo el 22% valida su impacto financiero, y señala la gestión rigurosa de los costos de la IA generativa como condición para escalar. Para una empresa peruana la lección es concreta: licencias, consumo por uso y nube ya forman una cuenta propia que hay que mirar cada mes, caso por caso, con un responsable.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Equipo de tecnología y finanzas de una empresa peruana revisando el gasto mensual en herramientas de IA por área",
+    "slug": "articulo-2026-11-12-costos-ia-consumo-licencias.html",
+    "title": "El gasto en IA también se administra: sabe cuánto cuesta cada uso, quién lo consume y apaga lo que no rinde"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Gobernanza",
     "date": "2026-11-11",
     "excerpt": "Un estudio de Mandü con 226 líderes de Recursos Humanos de Perú y Argentina, publicado por Infobae el 8 de noviembre, muestra que la IA ya se usa sobre todo para reclutar, seleccionar y analizar datos de personal, pero que solo el 15% la emplea dentro de su propia plataforma de gestión de personas; el resto trabaja con herramientas de uso general. La lección práctica: antes de pegar un CV o una evaluación en un chat, define qué datos pueden salir, con qué cuenta y quién responde por la decisión.",
