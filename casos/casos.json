@@ -1,5 +1,24 @@
 [
   {
+    "slug": "inspeccion-vial-video-conservacion-carreteras",
+    "date": "2026-11-13",
+    "title": "Conservación vial: inventariar con IA el estado de cada kilómetro desde el video de una camioneta, no con recorridos a pie y planillas",
+    "home_title": "Inventariar con IA el estado de cada kilómetro de carretera desde el video de una camioneta.",
+    "categoria": "Infraestructura",
+    "sector": "Conservación vial y mantenimiento de carreteras",
+    "problema": "Empresas de conservación vial y unidades de gobiernos regionales y municipalidades que inventarían baches, cunetas obstruidas, señales dañadas y derrumbes recorriendo la vía con planillas y fotos sueltas, sin ubicación exacta ni comparación entre inspecciones, en contratos de conservación por niveles de servicio",
+    "servicio": "Visión por computadora e IA aplicada",
+    "excerpt": "Para 2026, el presupuesto público asignó más de S/ 537 millones al mantenimiento rutinario y periódico de unos 42 mil kilómetros de vías departamentales y vecinales, y buena parte de la conservación se contrata por niveles de servicio. Una oportunidad aplicable: que las empresas de conservación vial detecten y ubiquen con IA baches, cunetas obstruidas y señales dañadas a partir del video de sus recorridos.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e IA, símbolo de un inventario del estado de las carreteras hecho a partir de video",
+    "url": "oportunidad-2026-11-13-inspeccion-vial-video-conservacion-carreteras.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/mtc/noticias/1347578-mtc-garantiza-mantenimiento-de-42-mil-kilometros-de-vias-mediante-convenios-con-gobiernos-regionales-y-locales",
+      "https://www.gob.pe/institucion/mtc/noticias/1387578-mtc-mejoro-mas-de-1700-kilometros-de-carreteras-de-nueve-regiones-mediante-proregion"
+    ]
+  },
+  {
     "slug": "consentimiento-llamadas-comerciales-contact-centers",
     "date": "2026-11-12",
     "title": "Contact centers y televentas: probar con IA que cada llamada comercial tenía consentimiento, antes de marcar y no después del reclamo",
