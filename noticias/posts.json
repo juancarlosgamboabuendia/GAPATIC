@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Operaciones",
+    "date": "2026-11-13",
+    "excerpt": "ENFEN mantiene la Alerta de El Niño Costero y, en su comunicado del 30 de octubre, prevé lluvias por encima de lo normal en la costa norte, la costa central y la sierra occidental hasta enero, con caudales altos que desde diciembre llegarían al Chillón, el Rímac y el Lurín. Para una empresa peruana, la IA no detiene un huaico, pero sí ayuda a cruzar esos avisos con rutas, almacenes, pedidos y turnos para decidir antes y no durante la emergencia.",
+    "image": "images/case-study-retail-logistics.jpg",
+    "image_alt": "Equipo de operaciones de una empresa peruana revisando en un tablero los avisos de lluvias junto a rutas, almacenes y pedidos",
+    "slug": "articulo-2026-11-13-el-nino-datos-climaticos-operacion.html",
+    "title": "El Niño costero sigue en alerta: cruza los avisos climáticos con tu operación para anticipar cortes de ruta, stock y personal"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Infraestructura",
     "date": "2026-11-12",
     "excerpt": "BCG publicó el 10 de noviembre que el 85% de las empresas tecnológicas de América Latina que analizó ya usa agentes de IA en producción, pero solo el 22% valida su impacto financiero, y señala la gestión rigurosa de los costos de la IA generativa como condición para escalar. Para una empresa peruana la lección es concreta: licencias, consumo por uso y nube ya forman una cuenta propia que hay que mirar cada mes, caso por caso, con un responsable.",
