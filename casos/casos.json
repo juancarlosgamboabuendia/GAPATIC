@@ -1,5 +1,25 @@
 [
   {
+    "slug": "exportacion-pisco-mercados-bodegas",
+    "date": "2026-11-14",
+    "title": "Bodegas pisqueras: elegir con IA a qué mercado exportar y con qué propuesta, cuando los envíos caen y la producción sube",
+    "home_title": "Elegir con IA a qué mercado exportar pisco cuando los envíos caen y la producción sube.",
+    "categoria": "Estrategia",
+    "sector": "Pisco y bodegas vitivinícolas",
+    "problema": "Bodegas pisqueras medianas y pequeñas que eligen mercados de exportación y propuesta de producto por intuición, contactos y ferias, sin cruzar los datos públicos de exportación por destino con sus costos y capacidad, en un año en que los envíos caen y la producción crece",
+    "servicio": "Analítica de datos y estrategia con IA",
+    "excerpt": "En el primer semestre de 2026 las exportaciones de pisco bajaron 23,68 % en valor mientras la producción nacional de enero a mayo creció 24,28 %. Una oportunidad aplicable: que las bodegas pisqueras crucen con IA los datos públicos de exportación, las señales de demanda y sus propios costos para decidir a qué mercados apostar y con qué producto.",
+    "image": "images/blog-ia-pymes.jpg",
+    "image_alt": "Ilustración de IA para empresas, símbolo de una bodega pisquera que decide sus mercados de exportación con datos",
+    "url": "oportunidad-2026-11-14-exportacion-pisco-mercados-bodegas.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://andina.pe/agencia/noticia-exportaciones-pisco-crecieron-12-2025-y-sumaron-95-millones-1062005.aspx",
+      "https://www.infobae.com/peru/2026/07/26/trago-amargo-eeuu-paises-bajos-espana-y-japon-dejan-de-tomar-pisco-y-exportaciones-se-hunden-246-este-ano/",
+      "https://exportemos.pe/descubre-oportunidades-de-exportacion/producto/2208202100"
+    ]
+  },
+  {
     "slug": "inspeccion-vial-video-conservacion-carreteras",
     "date": "2026-11-13",
     "title": "Conservación vial: inventariar con IA el estado de cada kilómetro desde el video de una camioneta, no con recorridos a pie y planillas",
