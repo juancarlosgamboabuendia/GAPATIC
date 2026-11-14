@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Productividad",
+    "date": "2026-11-14",
+    "excerpt": "El estudio Work:InProgress de Google Cloud, IDC y Provokers encontró que el 44% de los profesionales de cinco países de la región usa con regularidad agentes de IA que su empresa no le dio, y que la mayoría no identifica casos de uso ni una política clara. Ese uso por cuenta propia es una señal de demanda: la tarea es darle un cauce oficial que se integre al trabajo diario, con datos protegidos y resultados medibles.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Colaboradores de una empresa trabajando con un asistente de IA corporativo integrado a sus herramientas de trabajo",
+    "slug": "articulo-2026-11-14-shadow-ai-agentes-equipo-herramienta-oficial.html",
+    "title": "Tu equipo ya usa agentes de IA por su cuenta: convierte ese uso en productividad con una herramienta oficial, casos claros y capacitación"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Operaciones",
     "date": "2026-11-13",
     "excerpt": "ENFEN mantiene la Alerta de El Niño Costero y, en su comunicado del 30 de octubre, prevé lluvias por encima de lo normal en la costa norte, la costa central y la sierra occidental hasta enero, con caudales altos que desde diciembre llegarían al Chillón, el Rímac y el Lurín. Para una empresa peruana, la IA no detiene un huaico, pero sí ayuda a cruzar esos avisos con rutas, almacenes, pedidos y turnos para decidir antes y no durante la emergencia.",
