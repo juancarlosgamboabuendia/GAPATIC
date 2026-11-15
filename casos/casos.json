@@ -1,5 +1,24 @@
 [
   {
+    "slug": "vencimientos-lotes-registro-sanitario-boticas",
+    "date": "2026-11-15",
+    "title": "Boticas y farmacias: controlar con IA vencimientos, lotes y registro sanitario del inventario, antes de que llegue la inspección",
+    "home_title": "Controlar con IA vencimientos, lotes y registro sanitario en boticas antes de la inspección.",
+    "categoria": "Operaciones",
+    "sector": "Farmacias y boticas",
+    "problema": "Boticas y farmacias independientes o pequeñas cadenas que controlan vencimientos, lotes y registro sanitario de miles de productos a mano, con riesgo de cierre en las inspecciones de Digemid por medicamentos vencidos o sin registro",
+    "servicio": "Automatización de procesos con IA",
+    "excerpt": "Desde noviembre de 2025, Digemid y las autoridades regionales de salud inspeccionaron 2272 farmacias y boticas en todo el país y cerraron 666 por irregularidades como medicamentos vencidos o sin registro sanitario. Una oportunidad aplicable: que las boticas crucen con IA su inventario, sus compras y sus lotes para retirar a tiempo lo que vence y comprar solo a proveedores y productos en regla.",
+    "image": "images/case-study-retail-logistics.jpg",
+    "image_alt": "Ilustración de inventario y logística, símbolo de una botica que controla con datos los vencimientos y lotes de sus medicamentos",
+    "url": "oportunidad-2026-11-15-vencimientos-lotes-registro-sanitario-boticas.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.digemid.minsa.gob.pe/webDigemid/notas/2026/mas-de-dos-mil-farmacias-y-boticas-fueron-intervenidas-en-la-lucha-contra-el-comercio-ilegal-de-medicamentos/",
+      "https://andina.pe/agencia/noticia-minsa-cierra-18-boticas-durante-operativo-contra-medicamentos-vencidos-1086435.aspx"
+    ]
+  },
+  {
     "slug": "exportacion-pisco-mercados-bodegas",
     "date": "2026-11-14",
     "title": "Bodegas pisqueras: elegir con IA a qué mercado exportar y con qué propuesta, cuando los envíos caen y la producción sube",
