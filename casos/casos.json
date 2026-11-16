@@ -1,5 +1,25 @@
 [
   {
+    "slug": "cambio-cuenta-pago-correo-estudios-abogados",
+    "date": "2026-11-16",
+    "title": "Estudios de abogados: detectar con IA el correo que cambia la cuenta de pago o suplanta al socio, antes de que el cliente transfiera",
+    "home_title": "Detectar con IA el correo que cambia la cuenta de pago o suplanta al socio del estudio.",
+    "categoria": "Ciberseguridad",
+    "sector": "Estudios de abogados",
+    "problema": "Estudios de abogados medianos cuyos correos con instrucciones de pago (honorarios, cierres, consignaciones, transacciones) pueden ser interceptados o suplantados para cambiar la cuenta de destino, sin un registro de cuentas oficiales ni verificación por otro canal antes de transferir",
+    "servicio": "Ciberseguridad y detección de fraude con IA",
+    "excerpt": "Según El Comercio, el Perú registró 748,2 millones de intentos de ciberataques en el primer semestre de 2025, y crece el fraude por correo empresarial (BEC), que pide cambiar cuentas bancarias o hacer transferencias urgentes. Una oportunidad aplicable: que el estudio de abogados revise con IA los correos con instrucciones de pago y confirme cada cambio por un canal independiente antes de que el cliente o la firma transfiera.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Ilustración de un escudo digital, símbolo de un estudio de abogados que protege sus correos e instrucciones de pago",
+    "url": "oportunidad-2026-11-16-cambio-cuenta-pago-correo-estudios-abogados.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://elcomercio.pe/tecnologia/ciberseguridad/en-plena-ola-de-ciberataques-el-fraude-que-engana-a-las-empresas-por-correo-electronico-crece-en-peru-noticia/",
+      "https://www.elperuano.pe/noticia/298918-mypes-pautas-para-evitar-caer-en-estafas-de-falsos-proveedores",
+      "https://www.gob.pe/institucion/minjus/noticias/1125784-minjusdh-realiza-acciones-de-fiscalizaci-n-al-colegio-de-abogados-de-lima-por-ataque-cibern-tico-a-su-base-de-datos-y-denuncia-de-agremiada"
+    ]
+  },
+  {
     "slug": "vencimientos-lotes-registro-sanitario-boticas",
     "date": "2026-11-15",
     "title": "Boticas y farmacias: controlar con IA vencimientos, lotes y registro sanitario del inventario, antes de que llegue la inspección",
