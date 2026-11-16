@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Ciberseguridad",
+    "date": "2026-11-16",
+    "excerpt": "Kaspersky y Unit 42 de Palo Alto Networks documentaron en América Latina intrusiones donde un agente de IA ejecuta el ataque y el operador solo fija el objetivo: en un caso, el robo de credenciales y bases de datos se completó en menos de una hora. Las técnicas siguen siendo conocidas; lo que cambió es la velocidad, y eso obliga a revisar cuánto tarda tu empresa en notar algo raro y quién actúa de noche.",
+    "image": "images/case-study-fintech-fraud.jpg",
+    "image_alt": "Red de sistemas conectados con alertas en rojo supervisadas por una inteligencia artificial",
+    "slug": "articulo-2026-11-16-ciberataques-ia-deteccion-fuera-de-horario.html",
+    "title": "Ciberataques con IA que avanzan en horas: vigila comportamientos, cuida las cuentas con más permisos y decide quién responde fuera de horario"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-11-15",
     "excerpt": "Meta lanzó en México Muse, un asistente que compara precios y completa compras con aprobación del usuario, y ya trabaja con comercios como Rappi, Walmart, Liverpool y Coppel, mientras Amazon le cerró el acceso. Para un comercio latinoamericano la decisión práctica no es tecnológica: es si quiere ser encontrado por estos agentes, con qué datos y con qué reglas.",
