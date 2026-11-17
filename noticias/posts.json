@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Estrategia",
+    "date": "2026-11-17",
+    "excerpt": "OpenAI habilitó la contratación de anuncios en ChatGPT para 14 países de América Latina, Perú incluido, con un revendedor local, facturación en moneda de cada país y soporte en español. Para una empresa peruana la pregunta no es si comprar el espacio, sino qué dice hoy la IA de su marca, qué pregunta de cliente quiere atender y cómo sabrá si el anuncio funcionó.",
+    "image": "images/blog-ia-generativa.jpg",
+    "image_alt": "Persona conversando con un asistente de inteligencia artificial en la pantalla de una laptop",
+    "slug": "articulo-2026-11-17-chatgpt-ads-peru-marcas-publicidad-ia.html",
+    "title": "Publicidad dentro de ChatGPT llega al Perú: antes de pautar, revisa cómo la IA ya describe tu marca y define qué vas a medir"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Ciberseguridad",
     "date": "2026-11-16",
     "excerpt": "Kaspersky y Unit 42 de Palo Alto Networks documentaron en América Latina intrusiones donde un agente de IA ejecuta el ataque y el operador solo fija el objetivo: en un caso, el robo de credenciales y bases de datos se completó en menos de una hora. Las técnicas siguen siendo conocidas; lo que cambió es la velocidad, y eso obliga a revisar cuánto tarda tu empresa en notar algo raro y quién actúa de noche.",
