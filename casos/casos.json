@@ -1,5 +1,24 @@
 [
   {
+    "slug": "cotizaciones-whatsapp-listas-ferreterias",
+    "date": "2026-11-17",
+    "title": "Ferreterías: convertir con IA la foto de la lista del maestro de obra en una cotización con precio y stock, en minutos y no al final del día",
+    "home_title": "Convertir con IA la foto de la lista del maestro de obra en una cotización con precio y stock.",
+    "categoria": "Productividad",
+    "sector": "Ferreterías y distribuidoras de materiales de construcción",
+    "problema": "Ferreterías y distribuidoras que reciben por WhatsApp listas de materiales de maestros de obra y contratistas como fotos manuscritas, audios o textos con nombres coloquiales, y las transcriben a mano para buscar códigos, precios, descuentos y stock antes de cotizar, mientras atienden el mostrador",
+    "servicio": "Automatización de procesos con IA",
+    "excerpt": "Según un estudio de Total Market Solutions citado por Gestión, el 72,1% de las compras frecuentes de materiales de los maestros de obra en Lima Norte se hace en ferreterías locales, y en Lima hay unos 6.000 puntos de venta entre ferreterías y depósitos. Una oportunidad aplicable: que la ferretería lea con IA las listas que llegan por WhatsApp (fotos, audios, textos), las cruce con su catálogo, precios y stock, y deje lista la cotización para que el vendedor solo la revise y la envíe.",
+    "image": "images/placeholder-desarrollo-ia.jpg",
+    "image_alt": "Ilustración de desarrollo de IA, símbolo de una ferretería que convierte en cotizaciones las listas de materiales que recibe por WhatsApp",
+    "url": "oportunidad-2026-11-17-cotizaciones-whatsapp-listas-ferreterias.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://gestion.pe/economia/empresas/maestros-de-obras-definen-compras-clave-en-autoconstruccion-pero-que-los-influye-noticia/",
+      "https://elcomercio.pe/economia/dia-1/progresol-proyecta-crecer-cerca-de-3-en-2027-y-prioriza-fortalecer-su-red-actual-noticia/"
+    ]
+  },
+  {
     "slug": "cambio-cuenta-pago-correo-estudios-abogados",
     "date": "2026-11-16",
     "title": "Estudios de abogados: detectar con IA el correo que cambia la cuenta de pago o suplanta al socio, antes de que el cliente transfiera",
