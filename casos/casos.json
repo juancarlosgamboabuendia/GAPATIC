@@ -1,5 +1,25 @@
 [
   {
+    "slug": "filtro-cv-ia-alto-riesgo-reclutamiento",
+    "date": "2026-11-18",
+    "title": "Consultoras de reclutamiento: usar IA para filtrar CV sin perder el control, con criterios explicables, revisión humana y registro de cada decisión",
+    "home_title": "Usar IA para filtrar CV sin perder el control: criterios explicables, revisión humana y registro.",
+    "categoria": "Gobernanza",
+    "sector": "Consultoras de reclutamiento y selección de personal",
+    "problema": "Consultoras de reclutamiento y áreas de selección que ya usan IA para preseleccionar o puntuar candidatos (portales, asistentes generativos, pruebas en línea) sin inventario de herramientas, criterios escritos, revisión humana de los descartes ni registro de decisiones, pese a que el Reglamento de la Ley 31814 trata ese uso como de riesgo alto",
+    "servicio": "Gobernanza y adopción responsable de IA",
+    "excerpt": "Según el estudio Reclutamiento y Postulación Digital de Bumeran, citado por Infobae, el 58% de los especialistas de Recursos Humanos en Perú ya usa IA en la selección de personal, y el Reglamento de la Ley 31814 clasifica como de riesgo alto el uso de IA para seleccionar, evaluar, contratar o cesar trabajadores. Una oportunidad aplicable: que la consultora ordene cómo usa la IA en el filtro de candidatos, con criterios que pueda explicar, supervisión humana en cada descarte y un registro listo para responder a clientes y postulantes.",
+    "image": "images/blog-etica-ia.jpg",
+    "image_alt": "Ilustración sobre ética en IA, símbolo de una consultora de reclutamiento que gobierna el uso de IA para filtrar candidatos",
+    "url": "oportunidad-2026-11-18-filtro-cv-ia-alto-riesgo-reclutamiento.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.infobae.com/peru/2026/10/10/el-58-de-especialistas-de-recursos-humanos-en-peru-ya-utiliza-inteligencia-artificial-para-reclutar-personal-como/",
+      "https://gestion.pe/peru/boom-de-contrataciones-solo-la-mitad-de-empresas-esta-lista-para-gestionar-talento-con-datos-noticia/",
+      "https://www.gob.pe/110225-clasificacion-de-la-ia-en-el-peru"
+    ]
+  },
+  {
     "slug": "cotizaciones-whatsapp-listas-ferreterias",
     "date": "2026-11-17",
     "title": "Ferreterías: convertir con IA la foto de la lista del maestro de obra en una cotización con precio y stock, en minutos y no al final del día",
