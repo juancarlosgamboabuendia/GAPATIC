@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-11-18",
+    "excerpt": "La SIC de Colombia adoptó los Estándares Iberoamericanos sobre el Uso de Datos Personales en Sistemas de Inteligencia Artificial, aprobados por la Red Iberoamericana de Protección de Datos. El mensaje sirve para cualquier empresa de la región: un dato público no basta para entrenar o alimentar un modelo, usar IA de un proveedor no traslada la responsabilidad y decir \"usamos IA\" no es informar.",
+    "image": "images/blog-etica-ia.jpg",
+    "image_alt": "Equipo de una empresa revisando qué datos personales entran a sus herramientas de IA y con qué base legal",
+    "slug": "articulo-2026-11-18-datos-personales-ia-estandares-iberoamericanos.html",
+    "title": "Datos personales en tus sistemas de IA: que un dato esté en internet no te autoriza a usarlo, y contratar la herramienta no te quita la responsabilidad"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-11-17",
     "excerpt": "OpenAI habilitó la contratación de anuncios en ChatGPT para 14 países de América Latina, Perú incluido, con un revendedor local, facturación en moneda de cada país y soporte en español. Para una empresa peruana la pregunta no es si comprar el espacio, sino qué dice hoy la IA de su marca, qué pregunta de cliente quiere atender y cómo sabrá si el anuncio funcionó.",
