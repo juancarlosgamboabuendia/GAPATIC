@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Infraestructura",
+    "date": "2026-11-19",
+    "excerpt": "AWS abrió su primera región de nube en Chile y anunció que reducirá el tiempo de respuesta para usuarios del Perú y otros países vecinos, y el 18 de noviembre Cirion lanzó Datrix, su negocio de centros de datos con presencia en seis países, Perú incluido. Más opciones cerca obligan a una empresa peruana a decidir con criterio dónde guarda sus datos y dónde ejecuta sus modelos de IA.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Infraestructura de servidores en un centro de datos que aloja aplicaciones y modelos de inteligencia artificial",
+    "slug": "articulo-2026-11-19-region-nube-datos-ia-latam.html",
+    "title": "Más nube y centros de datos en la región: decide dónde viven tus datos y dónde corre tu IA por regulación, latencia y costo, no por costumbre"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Gobernanza",
     "date": "2026-11-18",
     "excerpt": "La SIC de Colombia adoptó los Estándares Iberoamericanos sobre el Uso de Datos Personales en Sistemas de Inteligencia Artificial, aprobados por la Red Iberoamericana de Protección de Datos. El mensaje sirve para cualquier empresa de la región: un dato público no basta para entrenar o alimentar un modelo, usar IA de un proveedor no traslada la responsabilidad y decir \"usamos IA\" no es informar.",
