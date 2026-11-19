@@ -1,5 +1,25 @@
 [
   {
+    "slug": "riesgo-electrico-incendios-mercados-abastos",
+    "date": "2026-11-19",
+    "title": "Mercados de abastos: priorizar con IA el riesgo eléctrico puesto por puesto, antes de que un cortocircuito cierre el mercado",
+    "home_title": "Priorizar con IA el riesgo eléctrico de cada puesto del mercado, antes del cortocircuito.",
+    "categoria": "Infraestructura",
+    "sector": "Mercados de abastos",
+    "problema": "Asociaciones y cooperativas que administran mercados de abastos con instalaciones eléctricas antiguas y compartidas (cables mellizos, tableros sin llave diferencial, conexiones improvisadas) que no saben qué puestos y circuitos son los más riesgosos ni hacen seguimiento a las observaciones de la ITSE, y se enteran recién con un cortocircuito, un incendio o un cierre municipal",
+    "servicio": "Analítica de riesgo de infraestructura con IA",
+    "excerpt": "Según el Censo Nacional de Mercados de Abastos del INEI, el Perú tiene 2612 mercados con unos 328 946 puestos fijos, y en 2026 se repiten los incendios y cierres por cables mellizos, tableros deficientes y falta de llaves diferenciales. Una oportunidad aplicable: que la directiva del mercado convierta fotos, inspecciones y recibos de luz en un mapa de riesgo eléctrico por puesto y un plan de subsanación priorizado.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e IA, símbolo de un mercado de abastos que prioriza su riesgo eléctrico puesto por puesto",
+    "url": "oportunidad-2026-11-19-riesgo-electrico-incendios-mercados-abastos.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1448/libro.pdf",
+      "https://www.gob.pe/institucion/munitrujillo/noticias/1445433-aun-hay-riesgo-electrico-en-el-mercado-central",
+      "https://diariocorreo.pe/edicion/ica/pisco-cables-mellizos-causan-voraz-incendio-que-arraso-con-puestos-en-el-mercado-ferial-n-1-noticia/"
+    ]
+  },
+  {
     "slug": "filtro-cv-ia-alto-riesgo-reclutamiento",
     "date": "2026-11-18",
     "title": "Consultoras de reclutamiento: usar IA para filtrar CV sin perder el control, con criterios explicables, revisión humana y registro de cada decisión",
