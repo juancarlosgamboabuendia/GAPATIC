@@ -1,5 +1,24 @@
 [
   {
+    "slug": "mezcla-modelos-sedes-electrificados-concesionarios-automotrices",
+    "date": "2026-11-20",
+    "title": "Concesionarios automotrices: decidir con IA qué modelos, tecnologías y sedes priorizar, cuando el mercado crece y la mezcla cambia cada mes",
+    "home_title": "Decidir con IA qué modelos, tecnologías y sedes priorizar en un concesionario.",
+    "categoria": "Estrategia",
+    "sector": "Concesionarios automotrices",
+    "problema": "Concesionarios y grupos automotores medianos que definen pedidos, mezcla de inventario (segmentos y tecnologías: gasolina, GNV, híbridos, enchufables, eléctricos) y apertura de sedes o marcas por experiencia y metas de la marca, sin cruzar las inscripciones públicas AAP–SUNARP con sus propias cotizaciones, leads, créditos y ventas perdidas, en un mercado que crece 42,5 % y cambia de mezcla cada mes",
+    "servicio": "Analítica comercial y estrategia de portafolio con IA",
+    "excerpt": "Según la AAP con datos de SUNARP, entre enero y octubre de 2026 se inscribieron 245 141 vehículos nuevos (42,5 % más que en 2025), las SUV ya son el 55,5 % de los livianos y los electrificados crecieron 83,1 % a setiembre. Una oportunidad aplicable: que el concesionario cruce esas cifras públicas con sus cotizaciones, ventas, créditos y taller para decidir qué pedir, qué empujar y dónde crecer.",
+    "image": "images/case-study-retail-logistics.jpg",
+    "image_alt": "Ilustración de analítica comercial, símbolo de un concesionario automotriz que decide con datos qué modelos y sedes priorizar",
+    "url": "oportunidad-2026-11-20-mezcla-modelos-sedes-electrificados-concesionarios-automotrices.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.turbo.com.pe/mercado-automotor-peruano-crecio-43-9-en-octubre-de-2026-y-supero-las-27-mil-unidades",
+      "https://aap.org.pe/prensa/ventas-de-vehiculos-electrificados-crecieron-831-a-setiembre-y-alcanzaron-record-de-participacion-en-el-mercado-peruano"
+    ]
+  },
+  {
     "slug": "riesgo-electrico-incendios-mercados-abastos",
     "date": "2026-11-19",
     "title": "Mercados de abastos: priorizar con IA el riesgo eléctrico puesto por puesto, antes de que un cortocircuito cierre el mercado",
