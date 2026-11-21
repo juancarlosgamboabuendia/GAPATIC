@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Operaciones",
+    "date": "2026-11-21",
+    "excerpt": "El estudio Tech Pulse LATAM 2026 de TIVIT, difundido esta semana, ubica al Perú con la menor proporción de empresas que ya integraron la IA a procesos clave entre los cinco mercados evaluados, aunque destaca en control de sus datos. La mayoría sigue en pilotos, y en el Perú los sistemas heredados aparecen como la principal barrera. La salida no es sumar más pruebas, sino llevar una sola a la operación diaria, bien conectada y con responsable.",
+    "image": "images/blog-placeholder-1.jpg",
+    "image_alt": "Equipo de operaciones revisando cómo un piloto de inteligencia artificial pasa a formar parte del proceso diario de la empresa",
+    "slug": "articulo-2026-11-21-piloto-a-proceso-ia-operacion.html",
+    "title": "Del piloto al proceso: si tu IA sigue en pruebas, elige un proceso, conéctalo a tus sistemas y dale un dueño antes de sumar otro piloto"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Ciberseguridad",
     "date": "2026-11-20",
     "excerpt": "El Informe de Fraude de Identidad 2026–2027 de Sumsub, difundido esta semana, indica que la mitad de las empresas encuestadas en Latinoamérica detectó o sospechó fraude relacionado con agentes de IA en el último año, mientras que pocas verifican quién autoriza a cada agente o limitan sus permisos. Si tu empresa usa agentes, o empieza a recibir pedidos hechos por agentes de terceros, la pregunta clave ya no es solo qué puede hacer el agente, sino quién responde por lo que hace.",
