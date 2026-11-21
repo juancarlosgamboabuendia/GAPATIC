@@ -1,5 +1,25 @@
 [
   {
+    "slug": "recepcion-leche-rutas-acopio-calidad-plantas-lacteas",
+    "date": "2026-11-21",
+    "title": "Plantas lácteas y queserías: ver con IA cuánta leche llega, de qué calidad y por qué ruta, y planificar la producción antes de que la leche se pierda",
+    "home_title": "Ver con IA la leche que llega por ruta y ganadero, y planificar la producción de la planta.",
+    "categoria": "Operaciones",
+    "sector": "Plantas lácteas y acopio de leche fresca",
+    "problema": "Plantas lácteas y queserías medianas que reciben leche de decenas o cientos de ganaderos por varias rutas de acopio y registran volumen, hora y pruebas de calidad en cuadernos u hojas por ruta, sin vista diaria por productor, con rechazos conocidos al final del día, plan de producción por costumbre frente a la estacionalidad de marzo a mayo y trazabilidad y pago por calidad reconstruidos a mano",
+    "servicio": "Analítica operativa y trazabilidad con IA",
+    "excerpt": "Según el Midagri, el Perú produjo 2 388 mil toneladas de leche fresca en 2025 (7,2 % más que en 2024) y la industria de leche evaporada acopió más de 110 mil toneladas entre enero y marzo de 2026, 7 % más que un año antes. Una oportunidad aplicable: que la planta láctea o quesera vea, ruta por ruta y ganadero por ganadero, volumen, calidad y tiempos de recepción para planificar qué producir cada día.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e IA, símbolo de una planta láctea que controla la recepción de leche por ruta y por ganadero",
+    "url": "oportunidad-2026-11-21-recepcion-leche-rutas-acopio-calidad-plantas-lacteas.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://cdn.www.gob.pe/uploads/document/file/10137262/7857710-commodities-leche-y-derivados-n-01.pdf?v=1781123411",
+      "https://www.agraria.pe/noticias/produccion-peruana-de-leche-fresca-alcanza-las-2-2-millones--42377",
+      "https://andina.pe/agencia/noticia-mas-2000-productores-leche-refuerzan-su-produccion-y-transformacion-5-regiones-1088074.aspx"
+    ]
+  },
+  {
     "slug": "mezcla-modelos-sedes-electrificados-concesionarios-automotrices",
     "date": "2026-11-20",
     "title": "Concesionarios automotrices: decidir con IA qué modelos, tecnologías y sedes priorizar, cuando el mercado crece y la mezcla cambia cada mes",
