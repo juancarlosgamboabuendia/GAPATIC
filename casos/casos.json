@@ -1,5 +1,26 @@
 [
   {
+    "slug": "cuentas-institucionales-phishing-cobros-universidades",
+    "date": "2026-11-22",
+    "title": "Universidades e institutos: detectar con IA la cuenta institucional tomada y el correo falso de cobro, antes de que llegue a miles de estudiantes",
+    "home_title": "Detectar con IA cuentas institucionales tomadas y correos falsos de cobro en universidades e institutos.",
+    "categoria": "Ciberseguridad",
+    "sector": "Universidades e institutos de educación superior",
+    "problema": "Universidades e institutos de educación superior con miles de cuentas de estudiantes, docentes y oficinas cuyo correo institucional es canal académico, de trámites y de cobranza, que se enteran por quejas de usuarios cuando una cuenta tomada envía enlaces maliciosos o circulan correos que suplantan a la institución para pedir pagos, contraseñas o amenazar con eliminar la cuenta, sin revisar a diario inicios de sesión anómalos, reglas de reenvío ni envíos masivos, con DMARC sin aplicar y sin procedimiento claro ante incidentes de proveedores",
+    "servicio": "Ciberseguridad con IA: detección de cuentas comprometidas y phishing",
+    "excerpt": "Según el Panorama de Amenazas de Kaspersky, el Perú registró 70 millones de intentos de phishing entre septiembre de 2025 y septiembre de 2026, dos por habitante, y un análisis de Sendmarc de 2025 halló que el 65 % de los dominios universitarios revisados no estaba protegido contra la suplantación. Una oportunidad aplicable: que la universidad o el instituto detecte a tiempo cuentas institucionales tomadas y correos falsos de cobro o de “eliminación de cuenta” dirigidos a su comunidad.",
+    "image": "images/case-study-placeholder-1.jpg",
+    "image_alt": "Ilustración de un campus digital, símbolo de una universidad que protege las cuentas y el correo institucional de su comunidad",
+    "url": "oportunidad-2026-11-22-cuentas-institucionales-phishing-cobros-universidades.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://andina.pe/agencia/noticia-peru-segundo-pais-america-latina-mas-atacado-phishing-y-malware-habitante-1099323.aspx",
+      "https://vidayfuturo.pe/ciberataques-amenazan-seguridad-de-universidades-en-el-peru/",
+      "https://diariocorreo.pe/edicion/arequipa/usan-correo-institucional-de-mesa-de-partes-de-la-unsa-para-enviar-link-malicioso-noticia/",
+      "https://www.infobae.com/peru/2026/05/08/hackeo-a-la-plataforma-educativa-canvas-complica-examenes-en-universidades-de-peru/"
+    ]
+  },
+  {
     "slug": "recepcion-leche-rutas-acopio-calidad-plantas-lacteas",
     "date": "2026-11-21",
     "title": "Plantas lácteas y queserías: ver con IA cuánta leche llega, de qué calidad y por qué ruta, y planificar la producción antes de que la leche se pierda",
