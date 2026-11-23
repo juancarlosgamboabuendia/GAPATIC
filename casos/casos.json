@@ -1,5 +1,24 @@
 [
   {
+    "slug": "partes-turno-informes-cliente-seguridad-privada",
+    "date": "2026-11-23",
+    "title": "Empresas de seguridad privada: convertir con IA los partes de turno y las ocurrencias de cada puesto en el informe al cliente, sin rearmarlo a mano",
+    "home_title": "Seguridad privada: del parte de turno al informe del cliente con IA",
+    "categoria": "Productividad",
+    "sector": "Empresas de seguridad y vigilancia privada",
+    "problema": "Empresas de seguridad y vigilancia privada cuyos supervisores reciben los partes de turno, rondas y ocurrencias de decenas de puestos como fotos de cuadernos, audios y mensajes de WhatsApp, y rearman a mano el informe semanal o mensual que pide cada cliente",
+    "servicio": "Automatización de procesos con IA",
+    "excerpt": "Según la Sucamec, en el Perú hay 125 546 personas autorizadas para brindar servicios de seguridad y 4 319 empresas acreditadas (marzo de 2022), y solo las empresas del gremio Asepri emplean alrededor de 41 130 trabajadores, el 36 % del personal autorizado (setiembre de 2026). Una oportunidad aplicable: que la empresa de vigilancia ordene con IA los partes de turno, rondas y ocurrencias que llegan de cada puesto (fotos del cuaderno, audios, mensajes) y deje listo el informe para el cliente, que el supervisor solo revisa y firma.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e IA, símbolo de una empresa de seguridad que convierte los partes de turno de sus puestos en informes para el cliente",
+    "url": "oportunidad-2026-11-23-partes-turno-informes-cliente-seguridad-privada.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/sucamec/noticias/589513-sucamec-acredito-a-mas-de-125-mil-agentes-de-seguridad-a-nivel-nacional",
+      "https://www.gob.pe/institucion/sucamec/noticias/1448754-sucamec-fortalece-trabajo-conjunto-con-empresas-de-seguridad-privada-a-nivel-nacional"
+    ]
+  },
+  {
     "slug": "cuentas-institucionales-phishing-cobros-universidades",
     "date": "2026-11-22",
     "title": "Universidades e institutos: detectar con IA la cuenta institucional tomada y el correo falso de cobro, antes de que llegue a miles de estudiantes",
