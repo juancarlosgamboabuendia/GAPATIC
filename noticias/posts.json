@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-11-23",
+    "excerpt": "El reglamento de la Ley 31814 se aplica por etapas al sector privado: el primer plazo, para usos de IA en salud, educación, justicia, seguridad, economía y finanzas, venció en septiembre de 2026, y los siguientes llegan entre 2027 y 2029. Mientras tanto, según el estudio Tech Pulse LATAM 2026 de Tivit, la mitad de las empresas peruanas consultadas usa IA generativa de manera informal. El punto de partida para cumplir es saber dónde está la IA en tu empresa.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Equipo de gestión revisando un inventario de sistemas de inteligencia artificial y su clasificación de riesgo frente a la regulación peruana",
+    "slug": "articulo-2026-11-23-ley-ia-peru-inventario-riesgo-alto.html",
+    "title": "Ley de IA en el Perú: los plazos ya corren; haz el inventario de dónde usas IA, marca lo que es de riesgo alto y define quién puede detenerlo"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Productividad",
     "date": "2026-11-22",
     "excerpt": "El informe Desarrollo en las Américas 2026 del BID, presentado el 16 de noviembre, estima que la IA podría sumar 5,1% al PIB de la región en una década si se adopta en la mayoría de las tareas donde aplica, pero solo 0,3% si el uso es bajo y superficial. La diferencia también se juega dentro de cada empresa: cuántas tareas toca la IA, cuánto mejora cada una y adónde se mueve el tiempo que libera.",
