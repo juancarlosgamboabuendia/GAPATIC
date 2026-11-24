@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Operaciones",
+    "date": "2026-11-24",
+    "excerpt": "Visa inició la segunda fase de su programa Agentic Ready en América Latina y el Caribe, enfocada en que adquirentes, pasarelas y comercios acepten compras iniciadas por agentes de IA. En el Perú, Izipay y Niubiz figuran entre los socios que probarán estas transacciones en entornos reales. Para un comercio, el trabajo pendiente no está en la tecnología de pago: está en cómo cobra, entrega, devuelve y atiende cuando quien compra es un agente.",
+    "image": "images/case-study-retail-logistics.jpg",
+    "image_alt": "Equipo de operaciones de un comercio revisando pedidos, pagos y devoluciones iniciados por asistentes de inteligencia artificial",
+    "slug": "articulo-2026-11-24-pagos-agentes-ia-niubiz-izipay-comercios.html",
+    "title": "Pagos hechos por agentes de IA: Niubiz e Izipay ya los prueban con Visa; prepara tu cobro, tus devoluciones y tu posventa antes de que lleguen"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Gobernanza",
     "date": "2026-11-23",
     "excerpt": "El reglamento de la Ley 31814 se aplica por etapas al sector privado: el primer plazo, para usos de IA en salud, educación, justicia, seguridad, economía y finanzas, venció en septiembre de 2026, y los siguientes llegan entre 2027 y 2029. Mientras tanto, según el estudio Tech Pulse LATAM 2026 de Tivit, la mitad de las empresas peruanas consultadas usa IA generativa de manera informal. El punto de partida para cumplir es saber dónde está la IA en tu empresa.",
