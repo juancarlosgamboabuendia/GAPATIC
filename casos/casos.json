@@ -1,5 +1,24 @@
 [
   {
+    "slug": "biometria-acceso-socios-gimnasios",
+    "date": "2026-11-24",
+    "title": "Gimnasios y centros deportivos: revisar con IA si de verdad necesitas la huella o el rostro de tus socios para dejarlos entrar, antes de que lo cuestione la ANPD",
+    "home_title": "Gimnasios: ¿necesitas la huella de tus socios? Decide con evidencia",
+    "categoria": "Gobernanza",
+    "sector": "Gimnasios y centros deportivos",
+    "problema": "Gimnasios y cadenas de centros deportivos que controlan el ingreso de sus socios con huella digital o reconocimiento facial sin haber documentado si esa biometría es necesaria, qué guardan, dónde y por cuánto tiempo, con consentimientos dentro del reglamento o del contrato y sin alternativa real para el socio",
+    "servicio": "Gobierno de datos e IA responsable",
+    "excerpt": "La Autoridad Nacional de Protección de Datos Personales multó con 27 UIT a un gimnasio de Arequipa que guardaba 7 132 huellas digitales de 3 566 socios para controlar el ingreso, por recopilar datos sensibles que no eran necesarios para el servicio (resolución de primera instancia del 26 de noviembre de 2025). Una oportunidad aplicable: que el gimnasio use IA para inventariar dónde trata biometría y otros datos de sus socios, compare alternativas menos intrusivas y deje documentadas sus decisiones, con revisión legal humana.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Ilustración de consultoría e IA, símbolo de un gimnasio que revisa el uso de huellas y rostros de sus socios en el control de acceso",
+    "url": "oportunidad-2026-11-24-biometria-acceso-socios-gimnasios.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/anpd/normas-legales/8074031-pas-industrias-del-fitness-rk-e-i-r-l-exp-165-2024",
+      "https://www.infobae.com/peru/2026/06/01/huella-digital-para-entrar-al-gimnasio-una-multa-de-s-139000-y-lo-que-toda-empresa-debe-saber-antes-de-usar-biometria/"
+    ]
+  },
+  {
     "slug": "partes-turno-informes-cliente-seguridad-privada",
     "date": "2026-11-23",
     "title": "Empresas de seguridad privada: convertir con IA los partes de turno y las ocurrencias de cada puesto en el informe al cliente, sin rearmarlo a mano",
