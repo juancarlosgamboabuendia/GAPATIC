@@ -1,5 +1,24 @@
 [
   {
+    "slug": "inventario-tanques-deteccion-fugas-grifos-estaciones-servicio",
+    "date": "2026-11-25",
+    "title": "Grifos y estaciones de servicio: cruzar con IA la medición de tanques, la venta de los surtidores y las alarmas de fuga para ver a tiempo el faltante que no cuadra",
+    "home_title": "Grifos: cruzar con IA tanques, surtidores y alarmas de fuga cada día",
+    "categoria": "Infraestructura",
+    "sector": "Grifos y estaciones de servicio",
+    "problema": "Grifos y estaciones de servicio, sobre todo independientes o con pocas sedes, que llevan la varilla o la telemedición de sus tanques enterrados, las lecturas de los surtidores, las guías de compra y las alarmas de los detectores de fuga en cuadernos, hojas de cálculo y sistemas separados, y que recién al cierre de mes descubren diferencias de inventario que no saben si son evaporación, error de medición, robo, despacho mal calibrado o una fuga en tanque o tubería, sin evidencia ordenada para Osinergmin ni para la prueba de hermeticidad",
+    "servicio": "Datos, IoT e IA para infraestructura",
+    "excerpt": "Según Osinergmin, en el Perú hay más de 5 000 grifos y estaciones de servicio con Registro de Hidrocarburos, y en un solo operativo nacional de setiembre de 2025 clausuró 23 por condiciones inseguras. La norma de hermeticidad (D. S. 064-2009-EM) pide registrar cada día el inventario de los tanques enterrados y considera fuga una diferencia mayor al 0,5 % del volumen manipulado en el mes. Una oportunidad aplicable: que el grifo cruce con IA la medición de tanques, la venta de los surtidores, las compras y las alarmas de fuga, para detectar a tiempo el faltante que no cuadra y llegar con evidencia a la inspección.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Ilustración de datos e IA, símbolo de un grifo que cruza la medición de sus tanques, la venta de sus surtidores y sus alarmas de fuga",
+    "url": "oportunidad-2026-11-25-inventario-tanques-deteccion-fugas-grifos-estaciones-servicio.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://www.gob.pe/institucion/osinergmin/noticias/1242370-osinergmin-cierra-23-grifos-inseguros-tras-mega-operativo-nacional",
+      "https://www.osinergmin.gob.pe/seccion/centro_documental/hidrocarburos/STEEmpresas%20Hermeticidad/Decreto%20Supremo%20N%C2%B0%20064-2009-EM.pdf"
+    ]
+  },
+  {
     "slug": "biometria-acceso-socios-gimnasios",
     "date": "2026-11-24",
     "title": "Gimnasios y centros deportivos: revisar con IA si de verdad necesitas la huella o el rostro de tus socios para dejarlos entrar, antes de que lo cuestione la ANPD",
