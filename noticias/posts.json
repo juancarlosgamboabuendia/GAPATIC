@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Productividad",
+    "date": "2026-11-26",
+    "excerpt": "El informe de BCG y Riverwood Capital, publicado el 10 de noviembre de 2026, señala que el 85% de las empresas tecnológicas de América Latina ya usa agentes de IA en producción, pero solo el 22% valida el impacto financiero. Bloomberg Línea añade que otro 44% trabaja con estimaciones sin línea base ni aprobación de Finanzas. El siguiente paso no es sumar más casos: es acordar cómo se va a medir cada uno.",
+    "image": "images/blog-ia-generativa-featured.jpg",
+    "image_alt": "Equipo de finanzas y operaciones revisando, en una misma mesa, los indicadores de un caso de inteligencia artificial ya en uso",
+    "slug": "articulo-2026-11-26-medir-impacto-ia-validacion-finanzas.html",
+    "title": "Solo el 22% de las tecnológicas de la región valida con Finanzas el impacto de su IA: fija la línea base antes de escalar"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Estrategia",
     "date": "2026-11-25",
     "excerpt": "El Ranking Mundial Digital y de IA 2026 del IMD, elaborado con Centrum PUCP, ubica al Perú en el puesto 65 de 70 economías. El país sube un lugar, pero queda último en Eficiencia y en Talento, y en el puesto 68 en adopción de IA en las empresas. Varias de las peores notas no dependen del Estado: dependen de cómo cada empresa elige sus usos de IA, forma a su gente y se prepara para una brecha de datos.",
