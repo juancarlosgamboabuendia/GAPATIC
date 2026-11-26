@@ -1,5 +1,24 @@
 [
   {
+    "slug": "portafolio-grano-elaborados-cooperativas-cacao",
+    "date": "2026-11-26",
+    "title": "Cooperativas y exportadoras de cacao: decidir con IA cuánto vender como grano y cuánto como elaborado, cuando el valor del grano se cae aunque el volumen no baste para sostenerlo",
+    "home_title": "Cacao: decidir con IA cuánto vender como grano y cuánto como elaborado",
+    "categoria": "Estrategia",
+    "sector": "Cooperativas, acopiadores y exportadoras de cacao",
+    "problema": "Cooperativas, acopiadores y exportadoras de cacao que liquidan casi toda la campaña como grano commodity, con facturas, contratos y análisis de calidad en planillas distintas, y que no comparan a tiempo el precio real de cada lote ni el margen de venderlo como nibs, manteca, licor o chocolate, de modo que se enteran del resultado al cierre, cuando el precio internacional del grano ya recortó el ingreso",
+    "servicio": "Analítica comercial y estrategia de portafolio con IA",
+    "excerpt": "Según MIDAGRI, en el primer semestre de 2026 el cacao en grano peruano exportó 39 mil toneladas (+5,7%), pero su valor FOB cayó 58,2%, a US$ 151 millones, por el precio internacional. El Reporte Regional de Comercio de setiembre de MINCETUR, publicado el 17 de noviembre, ubica esos envíos en US$ 361 millones entre enero y setiembre, 55,6% menos que en 2025. Una oportunidad aplicable: que la cooperativa o exportadora vea con IA el precio real de cada lote y decida, con evidencia, cuánto sale como grano y cuánto como nibs, manteca o chocolate.",
+    "image": "images/placeholder-consultoria-ia.jpg",
+    "image_alt": "Equipo de una cooperativa o exportadora de cacao revisando, con datos, si un lote sale como grano o como producto elaborado",
+    "url": "oportunidad-2026-11-26-portafolio-grano-elaborados-cooperativas-cacao.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://cdn.www.gob.pe/uploads/document/file/10495151/7710817-comportamiento-de-las-exportaciones-agropecuarias-al-1-semestre-2026.pdf",
+      "https://www.gob.pe/institucion/mincetur/informes-publicaciones/8832704-reportes-de-comercio-reporte-regional-de-comercio-setiembre-2026"
+    ]
+  },
+  {
     "slug": "inventario-tanques-deteccion-fugas-grifos-estaciones-servicio",
     "date": "2026-11-25",
     "title": "Grifos y estaciones de servicio: cruzar con IA la medición de tanques, la venta de los surtidores y las alarmas de fuga para ver a tiempo el faltante que no cuadra",
