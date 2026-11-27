@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Ciberseguridad",
+    "date": "2026-11-27",
+    "excerpt": "La Encuesta de ciberseguridad en América Latina 2026 de RSM, con 265 especialistas y líderes de empresas del mercado medio, muestra que el 69% prevé más presupuesto, pero solo el 30% tiene un CISO o cargo equivalente y apenas el 16% ha definido responsabilidades para la gobernanza de la IA. La brecha no está en cuánto se gasta, sino en quién decide, quién responde y qué se controla.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Responsable de seguridad y equipo de TI revisando juntos la configuración de la nube y los accesos de la empresa",
+    "slug": "articulo-2026-11-27-ciberseguridad-mercado-medio-responsable-nube-ia.html",
+    "title": "Más presupuesto en ciberseguridad no te protege si nadie es dueño del riesgo: nombra un responsable, exige resultados a tu proveedor y revisa tu nube"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Productividad",
     "date": "2026-11-26",
     "excerpt": "El informe de BCG y Riverwood Capital, publicado el 10 de noviembre de 2026, señala que el 85% de las empresas tecnológicas de América Latina ya usa agentes de IA en producción, pero solo el 22% valida el impacto financiero. Bloomberg Línea añade que otro 44% trabaja con estimaciones sin línea base ni aprobación de Finanzas. El siguiente paso no es sumar más casos: es acordar cómo se va a medir cada uno.",
