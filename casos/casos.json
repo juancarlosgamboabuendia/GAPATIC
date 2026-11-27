@@ -1,5 +1,24 @@
 [
   {
+    "slug": "recepcion-secado-pilado-molinos-arroz",
+    "date": "2026-11-27",
+    "title": "Molinos de arroz: ordenar con IA la recepción, el secado y el pilado de cada lote cuando la cosecha crece más rápido que la capacidad para secar y almacenar",
+    "home_title": "Molinos de arroz: ordenar con IA la recepción, el secado y el pilado de cada lote",
+    "categoria": "Operaciones",
+    "sector": "Molinos y piladoras de arroz",
+    "problema": "Molinos y piladoras de arroz medianos que reciben arroz cáscara en orden de llegada, con la humedad, las impurezas y el rendimiento de pilado anotados en cuadernos o planillas que no se cruzan por lote, de modo que los lotes húmedos esperan sin secar, se paga igual por lotes que rinden distinto y la saturación de secado y almacén se descubre con el patio lleno cuando la cosecha se concentra",
+    "servicio": "Planificación operativa y analítica de planta con IA",
+    "excerpt": "Según MIDAGRI, entre enero y junio de 2026 el Perú produjo 2 434 430 toneladas de arroz cáscara (+7,5% frente a 2025) mientras el precio en chacra bajó 20,4%, a S/ 1,195 por kilo; en Lambayeque la producción subió 38,4% y el ministerio advierte mayores requerimientos de secado y almacenamiento. Una oportunidad aplicable: que el molino use IA para ordenar la cola de recepción, el secado y el pilado según la humedad y la calidad de cada lote, y medir el rendimiento real de pilado por proveedor.",
+    "image": "images/case-study-placeholder-2.jpg",
+    "image_alt": "Patio de recepción de un molino de arroz con lotes de arroz cáscara esperando análisis de humedad, secado y pilado",
+    "url": "oportunidad-2026-11-27-recepcion-secado-pilado-molinos-arroz.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://cdn.www.gob.pe/uploads/document/file/10557962/7710817-evaluacion-agroclimatica-del-arroz-2026-2027.pdf?v=1788443299",
+      "https://www.agraria.pe/noticias/produccion-nacional-de-arroz-supero-los-2-4-millones-de-tone-43359"
+    ]
+  },
+  {
     "slug": "portafolio-grano-elaborados-cooperativas-cacao",
     "date": "2026-11-26",
     "title": "Cooperativas y exportadoras de cacao: decidir con IA cuánto vender como grano y cuánto como elaborado, cuando el valor del grano se cae aunque el volumen no baste para sostenerlo",
