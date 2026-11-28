@@ -1,5 +1,24 @@
 [
   {
+    "slug": "ransomware-resultados-pacientes-laboratorios-clinicos",
+    "date": "2026-11-28",
+    "title": "Laboratorios clínicos: vigilar con IA quién accede y qué sale de los resultados de pacientes antes de que el ransomware los cifre y los publique",
+    "home_title": "Laboratorios clínicos: detectar con IA el acceso y la fuga de resultados antes del ransomware",
+    "categoria": "Ciberseguridad",
+    "sector": "Laboratorios clínicos y centros de diagnóstico",
+    "problema": "Laboratorios clínicos y centros de diagnóstico por imágenes medianos con portal de resultados, LIS/RIS y accesos remotos expuestos a internet, cuentas compartidas o sin doble factor, registros de acceso que nadie revisa y respaldos en la misma red, que no detectan a tiempo el uso de credenciales válidas ni la exfiltración de resultados de pacientes previa al ransomware y no pueden reconstruir en 48 horas qué datos y cuántos pacientes se expusieron",
+    "servicio": "Detección de amenazas y respuesta a incidentes con IA",
+    "excerpt": "Según la Alerta Integrada de Seguridad Digital N.° 061-2026 del CNSD, el ransomware Vect 2.0 afecta sobre todo a manufactura, educación, sanidad y tecnología, entra por servicios expuestos y credenciales comprometidas, roba los datos antes de cifrarlos y tarda unos 8 días de la intrusión a la publicación; el reglamento de la Ley 29733 exige notificar a la ANPD en 48 horas los incidentes con datos sensibles. Una oportunidad aplicable: que el laboratorio use IA para detectar accesos y descargas fuera de patrón en sus sistemas de resultados y llegar preparado a esas 48 horas.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Panel de monitoreo de un laboratorio clínico que marca accesos y descargas inusuales de resultados de pacientes",
+    "url": "oportunidad-2026-11-28-ransomware-resultados-pacientes-laboratorios-clinicos.html",
+    "tipo": "Oportunidad",
+    "fuentes": [
+      "https://cdn.www.gob.pe/uploads/document/file/9893329/8075933-alerta-integrada-de-seguridad-digital-061-2026-cnsd.pdf",
+      "https://cdn.www.gob.pe/uploads/document/file/7568330/6426760-decreto-supremo-n-016-2024-jus-reglamento-de-la-ley-n-29733-ley-de-proteccion-de-datos-personales-publicado-nov-2024.pdf"
+    ]
+  },
+  {
     "slug": "recepcion-secado-pilado-molinos-arroz",
     "date": "2026-11-27",
     "title": "Molinos de arroz: ordenar con IA la recepción, el secado y el pilado de cada lote cuando la cosecha crece más rápido que la capacidad para secar y almacenar",
