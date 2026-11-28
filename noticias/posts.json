@@ -1,6 +1,16 @@
 [
   {
     "author": "GAPATIC",
+    "category": "Gobernanza",
+    "date": "2026-11-28",
+    "excerpt": "Pampa Energía contó que, además de llevar Microsoft 365 Copilot a todos sus colaboradores, creó más de 300 agentes de IA que concentran conocimiento técnico y normativo de distintas áreas. Ese es el paso que muchas empresas darán en 2027: pasar de un asistente general a muchos agentes especializados. Para que sigan diciendo lo correcto, cada agente necesita un responsable, documentos al día y una fecha para revisarlo o retirarlo.",
+    "image": "images/placeholder-datos-ia.jpg",
+    "image_alt": "Equipo de operaciones revisando en pantalla un catálogo de agentes de IA con sus responsables y documentos de referencia",
+    "slug": "articulo-2026-11-28-agentes-conocimiento-tecnico-dueno-fuente-revision.html",
+    "title": "Cientos de agentes con el conocimiento de tu empresa: cada uno necesita un dueño, una fuente vigente y una fecha de revisión"
+  },
+  {
+    "author": "GAPATIC",
     "category": "Ciberseguridad",
     "date": "2026-11-27",
     "excerpt": "La Encuesta de ciberseguridad en América Latina 2026 de RSM, con 265 especialistas y líderes de empresas del mercado medio, muestra que el 69% prevé más presupuesto, pero solo el 30% tiene un CISO o cargo equivalente y apenas el 16% ha definido responsabilidades para la gobernanza de la IA. La brecha no está en cuánto se gasta, sino en quién decide, quién responde y qué se controla.",
